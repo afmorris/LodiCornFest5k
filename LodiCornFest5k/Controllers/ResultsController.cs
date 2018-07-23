@@ -98,7 +98,8 @@ namespace LodiCornFest5k.Controllers
                     Name = $"{dbResult.Runner.FirstName} {dbResult.Runner.LastName}",
                     Gender = dbResult.Runner.Gender,
                     AgeGroupName = ageGroup.Name,
-                    Time = dbResult.Time
+                    Time = dbResult.Time,
+                    RaceName = race.Name
                 };
 
                 results.Add(result);
@@ -144,7 +145,8 @@ namespace LodiCornFest5k.Controllers
                         Name = $"{ageGroupResult.Runner.FirstName} {ageGroupResult.Runner.LastName}",
                         Gender = ageGroupResult.Runner.Gender,
                         AgeGroupName = ageGroup.Name,
-                        Time = ageGroupResult.Time
+                        Time = ageGroupResult.Time,
+                        RaceName = race.Name
                     };
 
                     results.Add(res);

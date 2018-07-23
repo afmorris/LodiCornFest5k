@@ -10,5 +10,8 @@ namespace LodiCornFest5k.ViewModels
         public Gender Gender { get; set; }
         public string AgeGroupName { get; set; }
         public TimeSpan Time { get; set; }
+        public string RaceName { get; set; }
+        public int OverallPlace { get; set; }
+        public int AgeGroupPlace { get; set; }
     }
 }
