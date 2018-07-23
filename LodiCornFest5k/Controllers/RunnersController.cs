@@ -48,7 +48,8 @@ namespace LodiCornFest5k.Controllers
                     AgeGroupPlace = dbResult.AgeGroupPlace,
                     RaceName = dbResult.Race.Name,
                     Time = dbResult.Time,
-                    AgeGroupName = raceRunner.AgeGroup.Name
+                    AgeGroupName = raceRunner.AgeGroup.Name,
+                    RaceYear = dbResult.Race.Date.Year
                 };
                 
                 results.Add(result);

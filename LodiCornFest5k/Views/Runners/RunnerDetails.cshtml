@@ -24,10 +24,18 @@
             <tr>
                 <td>@result.Name</td>
                 <td>@result.Gender</td>
-                <td>@result.RaceName</td>
-                <td>@result.AgeGroupName</td>
-                <td>@result.OverallPlace</td>
-                <td>@result.AgeGroupPlace</td>
+                <td>
+                    <a asp-controller="Results" asp-action="List" asp-route-year="@result.RaceYear" asp-route-name="@result.LinkName" target="_blank">@result.RaceName</a>
+                </td>
+                <td>
+                    <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@result.RaceYear" asp-route-ageGroup="@result.AgeGroupLink" target="_blank">@result.AgeGroupName</a>
+                </td>
+                <td>
+                    <a asp-controller="Results" asp-action="Overall" asp-route-year="@result.RaceYear" asp-route-place="@result.OverallPlace" target="_blank">@result.OverallPlace</a>
+                </td>
+                <td>
+                    <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@result.RaceYear" asp-route-ageGroup="@result.AgeGroupLink" asp-route-place="@result.AgeGroupPlace" target="_blank">@result.AgeGroupPlace</a>
+                </td>
                 <td>@result.Time.ToString(@"mm\:ss\.ff")</td>
             </tr>
         }

@@ -13,6 +13,7 @@ namespace LodiCornFest5k.ViewModels
         public string RaceName { get; set; }
         public int OverallPlace { get; set; }
         public int AgeGroupPlace { get; set; }
+        public int RaceYear { get; set; }
 
         public string LinkName
         {
@@ -23,6 +24,14 @@ namespace LodiCornFest5k.ViewModels
                 var lastName = names[1];
 
                 return $"{firstName}-{lastName}";
+            }
+        }
+
+        public string AgeGroupLink
+        {
+            get
+            {
+                return $"{this.Gender.ToString().ToLower()}-{this.AgeGroupName.Replace(" ", "").Replace("+", "-").Replace("&", "-").ToLower()}";
             }
         }
     }
