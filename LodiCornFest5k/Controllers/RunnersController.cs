@@ -36,7 +36,7 @@ namespace LodiCornFest5k.Controllers
 
             var results = new List<ResultViewModel>();
 
-            foreach (var dbResult in runner.Results)
+            foreach (var dbResult in runner.Results.OrderBy(x => x.Race.Date))
             {
                 var raceRunner = runner.RaceRunners.First(x => x.Race.Id == dbResult.Race.Id);
 
