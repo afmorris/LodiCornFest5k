@@ -13,30 +13,17 @@
 }
 
 <div class="row">
-    <div class="col-sm-3 toc">
-        <nav id="toc" data-toggle="toc">
-            <span class="navbar-brand">@Model.Race.Name Age Group Results</span>
+    <div class="col-sm-2">
+        <nav class="nav flex-column nav-pills">
+            <span class="navbar-brand">@ViewData["Title"]</span>
+            <a class="nav-link" is-active-route asp-controller="Results" asp-action="List" asp-route-year="@Model.Race.Date.Year">Runner List</a>
+            <a class="nav-link" is-active-route asp-controller="Results" asp-action="Overall" asp-route-year="@Model.Race.Date.Year">Overall Results</a>
+            <a class="nav-link" is-active-route asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.Race.Date.Year">Results by Age Group</a>
         </nav>
     </div>
-    <div class="col-sm-9">
-        <div class="row">
-            <div class="col-sm-10">
-                <h1>Age Group Results</h1>
-                <h2>@Model.Race.Name</h2>
-            </div>
-            <div class="col-sm-2">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="RaceActionsButton-@Model.Race.Date.Year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Race Actions
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="RaceActionsButton-@Model.Race.Id">
-                        <a class="dropdown-item" asp-controller="Results" asp-action="List" asp-route-year="@Model.Race.Date.Year">Runner List</a>
-                        <a class="dropdown-item" asp-controller="Results" asp-action="Overall" asp-route-year="@Model.Race.Date.Year">Overall Results</a>
-                        <a class="dropdown-item" asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.Race.Date.Year">Results by Age Group</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="col-sm-7">
+        <h1>Age Group Results</h1>
+        <h2>@Model.Race.Name</h2>
 
         @foreach (var ageGroup in Model.AgeGroups)
         {
@@ -69,7 +56,9 @@
                 </table>
             }
         }
-
-
+    </div>
+    <div class="col-sm-3 toc">
+        <nav id="toc" data-toggle="toc">
+        </nav>
     </div>
 </div>
