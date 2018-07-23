@@ -13,5 +13,17 @@ namespace LodiCornFest5k.ViewModels
         public string RaceName { get; set; }
         public int OverallPlace { get; set; }
         public int AgeGroupPlace { get; set; }
+
+        public string LinkName
+        {
+            get
+            {
+                var names = this.Name.ToLower().Split(" ");
+                var firstName = names[0];
+                var lastName = names[1];
+
+                return $"{firstName}-{lastName}";
+            }
+        }
     }
 }

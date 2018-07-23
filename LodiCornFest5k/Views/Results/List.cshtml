@@ -30,7 +30,9 @@
                 @foreach (var runner in Model.Runners)
                 {
                     <tr>
-                        <td>@runner.Name</td>
+                        <td>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@runner.LinkName">@runner.Name</a>
+                        </td>
                         <td>@runner.Gender</td>
                         <td>@runner.AgeGroupName</td>
                     </tr>

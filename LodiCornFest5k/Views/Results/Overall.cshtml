@@ -33,7 +33,9 @@
                 {
                     <tr>
                         <td>@result.Place</td>
-                        <td>@result.Name</td>
+                        <td>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@result.LinkName">@result.Name</a>
+                        </td>
                         <td>@result.Gender</td>
                         <td>@result.AgeGroupName</td>
                         <td>@result.Time.ToString(@"mm\:ss\.ff")</td>
