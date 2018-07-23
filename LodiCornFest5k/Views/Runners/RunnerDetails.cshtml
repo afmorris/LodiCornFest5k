@@ -1,0 +1,35 @@
+﻿@model LodiCornFest5k.ViewModels.Runners.RunnerDetailsViewModel
+
+@{
+    ViewData["Title"] = $"{Model.Runner.FirstName} {Model.Runner.LastName} Results";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Race</th>
+            <th>Age Group</th>
+            <th>Overall Place</th>
+            <th>Age Group Place</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var result in Model.Results)
+        {
+            <tr>
+                <td>@result.Name</td>
+                <td>@result.Gender</td>
+                <td>@result.RaceName</td>
+                <td>@result.AgeGroupName</td>
+                <td>@result.OverallPlace</td>
+                <td>@result.AgeGroupPlace</td>
+                <td>@result.Time.ToString(@"mm\:ss\.ff")</td>
+            </tr>
+        }
+    </tbody>
+</table>
