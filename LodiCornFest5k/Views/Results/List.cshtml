@@ -1,0 +1,45 @@
+﻿@model LodiCornFest5k.ViewModels.Results.ListViewModel
+
+@{
+    ViewData["Title"] = $"{Model.Race.Name} Runner List";
+}
+
+<div class="row">
+    <div class="col-sm-10">
+        <h1>Runner List</h1>
+        <h2>@Model.Race.Name</h2>
+    </div>
+    <div class="col-sm-2">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="RaceActionsButton-@Model.Race.Date.Year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Race Actions
+            </button>
+            <div class="dropdown-menu" aria-labelledby="RaceActionsButton-@Model.Race.Id">
+                <a class="dropdown-item" asp-controller="Results" asp-action="List" asp-route-year="@Model.Race.Date.Year">Runner List</a>
+                <a class="dropdown-item" asp-controller="Results" asp-action="Overall" asp-route-year="@Model.Race.Date.Year">Overall Results</a>
+                <a class="dropdown-item" asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.Race.Date.Year">Results by Age Group</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <caption>Runner List of @Model.Race.Name</caption>
+    <thead class="thead-light">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age Group</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var runner in Model.Runners)
+        {
+            <tr>
+                <td>@runner.Name</td>
+                <td>@runner.Gender</td>
+                <td>@runner.AgeGroupName</td>
+            </tr>
+        }
+    </tbody>
+</table>

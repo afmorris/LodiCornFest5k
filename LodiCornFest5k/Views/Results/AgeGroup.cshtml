@@ -1,0 +1,75 @@
+﻿@model LodiCornFest5k.ViewModels.Results.AgeGroupViewModel
+
+@{
+    ViewData["Title"] = $"{Model.Race.Name} Age Group Results";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+}
+
+@section Scripts {
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+}
+
+<div class="row">
+    <div class="col-sm-3 toc">
+        <nav id="toc" data-toggle="toc">
+            <span class="navbar-brand">@Model.Race.Name Age Group Results</span>
+        </nav>
+    </div>
+    <div class="col-sm-9">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Age Group Results</h1>
+                <h2>@Model.Race.Name</h2>
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="RaceActionsButton-@Model.Race.Date.Year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Race Actions
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="RaceActionsButton-@Model.Race.Id">
+                        <a class="dropdown-item" asp-controller="Results" asp-action="List" asp-route-year="@Model.Race.Date.Year">Runner List</a>
+                        <a class="dropdown-item" asp-controller="Results" asp-action="Overall" asp-route-year="@Model.Race.Date.Year">Overall Results</a>
+                        <a class="dropdown-item" asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.Race.Date.Year">Results by Age Group</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @foreach (var ageGroup in Model.AgeGroups)
+        {
+            @if (ageGroup.Results.Any())
+            {
+                <h3 style="padding-top:4rem;">@ageGroup.Gender @ageGroup.Name</h3>
+                <table class="table table-striped">
+                    <caption>@ageGroup.Gender @ageGroup.Name Age Group Results of @Model.Race.Name</caption>
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Age Group</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in ageGroup.Results)
+                        {
+                            <tr>
+                                <td>@result.Place</td>
+                                <td>@result.Name</td>
+                                <td>@result.Gender</td>
+                                <td>@result.AgeGroupName</td>
+                                <td>@result.Time.ToString(@"mm\:ss\.ff")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        }
+
+
+    </div>
+</div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="~/css/sticky-footer.css" />
+    <link rel="stylesheet" href="~/css/cover.css" />
     @RenderSection("Styles", false)
 
     <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="~/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="~/#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>@ViewData["Title"] | Lodi Corn Fest 5k</title>
+    <title>Lodi Corn Fest 5k</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83190618-3"></script>
     <script>
@@ -26,34 +26,27 @@
         gtag('config', 'UA-83190618-3');
     </script>
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="/">Lodi Corn Fest 5K</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li asp-controller="Home" asp-action="Index" is-active-route class="nav-item">
-                    <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
-                </li>
-                <li asp-controller="Results" asp-action="Index" is-active-route class="nav-item">
-                    <a asp-controller="Results" asp-action="Index" class="nav-link">Results</a>
-                </li>
-                <li asp-controller="Route" asp-action="Index" is-active-route class="nav-item">
-                    <a asp-controller="Route" asp-action="Index" class="nav-link">Route Map</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main role="main" class="container-fluid">
-        @RenderBody()
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">LodiCornFest5k.com is made with &#10084; by <a href="https://twitter.com/TonyTalksTech" target="_blank">Tony Morris</a></span>
-        </div>
-    </footer>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Lodi Corn Fest 5K</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a asp-controller="Home" asp-action="Index" is-active-route class="nav-link">Home</a>
+                    <a asp-controller="Results" asp-action="Index" is-active-route class="nav-link">Results</a>
+                    <a asp-controller="Route" asp-action="Index" is-active-route class="nav-link">Route Map</a>
+                </nav>
+            </div>
+        </header>
+        <main role="main" class="inner cover">
+            @RenderBody()
+        </main>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>LodiCornFest5k.com is made with &#10084; by <a href="https://twitter.com/TonyTalksTech" target="_blank">Tony Morris</a>.
+            </div>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

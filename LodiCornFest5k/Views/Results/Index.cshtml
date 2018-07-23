@@ -1,0 +1,43 @@
+﻿@model LodiCornFest5k.ViewModels.Results.IndexViewModel
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h1>Race Results</h1>
+<p>
+    For each of the races below, select the <strong>Race Actions</strong> button to view the details.
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var race in Model.Races)
+        {
+            <tr>
+                <td>
+                    @race.Name
+                </td>
+                <td>@race.Date.ToString("d")</td>
+                <td class="text-center">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="RaceActionsButton-@race.Date.Year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Race Actions
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="RaceActionsButton-@race.Id">
+                            <a class="dropdown-item" asp-controller="Results" asp-action="List" asp-route-year="@race.Date.Year">Runner List</a>
+                            <a class="dropdown-item" asp-controller="Results" asp-action="Overall" asp-route-year="@race.Date.Year">Overall Results</a>
+                            <a class="dropdown-item" asp-controller="Results" asp-action="AgeGroup" asp-route-year="@race.Date.Year">Results by Age Group</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
