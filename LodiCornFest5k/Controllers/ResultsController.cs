@@ -23,7 +23,7 @@ namespace LodiCornFest5k.Controllers
         {
             var viewModel = new IndexViewModel
             {
-                Races = await this.context.Races.ToListAsync()
+                Races = await this.context.Races.OrderByDescending(x => x.Date).ToListAsync()
             };
 
             return View(viewModel);

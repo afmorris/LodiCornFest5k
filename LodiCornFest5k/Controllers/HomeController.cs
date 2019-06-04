@@ -7,8 +7,13 @@ namespace LodiCornFest5k.Controllers
     public class HomeController : Controller
     {
         [HttpGet("/")]
-        [HttpGet("/index")]
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("/about")]
+        public IActionResult About()
         {
             return View();
         }
