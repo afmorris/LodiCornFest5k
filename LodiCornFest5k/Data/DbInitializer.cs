@@ -11,6 +11,7 @@ namespace LodiCornFest5k.Data
         private static readonly string RaceName2016 = "2016 Lodi Cornfest 5K";
         private static readonly string RaceName2017 = "2017 Lodi Cornfest 5K";
         private static readonly string RaceName2018 = "2018 Lodi Cornfest 5K";
+        private static readonly string RaceName2019 = "2019 Lodi Cornfest 5K";
 
         private static readonly string AgeGroupName14AndUnder = "14 & Under";
         private static readonly string AgeGroupName15to18 = "15-18";
@@ -28,175 +29,219 @@ namespace LodiCornFest5k.Data
             
             var runners = new ConcurrentBag<Runner>()
             {
-                new Runner { FirstName = "Max", LastName = "Gucker", Gender = Gender.Male},
-                new Runner { FirstName = "Chuck", LastName = "Engle", Gender = Gender.Male},
-                new Runner { FirstName = "Kyle", LastName = "Chudzinski", Gender = Gender.Male},
-                new Runner { FirstName = "Macy", LastName = "McAdams", Gender = Gender.Female},
-                new Runner { FirstName = "Andrew", LastName = "Hibler", Gender = Gender.Male},
-                new Runner { FirstName = "Alex", LastName = "Derhammer", Gender = Gender.Male},
-                new Runner { FirstName = "Zane", LastName = "Evans", Gender = Gender.Male},
-                new Runner { FirstName = "Brett", LastName = "Gucker", Gender = Gender.Male},
-                new Runner { FirstName = "Luke", LastName = "Malena", Gender = Gender.Male},
-                new Runner { FirstName = "Riley", LastName = "Freeland", Gender = Gender.Female},
-                new Runner { FirstName = "Ladd", LastName = "Clifford", Gender = Gender.Male},
-                new Runner { FirstName = "Andy", LastName = "Davis", Gender = Gender.Male},
-                new Runner { FirstName = "Zach", LastName = "Johnston", Gender = Gender.Male},
-                new Runner { FirstName = "Joseph", LastName = "Bruening", Gender = Gender.Male},
-                new Runner { FirstName = "Michaela", LastName = "Davis", Gender = Gender.Female},
-                new Runner { FirstName = "Maria", LastName = "Porras", Gender = Gender.Female},
-                new Runner { FirstName = "Makaela", LastName = "Salyer", Gender = Gender.Female},
-                new Runner { FirstName = "Greg", LastName = "Hill", Gender = Gender.Male},
-                new Runner { FirstName = "Bailey", LastName = "Freeland", Gender = Gender.Female},
-                new Runner { FirstName = "Jenna", LastName = "Oliver", Gender = Gender.Female},
-                new Runner { FirstName = "Cooper", LastName = "Hartsel", Gender = Gender.Male},
-                new Runner { FirstName = "Joey", LastName = "Kurtz", Gender = Gender.Male},
-                new Runner { FirstName = "Nolan", LastName = "Freeland", Gender = Gender.Male},
-                new Runner { FirstName = "Sophia", LastName = "Spencer", Gender = Gender.Female},
-                new Runner { FirstName = "David", LastName = "Huff", Gender = Gender.Male},
-                new Runner { FirstName = "Tyler", LastName = "Palmer", Gender = Gender.Male},
-                new Runner { FirstName = "Paige", LastName = "Munchick", Gender = Gender.Female},
-                new Runner { FirstName = "Dave", LastName = "Freeland", Gender = Gender.Male},
-                new Runner { FirstName = "Keith", LastName = "Johnston", Gender = Gender.Male},
-                new Runner { FirstName = "Harold", LastName = "Dravenstott", Gender = Gender.Male},
-                new Runner { FirstName = "Scott", LastName = "Stoner", Gender = Gender.Male},
-                new Runner { FirstName = "Jennifer", LastName = "Ridgway", Gender = Gender.Female},
-                new Runner { FirstName = "Brad", LastName = "Oliver", Gender = Gender.Male},
-                new Runner { FirstName = "TJ", LastName = "Corbett", Gender = Gender.Male},
-                new Runner { FirstName = "Raymond", LastName = "Miller", Gender = Gender.Male},
-                new Runner { FirstName = "Asa", LastName = "Gynn", Gender = Gender.Male},
-                new Runner { FirstName = "William", LastName = "Foster", Gender = Gender.Male},
-                new Runner { FirstName = "Eric", LastName = "Thomas", Gender = Gender.Male},
-                new Runner { FirstName = "Liv", LastName = "Wells", Gender = Gender.Female},
-                new Runner { FirstName = "Katie", LastName = "Canfield", Gender = Gender.Female},
-                new Runner { FirstName = "Emma", LastName = "Hibler", Gender = Gender.Female},
-                new Runner { FirstName = "Clay", LastName = "Gucker", Gender = Gender.Male},
-                new Runner { FirstName = "Andrew", LastName = "Vasel", Gender = Gender.Male},
-                new Runner { FirstName = "Kevin", LastName = "Seager", Gender = Gender.Male},
-                new Runner { FirstName = "Clara", LastName = "Neville", Gender = Gender.Female},
-                new Runner { FirstName = "Vanessa", LastName = "Monhemius", Gender = Gender.Female},
-                new Runner { FirstName = "John", LastName = "Monhemius", Gender = Gender.Male},
-                new Runner { FirstName = "Daniel", LastName = "Vereb", Gender = Gender.Male},
-                new Runner { FirstName = "Randi", LastName = "Vahl", Gender = Gender.Female},
-                new Runner { FirstName = "Madeline", LastName = "Bohan", Gender = Gender.Female},
-                new Runner { FirstName = "Shaun", LastName = "Vahl", Gender = Gender.Male},
-                new Runner { FirstName = "Sandra", LastName = "Foster", Gender = Gender.Female},
-                new Runner { FirstName = "Melody", LastName = "Seager", Gender = Gender.Female},
-                new Runner { FirstName = "Jessica", LastName = "Hill", Gender = Gender.Female},
-                new Runner { FirstName = "Becky", LastName = "McAdams", Gender = Gender.Female},
-                new Runner { FirstName = "Jennifer", LastName = "Foster", Gender = Gender.Female},
-                new Runner { FirstName = "Charlie", LastName = "Reed", Gender = Gender.Male},
-                new Runner { FirstName = "Kevin", LastName = "Chudzinski", Gender = Gender.Male},
-                new Runner { FirstName = "Riley", LastName = "Evans", Gender = Gender.Female},
-                new Runner { FirstName = "Madison", LastName = "Snyder", Gender = Gender.Female},
-                new Runner { FirstName = "Debby", LastName = "Klinect", Gender = Gender.Female},
-                new Runner { FirstName = "Abigail", LastName = "Sparks", Gender = Gender.Female},
-                new Runner { FirstName = "Lydia", LastName = "Fike", Gender = Gender.Female},
-                new Runner { FirstName = "David", LastName = "Sears", Gender = Gender.Male},
-                new Runner { FirstName = "Earl", LastName = "Kanzeg", Gender = Gender.Male},
-                new Runner { FirstName = "Elizabeth", LastName = "Kanzeg", Gender = Gender.Female},
-                new Runner { FirstName = "Teresa", LastName = "Strine", Gender = Gender.Female},
-                new Runner { FirstName = "Cassie", LastName = "Chance", Gender = Gender.Female},
-                new Runner { FirstName = "James", LastName = "Mathatas", Gender = Gender.Male},
-                new Runner { FirstName = "Christy", LastName = "Mathatas", Gender = Gender.Female},
-                new Runner { FirstName = "Caity", LastName = "Steiner", Gender = Gender.Female},
-                new Runner { FirstName = "Brooke", LastName = "Gucker", Gender = Gender.Female},
-                new Runner { FirstName = "Heidi", LastName = "Hartzler", Gender = Gender.Female},
-                new Runner { FirstName = "Brian", LastName = "Hartzler", Gender = Gender.Male},
-                new Runner { FirstName = "Brian", LastName = "Kulchar", Gender = Gender.Male},
-                new Runner { FirstName = "Tiffany", LastName = "Kosman", Gender = Gender.Female},
-                new Runner { FirstName = "Connie", LastName = "Emerson", Gender = Gender.Female},
-                new Runner { FirstName = "Lucas", LastName = "Clark", Gender = Gender.Male},
-                new Runner { FirstName = "Kris", LastName = "Kopchak", Gender = Gender.Male},
-                new Runner { FirstName = "Noah", LastName = "Navratil", Gender = Gender.Male},
-                new Runner { FirstName = "Benjamin", LastName = "Melkey", Gender = Gender.Male},
-                new Runner { FirstName = "Jeral", LastName = "Imhoff", Gender = Gender.Male},
-                new Runner { FirstName = "Dillon", LastName = "West", Gender = Gender.Male},
-                new Runner { FirstName = "Sam", LastName = "Brandt", Gender = Gender.Male},
-                new Runner { FirstName = "Estevan", LastName = "Ortega", Gender = Gender.Male},
-                new Runner { FirstName = "Braden", LastName = "Young", Gender = Gender.Male},
-                new Runner { FirstName = "Greg", LastName = "Szklarz", Gender = Gender.Male},
-                new Runner { FirstName = "Nick", LastName = "Zeigler", Gender = Gender.Male},
-                new Runner { FirstName = "Tommie", LastName = "Kurtz", Gender = Gender.Female},
-                new Runner { FirstName = "Jack", LastName = "Szklarz", Gender = Gender.Male},
-                new Runner { FirstName = "Emma", LastName = "Nagel", Gender = Gender.Female},
-                new Runner { FirstName = "Joshua", LastName = "Rittgers", Gender = Gender.Male},
-                new Runner { FirstName = "Hayden", LastName = "Jarvis", Gender = Gender.Male},
-                new Runner { FirstName = "Mollie", LastName = "Jarvis", Gender = Gender.Female},
-                new Runner { FirstName = "Steven", LastName = "Bett", Gender = Gender.Male},
-                new Runner { FirstName = "Stephanie", LastName = "Foster", Gender = Gender.Female},
-                new Runner { FirstName = "Brett", LastName = "Deyung", Gender = Gender.Male},
-                new Runner { FirstName = "Carrie", LastName = "Stoner", Gender = Gender.Female},
-                new Runner { FirstName = "Alyssa", LastName = "Stoner", Gender = Gender.Female},
-                new Runner { FirstName = "Bob", LastName = "Chittenden", Gender = Gender.Male},
-                new Runner { FirstName = "McKenna", LastName = "Kulas", Gender = Gender.Female},
-                new Runner { FirstName = "David", LastName = "Rittgers", Gender = Gender.Male},
-                new Runner { FirstName = "Vladimir", LastName = "Herdman", Gender = Gender.Male},
-                new Runner { FirstName = "Carrie", LastName = "Hartsel", Gender = Gender.Female},
-                new Runner { FirstName = "Garrett", LastName = "Silva", Gender = Gender.Male},
-                new Runner { FirstName = "Mariya", LastName = "Silva", Gender = Gender.Female},
-                new Runner { FirstName = "Keith", LastName = "Winkler", Gender = Gender.Male},
-                new Runner { FirstName = "Jack", LastName = "Reed", Gender = Gender.Male},
                 new Runner { FirstName = "Noah", LastName = "Affolder", Gender = Gender.Male},
                 new Runner { FirstName = "Sam", LastName = "Affolder", Gender = Gender.Male},
-                new Runner { FirstName = "Tony", LastName = "Kall", Gender = Gender.Male},
-                new Runner { FirstName = "Matt", LastName = "Chidsey", Gender = Gender.Male},
-                new Runner { FirstName = "Kris", LastName = "Kapchak", Gender = Gender.Male},
-                new Runner { FirstName = "Ben", LastName = "House", Gender = Gender.Male},
-                new Runner { FirstName = "Tristan", LastName = "Vaughan", Gender = Gender.Male},
-                new Runner { FirstName = "Caleb", LastName = "Hostetler", Gender = Gender.Male},
-                new Runner { FirstName = "Matt", LastName = "Butt", Gender = Gender.Male},
-                new Runner { FirstName = "Edward", LastName = "Hawkins", Gender = Gender.Male},
-                new Runner { FirstName = "Christopher", LastName = "Dostal", Gender = Gender.Male},
-                new Runner { FirstName = "Robert", LastName = "Sayer", Gender = Gender.Male},
-                new Runner { FirstName = "Danny", LastName = "Price", Gender = Gender.Male},
-                new Runner { FirstName = "Ben", LastName = "Nagy", Gender = Gender.Male},
-                new Runner { FirstName = "Caleigh", LastName = "Stefanko", Gender = Gender.Female},
-                new Runner { FirstName = "Xander", LastName = "Beltz", Gender = Gender.Male},
-                new Runner { FirstName = "Drew", LastName = "West", Gender = Gender.Male},
-                new Runner { FirstName = "Anna", LastName = "Winnicki", Gender = Gender.Female},
-                new Runner { FirstName = "Colton", LastName = "Carpenter", Gender = Gender.Male},
-                new Runner { FirstName = "Matthew", LastName = "Pettry", Gender = Gender.Male},
-                new Runner { FirstName = "Don", LastName = "House", Gender = Gender.Male},
                 new Runner { FirstName = "Luke", LastName = "Affolder", Gender = Gender.Male},
-                new Runner { FirstName = "Liz", LastName = "Stanley", Gender = Gender.Female},
-                new Runner { FirstName = "Giovanna", LastName = "Moroschan", Gender = Gender.Male},
-                new Runner { FirstName = "Jeff", LastName = "Heilman", Gender = Gender.Male},
-                new Runner { FirstName = "Kayla", LastName = "Moroschan", Gender = Gender.Female},
-                new Runner { FirstName = "Michelle", LastName = "Yoder", Gender = Gender.Female},
-                new Runner { FirstName = "Gia", LastName = "Catalano", Gender = Gender.Female},
-                new Runner { FirstName = "Carson", LastName = "Nagy", Gender = Gender.Male},
-                new Runner { FirstName = "Shannon", LastName = "Malikowski", Gender = Gender.Female},
-                new Runner { FirstName = "Faith", LastName = "Theobald", Gender = Gender.Female},
+                new Runner { FirstName = "Joe", LastName = "Armogida", Gender = Gender.Male},
+                new Runner { FirstName = "Mike", LastName = "Bangert", Gender = Gender.Male},
+                new Runner { FirstName = "Jacob", LastName = "Beadnell", Gender = Gender.Male},
+                new Runner { FirstName = "Xander", LastName = "Beltz", Gender = Gender.Male},
+                new Runner { FirstName = "Steven", LastName = "Bett", Gender = Gender.Male},
+                new Runner { FirstName = "Madeline", LastName = "Bohan", Gender = Gender.Female},
+                new Runner { FirstName = "Rebecca", LastName = "Boscaljon", Gender = Gender.Female},
+                new Runner { FirstName = "Valarie", LastName = "Boscaljon", Gender = Gender.Female},
+                new Runner { FirstName = "Pamela", LastName = "Boyles", Gender = Gender.Female},
+                new Runner { FirstName = "Sam", LastName = "Brandt", Gender = Gender.Male},
                 new Runner { FirstName = "Bill", LastName = "Brandt", Gender = Gender.Male},
-                new Runner { FirstName = "Jennifer", LastName = "Meyers", Gender = Gender.Female},
-                new Runner { FirstName = "Darin", LastName = "Clapp", Gender = Gender.Male},
-                new Runner { FirstName = "Eileen", LastName = "Robison", Gender = Gender.Female},
                 new Runner { FirstName = "Megan", LastName = "Brandt", Gender = Gender.Female},
-                new Runner { FirstName = "Amy", LastName = "Winnicki", Gender = Gender.Female},
-                new Runner { FirstName = "Maria", LastName = "Clapp", Gender = Gender.Female},
                 new Runner { FirstName = "Maddie", LastName = "Brandt", Gender = Gender.Female},
-                new Runner { FirstName = "Donald", LastName = "Spencer", Gender = Gender.Male},
+                new Runner { FirstName = "Adam", LastName = "Brantner", Gender = Gender.Male},
+                new Runner { FirstName = "Joseph", LastName = "Bruening", Gender = Gender.Male},
+                new Runner { FirstName = "Matt", LastName = "Butt", Gender = Gender.Male},
+                new Runner { FirstName = "Katie", LastName = "Canfield", Gender = Gender.Female},
+                new Runner { FirstName = "Colton", LastName = "Carpenter", Gender = Gender.Male},
+                new Runner { FirstName = "Marley", LastName = "Carter", Gender = Gender.Female},
+                new Runner { FirstName = "Gia", LastName = "Catalano", Gender = Gender.Female},
+                new Runner { FirstName = "Jo", LastName = "Cavallaro", Gender = Gender.Female},
+                new Runner { FirstName = "Cassie", LastName = "Chance", Gender = Gender.Female},
+                new Runner { FirstName = "Matt", LastName = "Chidsey", Gender = Gender.Male},
+                new Runner { FirstName = "Bob", LastName = "Chittenden", Gender = Gender.Male},
+                new Runner { FirstName = "Kyle", LastName = "Chudzinski", Gender = Gender.Male},
+                new Runner { FirstName = "Kevin", LastName = "Chudzinski", Gender = Gender.Male},
+                new Runner { FirstName = "Darin", LastName = "Clapp", Gender = Gender.Male},
+                new Runner { FirstName = "Maria", LastName = "Clapp", Gender = Gender.Female},
+                new Runner { FirstName = "Lucas", LastName = "Clark", Gender = Gender.Male},
+                new Runner { FirstName = "Ladd", LastName = "Clifford", Gender = Gender.Male},
+                new Runner { FirstName = "Kaitlyn", LastName = "Clifford", Gender = Gender.Female},
+                new Runner { FirstName = "TJ", LastName = "Corbett", Gender = Gender.Male},
                 new Runner { FirstName = "Kelsey", LastName = "Dake", Gender = Gender.Female},
+                new Runner { FirstName = "Andy", LastName = "Davis", Gender = Gender.Male},
+                new Runner { FirstName = "Michaela", LastName = "Davis", Gender = Gender.Female},
+                new Runner { FirstName = "Alex", LastName = "Derhammer", Gender = Gender.Male},
+                new Runner { FirstName = "Brett", LastName = "Deyung", Gender = Gender.Male},
+                new Runner { FirstName = "Amy", LastName = "Donnelly", Gender = Gender.Female},
+                new Runner { FirstName = "Christopher", LastName = "Dostal", Gender = Gender.Male},
+                new Runner { FirstName = "Harold", LastName = "Dravenstott", Gender = Gender.Male},
+                new Runner { FirstName = "Abbie", LastName = "Eichel", Gender = Gender.Female},
+                new Runner { FirstName = "Connie", LastName = "Emerson", Gender = Gender.Female},
+                new Runner { FirstName = "Chuck", LastName = "Engle", Gender = Gender.Male},
+                new Runner { FirstName = "Zane", LastName = "Evans", Gender = Gender.Male},
+                new Runner { FirstName = "Riley", LastName = "Evans", Gender = Gender.Female},
+                new Runner { FirstName = "Meghan", LastName = "Fiala", Gender = Gender.Female},
+                new Runner { FirstName = "Lydia", LastName = "Fike", Gender = Gender.Female},
                 new Runner { FirstName = "Jessica", LastName = "Flynn", Gender = Gender.Female},
-                new Runner { FirstName = "Mike", LastName = "Hewit", Gender = Gender.Male},
                 new Runner { FirstName = "Ethan", LastName = "Flynn", Gender = Gender.Male},
+                new Runner { FirstName = "Graydon", LastName = "Flynn", Gender = Gender.Male},
+                new Runner { FirstName = "William", LastName = "Foster", Gender = Gender.Male},
+                new Runner { FirstName = "Sandra", LastName = "Foster", Gender = Gender.Female},
+                new Runner { FirstName = "Jennifer", LastName = "Foster", Gender = Gender.Female},
+                new Runner { FirstName = "Stephanie", LastName = "Foster", Gender = Gender.Female},
+                new Runner { FirstName = "Riley", LastName = "Freeland", Gender = Gender.Female},
+                new Runner { FirstName = "Bailey", LastName = "Freeland", Gender = Gender.Female},
+                new Runner { FirstName = "Nolan", LastName = "Freeland", Gender = Gender.Male},
+                new Runner { FirstName = "Dave", LastName = "Freeland", Gender = Gender.Male},
+                new Runner { FirstName = "Max", LastName = "Gucker", Gender = Gender.Male},
+                new Runner { FirstName = "Brett", LastName = "Gucker", Gender = Gender.Male},
+                new Runner { FirstName = "Clay", LastName = "Gucker", Gender = Gender.Male},
+                new Runner { FirstName = "Brooke", LastName = "Gucker", Gender = Gender.Female},
+                new Runner { FirstName = "Asa", LastName = "Gynn", Gender = Gender.Male},
+                new Runner { FirstName = "Cooper", LastName = "Hartsel", Gender = Gender.Male},
+                new Runner { FirstName = "Carrie", LastName = "Hartsel", Gender = Gender.Female},
+                new Runner { FirstName = "Heidi", LastName = "Hartzler", Gender = Gender.Female},
+                new Runner { FirstName = "Brian", LastName = "Hartzler", Gender = Gender.Male},
+                new Runner { FirstName = "Edward", LastName = "Hawkins", Gender = Gender.Male},
+                new Runner { FirstName = "Jeff", LastName = "Heilman", Gender = Gender.Male},
+                new Runner { FirstName = "Vladimir", LastName = "Herdman", Gender = Gender.Male},
+                new Runner { FirstName = "Mike", LastName = "Hewit", Gender = Gender.Male},
+                new Runner { FirstName = "Andrew", LastName = "Hibler", Gender = Gender.Male},
+                new Runner { FirstName = "Emma", LastName = "Hibler", Gender = Gender.Female},
+                new Runner { FirstName = "Greg", LastName = "Hill", Gender = Gender.Male},
+                new Runner { FirstName = "Jessica", LastName = "Hill", Gender = Gender.Female},
+                new Runner { FirstName = "Andrea", LastName = "Hoff", Gender = Gender.Female},
+                new Runner { FirstName = "Caleb", LastName = "Hostetler", Gender = Gender.Male},
+                new Runner { FirstName = "Ben", LastName = "House", Gender = Gender.Male},
+                new Runner { FirstName = "Don", LastName = "House", Gender = Gender.Male},
+                new Runner { FirstName = "David", LastName = "Huff", Gender = Gender.Male},
+                new Runner { FirstName = "Jeral", LastName = "Imhoff", Gender = Gender.Male},
+                new Runner { FirstName = "Dakota", LastName = "Jacobson", Gender = Gender.Male},
+                new Runner { FirstName = "Hayden", LastName = "Jarvis", Gender = Gender.Male},
+                new Runner { FirstName = "Mollie", LastName = "Jarvis", Gender = Gender.Female},
+                new Runner { FirstName = "James", LastName = "Johnson", Gender = Gender.Male},
+                new Runner { FirstName = "Zach", LastName = "Johnston", Gender = Gender.Male},
+                new Runner { FirstName = "Keith", LastName = "Johnston", Gender = Gender.Male},
+                new Runner { FirstName = "Tony", LastName = "Kall", Gender = Gender.Male},
+                new Runner { FirstName = "Earl", LastName = "Kanzeg", Gender = Gender.Male},
+                new Runner { FirstName = "Elizabeth", LastName = "Kanzeg", Gender = Gender.Female},
+                new Runner { FirstName = "Kris", LastName = "Kapchak", Gender = Gender.Male},
+                new Runner { FirstName = "Debby", LastName = "Klinect", Gender = Gender.Female},
+                new Runner { FirstName = "Megan", LastName = "Knapp", Gender = Gender.Female},
+                new Runner { FirstName = "Kris", LastName = "Kopchak", Gender = Gender.Male},
+                new Runner { FirstName = "Tiffany", LastName = "Kosman", Gender = Gender.Female},
+                new Runner { FirstName = "Benjamin", LastName = "Kruggel", Gender = Gender.Male},
+                new Runner { FirstName = "McKenna", LastName = "Kulas", Gender = Gender.Female},
+                new Runner { FirstName = "Brian", LastName = "Kulchar", Gender = Gender.Male},
+                new Runner { FirstName = "Joey", LastName = "Kurtz", Gender = Gender.Male},
+                new Runner { FirstName = "Tommie", LastName = "Kurtz", Gender = Gender.Female},
+                new Runner { FirstName = "Amber", LastName = "LeClair", Gender = Gender.Female},
+                new Runner { FirstName = "Windy", LastName = "Lewis", Gender = Gender.Female},
+                new Runner { FirstName = "Wilson", LastName = "Lewis", Gender = Gender.Male},
+                new Runner { FirstName = "Luke", LastName = "Malena", Gender = Gender.Male},
+                new Runner { FirstName = "Shannon", LastName = "Malikowski", Gender = Gender.Female},
+                new Runner { FirstName = "Erin", LastName = "Mason", Gender = Gender.Female},
+                new Runner { FirstName = "James", LastName = "Mathatas", Gender = Gender.Male},
+                new Runner { FirstName = "Christy", LastName = "Mathatas", Gender = Gender.Female},
+                new Runner { FirstName = "Macy", LastName = "McAdams", Gender = Gender.Female},
+                new Runner { FirstName = "Becky", LastName = "McAdams", Gender = Gender.Female},
+                new Runner { FirstName = "Brynne", LastName = "McAllister", Gender = Gender.Female},
+                new Runner { FirstName = "Ryan", LastName = "McAllister", Gender = Gender.Male},
+                new Runner { FirstName = "Benjamin", LastName = "Melkey", Gender = Gender.Male},
+                new Runner { FirstName = "Jennifer", LastName = "Meyers", Gender = Gender.Female},
+                new Runner { FirstName = "Raymond", LastName = "Miller", Gender = Gender.Male},
+                new Runner { FirstName = "Rob", LastName = "Miller", Gender = Gender.Male},
+                new Runner { FirstName = "Vanessa", LastName = "Monhemius", Gender = Gender.Female},
+                new Runner { FirstName = "John", LastName = "Monhemius", Gender = Gender.Male},
+                new Runner { FirstName = "Giovanna", LastName = "Moroschan", Gender = Gender.Male},
+                new Runner { FirstName = "Kayla", LastName = "Moroschan", Gender = Gender.Female},
+                new Runner { FirstName = "Sommer", LastName = "Mueller", Gender = Gender.Female},
+                new Runner { FirstName = "Paige", LastName = "Munchick", Gender = Gender.Female},
+                new Runner { FirstName = "Blake", LastName = "Musick", Gender = Gender.Male},
+                new Runner { FirstName = "Jen", LastName = "Myers", Gender = Gender.Female},
+                new Runner { FirstName = "Sarah", LastName = "Naftzger", Gender = Gender.Female},
+                new Runner { FirstName = "Dan", LastName = "Naftzger", Gender = Gender.Female},
+                new Runner { FirstName = "Emma", LastName = "Nagel", Gender = Gender.Female},
+                new Runner { FirstName = "Ben", LastName = "Nagy", Gender = Gender.Male},
+                new Runner { FirstName = "Carson", LastName = "Nagy", Gender = Gender.Male},
+                new Runner { FirstName = "Noah", LastName = "Navratil", Gender = Gender.Male},
+                new Runner { FirstName = "Clara", LastName = "Neville", Gender = Gender.Female},
+                new Runner { FirstName = "Caleb", LastName = "Neville", Gender = Gender.Male},
+                new Runner { FirstName = "Jenna", LastName = "Oliver", Gender = Gender.Female},
+                new Runner { FirstName = "Brad", LastName = "Oliver", Gender = Gender.Male},
+                new Runner { FirstName = "Estevan", LastName = "Ortega", Gender = Gender.Male},
+                new Runner { FirstName = "Tyler", LastName = "Palmer", Gender = Gender.Male},
+                new Runner { FirstName = "Licia", LastName = "Pappas", Gender = Gender.Female},
                 new Runner { FirstName = "Zech", LastName = "Paul", Gender = Gender.Male},
+                new Runner { FirstName = "Matthew", LastName = "Pettry", Gender = Gender.Male},
+                new Runner { FirstName = "Jim", LastName = "Plikerd", Gender = Gender.Male},
+                new Runner { FirstName = "Tristan", LastName = "Ponting", Gender = Gender.Male},
+                new Runner { FirstName = "Maria", LastName = "Porras", Gender = Gender.Female},
+                new Runner { FirstName = "Victoria", LastName = "Porter", Gender = Gender.Female},
+                new Runner { FirstName = "Danny", LastName = "Price", Gender = Gender.Male},
+                new Runner { FirstName = "Charlie", LastName = "Reed", Gender = Gender.Male},
+                new Runner { FirstName = "Jack", LastName = "Reed", Gender = Gender.Male},
                 new Runner { FirstName = "Emma", LastName = "Reed", Gender = Gender.Female},
                 new Runner { FirstName = "Lisa", LastName = "Reinhart", Gender = Gender.Female},
-                new Runner { FirstName = "Amy", LastName = "Donnelly", Gender = Gender.Female},
-                new Runner { FirstName = "Mike", LastName = "Bangert", Gender = Gender.Male},
+                new Runner { FirstName = "Jennifer", LastName = "Ridgway", Gender = Gender.Female},
+                new Runner { FirstName = "Joshua", LastName = "Rittgers", Gender = Gender.Male},
+                new Runner { FirstName = "David", LastName = "Rittgers", Gender = Gender.Male},
+                new Runner { FirstName = "Eileen", LastName = "Robison", Gender = Gender.Female},
+                new Runner { FirstName = "Makaela", LastName = "Salyer", Gender = Gender.Female},
+                new Runner { FirstName = "Robert", LastName = "Sayer", Gender = Gender.Male},
+                new Runner { FirstName = "Russell", LastName = "Schultz", Gender = Gender.Male},
+                new Runner { FirstName = "Kevin", LastName = "Seager", Gender = Gender.Male},
+                new Runner { FirstName = "Melody", LastName = "Seager", Gender = Gender.Female},
+                new Runner { FirstName = "David", LastName = "Sears", Gender = Gender.Male},
+                new Runner { FirstName = "Garrett", LastName = "Silva", Gender = Gender.Male},
+                new Runner { FirstName = "Mariya", LastName = "Silva", Gender = Gender.Female},
+                new Runner { FirstName = "Madison", LastName = "Snyder", Gender = Gender.Female},
+                new Runner { FirstName = "Maddy", LastName = "Snyder", Gender = Gender.Female},
+                new Runner { FirstName = "Abigail", LastName = "Sparks", Gender = Gender.Female},
+                new Runner { FirstName = "Sophia", LastName = "Spencer", Gender = Gender.Female},
+                new Runner { FirstName = "Donald", LastName = "Spencer", Gender = Gender.Male},
+                new Runner { FirstName = "Hunter", LastName = "Stallings", Gender = Gender.Male},
+                new Runner { FirstName = "Melanie", LastName = "Stallings", Gender = Gender.Female},
+                new Runner { FirstName = "Liz", LastName = "Stanley", Gender = Gender.Female},
+                new Runner { FirstName = "Caleigh", LastName = "Stefanko", Gender = Gender.Female},
+                new Runner { FirstName = "Caity", LastName = "Steiner", Gender = Gender.Female},
+                new Runner { FirstName = "Scott", LastName = "Stoner", Gender = Gender.Male},
+                new Runner { FirstName = "Carrie", LastName = "Stoner", Gender = Gender.Female},
+                new Runner { FirstName = "Alyssa", LastName = "Stoner", Gender = Gender.Female},
+                new Runner { FirstName = "Teresa", LastName = "Strine", Gender = Gender.Female},
+                new Runner { FirstName = "Stacy", LastName = "Stuchal", Gender = Gender.Female},
+                new Runner { FirstName = "Adam", LastName = "Swait", Gender = Gender.Male},
                 new Runner { FirstName = "Philip", LastName = "Syverson", Gender = Gender.Male},
-                new Runner { FirstName = "Victoria", LastName = "Porter", Gender = Gender.Female},
-                new Runner { FirstName = "Graydon", LastName = "Flynn", Gender = Gender.Male},
-                new Runner { FirstName = "Abbie", LastName = "Eichel", Gender = Gender.Female},
-                new Runner { FirstName = "Licia", LastName = "Pappas", Gender = Gender.Female}
+                new Runner { FirstName = "Greg", LastName = "Szklarz", Gender = Gender.Male},
+                new Runner { FirstName = "Jack", LastName = "Szklarz", Gender = Gender.Male},
+                new Runner { FirstName = "Brock", LastName = "Tegtmeier", Gender = Gender.Male},
+                new Runner { FirstName = "Kade", LastName = "Tegtmeier", Gender = Gender.Male},
+                new Runner { FirstName = "Heather", LastName = "Tegtmeier", Gender = Gender.Female},
+                new Runner { FirstName = "Randy", LastName = "Tegtmeier", Gender = Gender.Male},
+                new Runner { FirstName = "Faith", LastName = "Theobald", Gender = Gender.Female},
+                new Runner { FirstName = "Eric", LastName = "Thomas", Gender = Gender.Male},
+                new Runner { FirstName = "Randi", LastName = "Vahl", Gender = Gender.Female},
+                new Runner { FirstName = "Shaun", LastName = "Vahl", Gender = Gender.Male},
+                new Runner { FirstName = "Andrew", LastName = "Vasel", Gender = Gender.Male},
+                new Runner { FirstName = "Tristan", LastName = "Vaughan", Gender = Gender.Male},
+                new Runner { FirstName = "Daniel", LastName = "Vereb", Gender = Gender.Male},
+                new Runner { FirstName = "Liv", LastName = "Wells", Gender = Gender.Female},
+                new Runner { FirstName = "Dillon", LastName = "West", Gender = Gender.Male},
+                new Runner { FirstName = "Drew", LastName = "West", Gender = Gender.Male},
+                new Runner { FirstName = "Anna", LastName = "West", Gender = Gender.Female},
+                new Runner { FirstName = "Blake", LastName = "Wilson", Gender = Gender.Male},
+                new Runner { FirstName = "Keith", LastName = "Winkler", Gender = Gender.Male},
+                new Runner { FirstName = "Anna", LastName = "Winnicki", Gender = Gender.Female},
+                new Runner { FirstName = "Amy", LastName = "Winnicki", Gender = Gender.Female},
+                new Runner { FirstName = "Cole", LastName = "Yagersz", Gender = Gender.Male},
+                new Runner { FirstName = "Michelle", LastName = "Yoder", Gender = Gender.Female},
+                new Runner { FirstName = "Braden", LastName = "Young", Gender = Gender.Male},
+                new Runner { FirstName = "Nick", LastName = "Ziegler", Gender = Gender.Male}
             };
 
             var races = new ConcurrentBag<Race>
             {
                 new Race { Name = RaceName2016, Date = new DateTime(2016, 7, 23) },
                 new Race { Name = RaceName2017, Date = new DateTime(2017, 7, 22) },
-                new Race { Name = RaceName2018, Date = new DateTime(2018, 7, 21) }
+                new Race { Name = RaceName2018, Date = new DateTime(2018, 7, 21) },
+                new Race { Name = RaceName2019, Date = new DateTime(2019, 7, 20) }
             };
 
             await context.Runners.AddRangeAsync(runners);
@@ -208,19 +253,27 @@ namespace LodiCornFest5k.Data
             var NoahAffolder = await context.Runners.SingleAsync(x => x.FirstName == "Noah" && x.LastName == "Affolder");
             var SamAffolder = await context.Runners.SingleAsync(x => x.FirstName == "Sam" && x.LastName == "Affolder");
             var LukeAffolder = await context.Runners.SingleAsync(x => x.FirstName == "Luke" && x.LastName == "Affolder");
+            var JoeArmogida = await context.Runners.SingleAsync(x => x.FirstName == "Joe" && x.LastName == "Armogida");
             var MikeBangert = await context.Runners.SingleAsync(x => x.FirstName == "Mike" && x.LastName == "Bangert");
+            var JacobBeadnell = await context.Runners.SingleAsync(x => x.FirstName == "Jacob" && x.LastName == "Beadnell");
             var XanderBeltz = await context.Runners.SingleAsync(x => x.FirstName == "Xander" && x.LastName == "Beltz");
             var StevenBett = await context.Runners.SingleAsync(x => x.FirstName == "Steven" && x.LastName == "Bett");
             var MadelineBohan = await context.Runners.SingleAsync(x => x.FirstName == "Madeline" && x.LastName == "Bohan");
+            var RebeccaBoscaljon = await context.Runners.SingleAsync(x => x.FirstName == "Rebecca" && x.LastName == "Boscaljon");
+            var ValarieBoscaljon = await context.Runners.SingleAsync(x => x.FirstName == "Valarie" && x.LastName == "Boscaljon");
+            var PamelaBoyles = await context.Runners.SingleAsync(x => x.FirstName == "Pamela" && x.LastName == "Boyles");
             var SamBrandt = await context.Runners.SingleAsync(x => x.FirstName == "Sam" && x.LastName == "Brandt");
             var BillBrandt = await context.Runners.SingleAsync(x => x.FirstName == "Bill" && x.LastName == "Brandt");
             var MeganBrandt = await context.Runners.SingleAsync(x => x.FirstName == "Megan" && x.LastName == "Brandt");
             var MaddieBrandt = await context.Runners.SingleAsync(x => x.FirstName == "Maddie" && x.LastName == "Brandt");
+            var AdamBrantner = await context.Runners.SingleAsync(x => x.FirstName == "Adam" && x.LastName == "Brantner");
             var JosephBruening = await context.Runners.SingleAsync(x => x.FirstName == "Joseph" && x.LastName == "Bruening");
             var MattButt = await context.Runners.SingleAsync(x => x.FirstName == "Matt" && x.LastName == "Butt");
             var KatieCanfield = await context.Runners.SingleAsync(x => x.FirstName == "Katie" && x.LastName == "Canfield");
             var ColtonCarpenter = await context.Runners.SingleAsync(x => x.FirstName == "Colton" && x.LastName == "Carpenter");
+            var MarleyCarter = await context.Runners.SingleAsync(x => x.FirstName == "Marley" && x.LastName == "Carter");
             var GiaCatalano = await context.Runners.SingleAsync(x => x.FirstName == "Gia" && x.LastName == "Catalano");
+            var JoCavallaro = await context.Runners.SingleAsync(x => x.FirstName == "Jo" && x.LastName == "Cavallaro");
             var CassieChance = await context.Runners.SingleAsync(x => x.FirstName == "Cassie" && x.LastName == "Chance");
             var MattChidsey = await context.Runners.SingleAsync(x => x.FirstName == "Matt" && x.LastName == "Chidsey");
             var BobChittenden = await context.Runners.SingleAsync(x => x.FirstName == "Bob" && x.LastName == "Chittenden");
@@ -230,6 +283,7 @@ namespace LodiCornFest5k.Data
             var MariaClapp = await context.Runners.SingleAsync(x => x.FirstName == "Maria" && x.LastName == "Clapp");
             var LucasClark = await context.Runners.SingleAsync(x => x.FirstName == "Lucas" && x.LastName == "Clark");
             var LaddClifford = await context.Runners.SingleAsync(x => x.FirstName == "Ladd" && x.LastName == "Clifford");
+            var KaitlynClifford = await context.Runners.SingleAsync(x => x.FirstName == "Kaitlyn" && x.LastName == "Clifford");
             var TJCorbett = await context.Runners.SingleAsync(x => x.FirstName == "TJ" && x.LastName == "Corbett");
             var KelseyDake = await context.Runners.SingleAsync(x => x.FirstName == "Kelsey" && x.LastName == "Dake");
             var AndyDavis = await context.Runners.SingleAsync(x => x.FirstName == "Andy" && x.LastName == "Davis");
@@ -244,6 +298,7 @@ namespace LodiCornFest5k.Data
             var ChuckEngle = await context.Runners.SingleAsync(x => x.FirstName == "Chuck" && x.LastName == "Engle");
             var ZaneEvans = await context.Runners.SingleAsync(x => x.FirstName == "Zane" && x.LastName == "Evans");
             var RileyEvans = await context.Runners.SingleAsync(x => x.FirstName == "Riley" && x.LastName == "Evans");
+            var MeghanFiala = await context.Runners.SingleAsync(x => x.FirstName == "Meghan" && x.LastName == "Fiala");
             var LydiaFike = await context.Runners.SingleAsync(x => x.FirstName == "Lydia" && x.LastName == "Fike");
             var JessicaFlynn = await context.Runners.SingleAsync(x => x.FirstName == "Jessica" && x.LastName == "Flynn");
             var EthanFlynn = await context.Runners.SingleAsync(x => x.FirstName == "Ethan" && x.LastName == "Flynn");
@@ -273,13 +328,16 @@ namespace LodiCornFest5k.Data
             var EmmaHibler = await context.Runners.SingleAsync(x => x.FirstName == "Emma" && x.LastName == "Hibler");
             var GregHill = await context.Runners.SingleAsync(x => x.FirstName == "Greg" && x.LastName == "Hill");
             var JessicaHill = await context.Runners.SingleAsync(x => x.FirstName == "Jessica" && x.LastName == "Hill");
+            var AndreaHoff = await context.Runners.SingleAsync(x => x.FirstName == "Andrea" && x.LastName == "Hoff");
             var CalebHostetler = await context.Runners.SingleAsync(x => x.FirstName == "Caleb" && x.LastName == "Hostetler");
             var BenHouse = await context.Runners.SingleAsync(x => x.FirstName == "Ben" && x.LastName == "House");
             var DonHouse = await context.Runners.SingleAsync(x => x.FirstName == "Don" && x.LastName == "House");
             var DavidHuff = await context.Runners.SingleAsync(x => x.FirstName == "David" && x.LastName == "Huff");
             var JeralImhoff = await context.Runners.SingleAsync(x => x.FirstName == "Jeral" && x.LastName == "Imhoff");
+            var DakotaJacobson = await context.Runners.SingleAsync(x => x.FirstName == "Dakota" && x.LastName == "Jacobson");
             var HaydenJarvis = await context.Runners.SingleAsync(x => x.FirstName == "Hayden" && x.LastName == "Jarvis");
             var MollieJarvis = await context.Runners.SingleAsync(x => x.FirstName == "Mollie" && x.LastName == "Jarvis");
+            var JamesJohnson = await context.Runners.SingleAsync(x => x.FirstName == "James" && x.LastName == "Johnson");
             var ZachJohnston = await context.Runners.SingleAsync(x => x.FirstName == "Zach" && x.LastName == "Johnston");
             var KeithJohnston = await context.Runners.SingleAsync(x => x.FirstName == "Keith" && x.LastName == "Johnston");
             var TonyKall = await context.Runners.SingleAsync(x => x.FirstName == "Tony" && x.LastName == "Kall");
@@ -287,31 +345,46 @@ namespace LodiCornFest5k.Data
             var ElizabethKanzeg = await context.Runners.SingleAsync(x => x.FirstName == "Elizabeth" && x.LastName == "Kanzeg");
             var KrisKapchak = await context.Runners.SingleAsync(x => x.FirstName == "Kris" && x.LastName == "Kapchak");
             var DebbyKlinect = await context.Runners.SingleAsync(x => x.FirstName == "Debby" && x.LastName == "Klinect");
+            var MeganKnapp = await context.Runners.SingleAsync(x => x.FirstName == "Megan" && x.LastName == "Knapp");
             var KrisKopchak = await context.Runners.SingleAsync(x => x.FirstName == "Kris" && x.LastName == "Kopchak");
             var TiffanyKosman = await context.Runners.SingleAsync(x => x.FirstName == "Tiffany" && x.LastName == "Kosman");
+            var BenjaminKruggel = await context.Runners.SingleAsync(x => x.FirstName == "Benjamin" && x.LastName == "Kruggel");
             var McKennaKulas = await context.Runners.SingleAsync(x => x.FirstName == "McKenna" && x.LastName == "Kulas");
             var BrianKulchar = await context.Runners.SingleAsync(x => x.FirstName == "Brian" && x.LastName == "Kulchar");
             var JoeyKurtz = await context.Runners.SingleAsync(x => x.FirstName == "Joey" && x.LastName == "Kurtz");
             var TommieKurtz = await context.Runners.SingleAsync(x => x.FirstName == "Tommie" && x.LastName == "Kurtz");
+            var AmberLeClair = await context.Runners.SingleAsync(x => x.FirstName == "Amber" && x.LastName == "LeClair");
+            var WindyLewis = await context.Runners.SingleAsync(x => x.FirstName == "Windy" && x.LastName == "Lewis");
+            var WilsonLewis = await context.Runners.SingleAsync(x => x.FirstName == "Wilson" && x.LastName == "Lewis");
             var LukeMalena = await context.Runners.SingleAsync(x => x.FirstName == "Luke" && x.LastName == "Malena");
             var ShannonMalikowski = await context.Runners.SingleAsync(x => x.FirstName == "Shannon" && x.LastName == "Malikowski");
+            var ErinMason = await context.Runners.SingleAsync(x => x.FirstName == "Erin" && x.LastName == "Mason");
             var JamesMathatas = await context.Runners.SingleAsync(x => x.FirstName == "James" && x.LastName == "Mathatas");
             var ChristyMathatas = await context.Runners.SingleAsync(x => x.FirstName == "Christy" && x.LastName == "Mathatas");
             var MacyMcAdams = await context.Runners.SingleAsync(x => x.FirstName == "Macy" && x.LastName == "McAdams");
             var BeckyMcAdams = await context.Runners.SingleAsync(x => x.FirstName == "Becky" && x.LastName == "McAdams");
+            var BrynneMcAllister = await context.Runners.SingleAsync(x => x.FirstName == "Brynne" && x.LastName == "McAllister");
+            var RyanMcAllister = await context.Runners.SingleAsync(x => x.FirstName == "Ryan" && x.LastName == "McAllister");
             var BenjaminMelkey = await context.Runners.SingleAsync(x => x.FirstName == "Benjamin" && x.LastName == "Melkey");
             var JenniferMeyers = await context.Runners.SingleAsync(x => x.FirstName == "Jennifer" && x.LastName == "Meyers");
             var RaymondMiller = await context.Runners.SingleAsync(x => x.FirstName == "Raymond" && x.LastName == "Miller");
+            var RobMiller = await context.Runners.SingleAsync(x => x.FirstName == "Rob" && x.LastName == "Miller");
             var VanessaMonhemius = await context.Runners.SingleAsync(x => x.FirstName == "Vanessa" && x.LastName == "Monhemius");
             var JohnMonhemius = await context.Runners.SingleAsync(x => x.FirstName == "John" && x.LastName == "Monhemius");
             var GiovannaMoroschan = await context.Runners.SingleAsync(x => x.FirstName == "Giovanna" && x.LastName == "Moroschan");
             var KaylaMoroschan = await context.Runners.SingleAsync(x => x.FirstName == "Kayla" && x.LastName == "Moroschan");
+            var SommerMueller = await context.Runners.SingleAsync(x => x.FirstName == "Sommer" && x.LastName == "Mueller");
             var PaigeMunchick = await context.Runners.SingleAsync(x => x.FirstName == "Paige" && x.LastName == "Munchick");
+            var BlakeMusick = await context.Runners.SingleAsync(x => x.FirstName == "Blake" && x.LastName == "Musick");
+            var JenMyers = await context.Runners.SingleAsync(x => x.FirstName == "Jen" && x.LastName == "Myers");
+            var SarahNaftzger = await context.Runners.SingleAsync(x => x.FirstName == "Sarah" && x.LastName == "Naftzger");
+            var DanNaftzger = await context.Runners.SingleAsync(x => x.FirstName == "Dan" && x.LastName == "Naftzger");
             var EmmaNagel = await context.Runners.SingleAsync(x => x.FirstName == "Emma" && x.LastName == "Nagel");
             var BenNagy = await context.Runners.SingleAsync(x => x.FirstName == "Ben" && x.LastName == "Nagy");
             var CarsonNagy = await context.Runners.SingleAsync(x => x.FirstName == "Carson" && x.LastName == "Nagy");
             var NoahNavratil = await context.Runners.SingleAsync(x => x.FirstName == "Noah" && x.LastName == "Navratil");
             var ClaraNeville = await context.Runners.SingleAsync(x => x.FirstName == "Clara" && x.LastName == "Neville");
+            var CalebNeville = await context.Runners.SingleAsync(x => x.FirstName == "Caleb" && x.LastName == "Neville");
             var JennaOliver = await context.Runners.SingleAsync(x => x.FirstName == "Jenna" && x.LastName == "Oliver");
             var BradOliver = await context.Runners.SingleAsync(x => x.FirstName == "Brad" && x.LastName == "Oliver");
             var EstevanOrtega = await context.Runners.SingleAsync(x => x.FirstName == "Estevan" && x.LastName == "Ortega");
@@ -319,6 +392,8 @@ namespace LodiCornFest5k.Data
             var LiciaPappas = await context.Runners.SingleAsync(x => x.FirstName == "Licia" && x.LastName == "Pappas");
             var ZechPaul = await context.Runners.SingleAsync(x => x.FirstName == "Zech" && x.LastName == "Paul");
             var MatthewPettry = await context.Runners.SingleAsync(x => x.FirstName == "Matthew" && x.LastName == "Pettry");
+            var JimPlikerd = await context.Runners.SingleAsync(x => x.FirstName == "Jim" && x.LastName == "Plikerd");
+            var TristanPonting = await context.Runners.SingleAsync(x => x.FirstName == "Tristan" && x.LastName == "Ponting");
             var MariaPorras = await context.Runners.SingleAsync(x => x.FirstName == "Maria" && x.LastName == "Porras");
             var VictoriaPorter = await context.Runners.SingleAsync(x => x.FirstName == "Victoria" && x.LastName == "Porter");
             var DannyPrice = await context.Runners.SingleAsync(x => x.FirstName == "Danny" && x.LastName == "Price");
@@ -332,15 +407,19 @@ namespace LodiCornFest5k.Data
             var EileenRobison = await context.Runners.SingleAsync(x => x.FirstName == "Eileen" && x.LastName == "Robison");
             var MakaelaSalyer = await context.Runners.SingleAsync(x => x.FirstName == "Makaela" && x.LastName == "Salyer");
             var RobertSayer = await context.Runners.SingleAsync(x => x.FirstName == "Robert" && x.LastName == "Sayer");
+            var RussellSchultz = await context.Runners.SingleAsync(x => x.FirstName == "Russell" && x.LastName == "Schultz");
             var KevinSeager = await context.Runners.SingleAsync(x => x.FirstName == "Kevin" && x.LastName == "Seager");
             var MelodySeager = await context.Runners.SingleAsync(x => x.FirstName == "Melody" && x.LastName == "Seager");
             var DavidSears = await context.Runners.SingleAsync(x => x.FirstName == "David" && x.LastName == "Sears");
             var GarrettSilva = await context.Runners.SingleAsync(x => x.FirstName == "Garrett" && x.LastName == "Silva");
             var MariyaSilva = await context.Runners.SingleAsync(x => x.FirstName == "Mariya" && x.LastName == "Silva");
             var MadisonSnyder = await context.Runners.SingleAsync(x => x.FirstName == "Madison" && x.LastName == "Snyder");
+            var MaddySnyder = await context.Runners.SingleAsync(x => x.FirstName == "Maddy" && x.LastName == "Snyder");
             var AbigailSparks = await context.Runners.SingleAsync(x => x.FirstName == "Abigail" && x.LastName == "Sparks");
             var SophiaSpencer = await context.Runners.SingleAsync(x => x.FirstName == "Sophia" && x.LastName == "Spencer");
             var DonaldSpencer = await context.Runners.SingleAsync(x => x.FirstName == "Donald" && x.LastName == "Spencer");
+            var HunterStallings = await context.Runners.SingleAsync(x => x.FirstName == "Hunter" && x.LastName == "Stallings");
+            var MelanieStallings = await context.Runners.SingleAsync(x => x.FirstName == "Melanie" && x.LastName == "Stallings");
             var LizStanley = await context.Runners.SingleAsync(x => x.FirstName == "Liz" && x.LastName == "Stanley");
             var CaleighStefanko = await context.Runners.SingleAsync(x => x.FirstName == "Caleigh" && x.LastName == "Stefanko");
             var CaitySteiner = await context.Runners.SingleAsync(x => x.FirstName == "Caity" && x.LastName == "Steiner");
@@ -348,9 +427,15 @@ namespace LodiCornFest5k.Data
             var CarrieStoner = await context.Runners.SingleAsync(x => x.FirstName == "Carrie" && x.LastName == "Stoner");
             var AlyssaStoner = await context.Runners.SingleAsync(x => x.FirstName == "Alyssa" && x.LastName == "Stoner");
             var TeresaStrine = await context.Runners.SingleAsync(x => x.FirstName == "Teresa" && x.LastName == "Strine");
+            var StacyStuchal = await context.Runners.SingleAsync(x => x.FirstName == "Stacy" && x.LastName == "Stuchal");
+            var AdamSwait = await context.Runners.SingleAsync(x => x.FirstName == "Adam" && x.LastName == "Swait");
             var PhilipSyverson = await context.Runners.SingleAsync(x => x.FirstName == "Philip" && x.LastName == "Syverson");
             var GregSzklarz = await context.Runners.SingleAsync(x => x.FirstName == "Greg" && x.LastName == "Szklarz");
             var JackSzklarz = await context.Runners.SingleAsync(x => x.FirstName == "Jack" && x.LastName == "Szklarz");
+            var BrockTegtmeier = await context.Runners.SingleAsync(x => x.FirstName == "Brock" && x.LastName == "Tegtmeier");
+            var KadeTegtmeier = await context.Runners.SingleAsync(x => x.FirstName == "Kade" && x.LastName == "Tegtmeier");
+            var HeatherTegtmeier = await context.Runners.SingleAsync(x => x.FirstName == "Heather" && x.LastName == "Tegtmeier");
+            var RandyTegtmeier = await context.Runners.SingleAsync(x => x.FirstName == "Randy" && x.LastName == "Tegtmeier");
             var FaithTheobald = await context.Runners.SingleAsync(x => x.FirstName == "Faith" && x.LastName == "Theobald");
             var EricThomas = await context.Runners.SingleAsync(x => x.FirstName == "Eric" && x.LastName == "Thomas");
             var RandiVahl = await context.Runners.SingleAsync(x => x.FirstName == "Randi" && x.LastName == "Vahl");
@@ -361,12 +446,15 @@ namespace LodiCornFest5k.Data
             var LivWells = await context.Runners.SingleAsync(x => x.FirstName == "Liv" && x.LastName == "Wells");
             var DillonWest = await context.Runners.SingleAsync(x => x.FirstName == "Dillon" && x.LastName == "West");
             var DrewWest = await context.Runners.SingleAsync(x => x.FirstName == "Drew" && x.LastName == "West");
+            var AnnaWest = await context.Runners.SingleAsync(x => x.FirstName == "Anna" && x.LastName == "West");
+            var BlakeWilson = await context.Runners.SingleAsync(x => x.FirstName == "Blake" && x.LastName == "Wilson");
             var KeithWinkler = await context.Runners.SingleAsync(x => x.FirstName == "Keith" && x.LastName == "Winkler");
             var AnnaWinnicki = await context.Runners.SingleAsync(x => x.FirstName == "Anna" && x.LastName == "Winnicki");
             var AmyWinnicki = await context.Runners.SingleAsync(x => x.FirstName == "Amy" && x.LastName == "Winnicki");
+            var ColeYagersz = await context.Runners.SingleAsync(x => x.FirstName == "Cole" && x.LastName == "Yagersz");
             var MichelleYoder = await context.Runners.SingleAsync(x => x.FirstName == "Michelle" && x.LastName == "Yoder");
             var BradenYoung = await context.Runners.SingleAsync(x => x.FirstName == "Braden" && x.LastName == "Young");
-            var NickZeigler = await context.Runners.SingleAsync(x => x.FirstName == "Nick" && x.LastName == "Zeigler");
+            var NickZiegler = await context.Runners.SingleAsync(x => x.FirstName == "Nick" && x.LastName == "Ziegler");
 
             #endregion
 
@@ -375,6 +463,7 @@ namespace LodiCornFest5k.Data
             var race2016 = await context.Races.SingleAsync(x => x.Name == RaceName2016);
             var race2017 = await context.Races.SingleAsync(x => x.Name == RaceName2017);
             var race2018 = await context.Races.SingleAsync(x => x.Name == RaceName2018);
+            var race2019 = await context.Races.SingleAsync(x => x.Name == RaceName2019);
 
             #endregion
 
@@ -428,6 +517,22 @@ namespace LodiCornFest5k.Data
                 new AgeGroup { Name = AgeGroupName40to49, Gender = Gender.Male, Race = race2018 },
                 new AgeGroup { Name = AgeGroupName50to59, Gender = Gender.Male, Race = race2018 },
                 new AgeGroup { Name = AgeGroupName60Plus, Gender = Gender.Male, Race = race2018 },
+                new AgeGroup { Name = AgeGroupName14AndUnder, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName15to18, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName19to24, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName25to29, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName30to39, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName40to49, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName50to59, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName60Plus, Gender = Gender.Female, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName14AndUnder, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName15to18, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName19to24, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName25to29, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName30to39, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName40to49, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName50to59, Gender = Gender.Male, Race = race2019 },
+                new AgeGroup { Name = AgeGroupName60Plus, Gender = Gender.Male, Race = race2019 }
             };
 
             await context.AgeGroups.AddRangeAsync(ageGroups);
@@ -485,6 +590,23 @@ namespace LodiCornFest5k.Data
             var race2018Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2018);
             var race2018Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2018);
             var race2018Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2018);
+            
+            var race2019Female14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Male14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2019);
 
 
             #endregion
@@ -512,7 +634,7 @@ namespace LodiCornFest5k.Data
                 new RaceRunner {Race = race2016, Runner = TommieKurtz, AgeGroup = race2016Female15to18},
                 new RaceRunner {Race = race2016, Runner = SamBrandt, AgeGroup = race2016Male15to18},
                 new RaceRunner {Race = race2016, Runner = BaileyFreeland, AgeGroup = race2016Female15to18},
-                new RaceRunner {Race = race2016, Runner = NickZeigler, AgeGroup = race2016Male15to18},
+                new RaceRunner {Race = race2016, Runner = NickZiegler, AgeGroup = race2016Male15to18},
                 new RaceRunner {Race = race2016, Runner = BradOliver, AgeGroup = race2016Male50to59},
                 new RaceRunner {Race = race2016, Runner = DannyPrice, AgeGroup = race2016Male60Plus},
                 new RaceRunner {Race = race2016, Runner = BenNagy, AgeGroup = race2016Male14andUnder},
@@ -581,7 +703,7 @@ namespace LodiCornFest5k.Data
                 new RaceRunner {Race = race2017, Runner = EstevanOrtega, AgeGroup = race2017Male15to18},
                 new RaceRunner {Race = race2017, Runner = BradenYoung, AgeGroup = race2017Male15to18},
                 new RaceRunner {Race = race2017, Runner = GregSzklarz, AgeGroup = race2017Male60Plus},
-                new RaceRunner {Race = race2017, Runner = NickZeigler, AgeGroup = race2017Male15to18},
+                new RaceRunner {Race = race2017, Runner = NickZiegler, AgeGroup = race2017Male15to18},
                 new RaceRunner {Race = race2017, Runner = AsaGynn, AgeGroup = race2017Male15to18},
                 new RaceRunner {Race = race2017, Runner = BrettGucker, AgeGroup = race2017Male14andUnder},
                 new RaceRunner {Race = race2017, Runner = MariaPorras, AgeGroup = race2017Female14andUnder},
@@ -634,7 +756,7 @@ namespace LodiCornFest5k.Data
                 new RaceRunner {Race = race2018, Runner = RileyFreeland, AgeGroup = race2018Female19to24},
                 new RaceRunner {Race = race2018, Runner = LaddClifford, AgeGroup = race2018Male50to59},
                 new RaceRunner {Race = race2018, Runner = AndyDavis, AgeGroup = race2018Male40to49},
-                new RaceRunner {Race = race2018, Runner = NickZeigler, AgeGroup = race2018Male15to18},
+                new RaceRunner {Race = race2018, Runner = NickZiegler, AgeGroup = race2018Male15to18},
                 new RaceRunner {Race = race2018, Runner = ZachJohnston, AgeGroup = race2018Male25to29},
                 new RaceRunner {Race = race2018, Runner = JosephBruening, AgeGroup = race2018Male25to29},
                 new RaceRunner {Race = race2018, Runner = MichaelaDavis, AgeGroup = race2018Female15to18},
@@ -701,6 +823,81 @@ namespace LodiCornFest5k.Data
                 new RaceRunner {Race = race2018, Runner = BrianKulchar, AgeGroup = race2018Male50to59},
                 new RaceRunner {Race = race2018, Runner = TiffanyKosman, AgeGroup = race2018Female30to39},
                 new RaceRunner {Race = race2018, Runner = ConnieEmerson, AgeGroup = race2018Female60Plus},
+                new RaceRunner { Race = race2019, Runner = RussellSchultz, AgeGroup = race2019Male19to24 },
+                new RaceRunner { Race = race2019, Runner = MaxGucker, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = TristanVaughan, AgeGroup = race2019Male19to24 },
+                new RaceRunner { Race = race2019, Runner = ChuckEngle, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = AlexDerhammer, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = BrettGucker, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = AndrewHibler, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = BrockTegtmeier, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = JohnMonhemius, AgeGroup = race2019Male30to39 },
+                new RaceRunner { Race = race2019, Runner = RobMiller, AgeGroup = race2019Male50to59 },
+                new RaceRunner { Race = race2019, Runner = ColeYagersz, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = AdamBrantner, AgeGroup = race2019Male30to39 },
+                new RaceRunner { Race = race2019, Runner = KadeTegtmeier, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = SophiaSpencer, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = CooperHartsel, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = ScottStoner, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = NolanFreeland, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = HunterStallings, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = MakaelaSalyer, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = EmmaHibler, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = MariaPorras, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = VladimirHerdman, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = PaigeMunchick, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = AlyssaStoner, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = WilliamFoster, AgeGroup = race2019Male50to59 },
+                new RaceRunner { Race = race2019, Runner = BrynneMcAllister, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = DavidHuff, AgeGroup = race2019Male30to39 },
+                new RaceRunner { Race = race2019, Runner = TJCorbett, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = BlakeWilson, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = JoeyKurtz, AgeGroup = race2019Male15to18 },
+                new RaceRunner { Race = race2019, Runner = HaroldDravenstott, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = DakotaJacobson, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = ClayGucker, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = RyanMcAllister, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = JacobBeadnell, AgeGroup = race2019Male19to24 },
+                new RaceRunner { Race = race2019, Runner = DillonWest, AgeGroup = race2019Male19to24 },
+                new RaceRunner { Race = race2019, Runner = LivWells, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = VanessaMonhemius, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = BlakeMusick, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = CalebNeville, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = KaitlynClifford, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = HeatherTegtmeier, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = JoeArmogida, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = SandraFoster, AgeGroup = race2019Female50to59 },
+                new RaceRunner { Race = race2019, Runner = SommerMueller, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = RandyTegtmeier, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = MeganKnapp, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = BrookeGucker, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = MaddySnyder, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = RileyEvans, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = AmberLeClair, AgeGroup = race2019Female30to39 },
+                new RaceRunner { Race = race2019, Runner = JenMyers, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = BenjaminKruggel, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = KatieCanfield, AgeGroup = race2019Female15to18 },
+                new RaceRunner { Race = race2019, Runner = ErinMason, AgeGroup = race2019Female30to39 },
+                new RaceRunner { Race = race2019, Runner = JimPlikerd, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = RandiVahl, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = ShaunVahl, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = RebeccaBoscaljon, AgeGroup = race2019Female30to39 },
+                new RaceRunner { Race = race2019, Runner = JamesJohnson, AgeGroup = race2019Male60Plus },
+                new RaceRunner { Race = race2019, Runner = MelanieStallings, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = MarleyCarter, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = TristanPonting, AgeGroup = race2019Male14andUnder },
+                new RaceRunner { Race = race2019, Runner = AdamSwait, AgeGroup = race2019Male40to49 },
+                new RaceRunner { Race = race2019, Runner = SarahNaftzger, AgeGroup = race2019Female14andUnder },
+                new RaceRunner { Race = race2019, Runner = WindyLewis, AgeGroup = race2019Female50to59 },
+                new RaceRunner { Race = race2019, Runner = AnnaWest, AgeGroup = race2019Female19to24 },
+                new RaceRunner { Race = race2019, Runner = DanNaftzger, AgeGroup = race2019Male30to39 },
+                new RaceRunner { Race = race2019, Runner = WilsonLewis, AgeGroup = race2019Male50to59 },
+                new RaceRunner { Race = race2019, Runner = ValarieBoscaljon, AgeGroup = race2019Female50to59 },
+                new RaceRunner { Race = race2019, Runner = AndreaHoff, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = StacyStuchal, AgeGroup = race2019Female40to49 },
+                new RaceRunner { Race = race2019, Runner = PamelaBoyles, AgeGroup = race2019Female30to39 },
+                new RaceRunner { Race = race2019, Runner = JoCavallaro, AgeGroup = race2019Female60Plus },
+                new RaceRunner { Race = race2019, Runner = MeghanFiala, AgeGroup = race2019Female40to49 }
             };
 
             var results = new ConcurrentBag<Result>
@@ -726,7 +923,7 @@ namespace LodiCornFest5k.Data
                 new Result { Runner = TommieKurtz, Race = race2016, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 39, 70) },
                 new Result { Runner = SamBrandt, Race = race2016, OverallPlace = 20, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 23, 39, 91) },
                 new Result { Runner = BaileyFreeland, Race = race2016, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 40, 92) },
-                new Result { Runner = NickZeigler, Race = race2016, OverallPlace = 22, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 24, 40, 21) },
+                new Result { Runner = NickZiegler, Race = race2016, OverallPlace = 22, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 24, 40, 21) },
                 new Result { Runner = BradOliver, Race = race2016, OverallPlace = 23, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 51, 90) },
                 new Result { Runner = DannyPrice, Race = race2016, OverallPlace = 24, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 55, 3) },
                 new Result { Runner = BenNagy, Race = race2016, OverallPlace = 25, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 6, 61) },
@@ -795,7 +992,7 @@ namespace LodiCornFest5k.Data
                 new Result { Runner = EstevanOrtega, Race = race2017, OverallPlace = 11, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 20, 26, 0) },
                 new Result { Runner = BradenYoung, Race = race2017, OverallPlace = 12, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 20, 32, 89) },
                 new Result { Runner = GregSzklarz, Race = race2017, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 19, 73) },
-                new Result { Runner = NickZeigler, Race = race2017, OverallPlace = 14, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 54, 60) },
+                new Result { Runner = NickZiegler, Race = race2017, OverallPlace = 14, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 54, 60) },
                 new Result { Runner = AsaGynn, Race = race2017, OverallPlace = 15, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 23, 16, 23) },
                 new Result { Runner = BrettGucker, Race = race2017, OverallPlace = 16, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 17, 60) },
                 new Result { Runner = MariaPorras, Race = race2017, OverallPlace = 17, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 22, 46) },
@@ -848,7 +1045,7 @@ namespace LodiCornFest5k.Data
                 new Result { Runner = RileyFreeland, Race = race2018, OverallPlace = 12, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 11, 3) },
                 new Result { Runner = LaddClifford, Race = race2018, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 15, 31) },
                 new Result { Runner = AndyDavis, Race = race2018, OverallPlace = 14, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 53, 80) },
-                new Result { Runner = NickZeigler, Race = race2018, OverallPlace = 15, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 21, 57, 92) },
+                new Result { Runner = NickZiegler, Race = race2018, OverallPlace = 15, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 21, 57, 92) },
                 new Result { Runner = ZachJohnston, Race = race2018, OverallPlace = 16, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 58, 43) },
                 new Result { Runner = JosephBruening, Race = race2018, OverallPlace = 17, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 7, 22) },
                 new Result { Runner = MichaelaDavis, Race = race2018, OverallPlace = 18, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 22, 14, 93) },
@@ -915,8 +1112,82 @@ namespace LodiCornFest5k.Data
                 new Result { Runner = BrianKulchar, Race = race2018, OverallPlace = 79, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 52, 48, 19) },
                 new Result { Runner = TiffanyKosman, Race = race2018, OverallPlace = 80, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 54, 17, 45) },
                 new Result { Runner = ConnieEmerson, Race = race2018, OverallPlace = 81, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 54, 17, 65) },
+                new Result { Runner = RussellSchultz, Race = race2019, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 10, 64) },
+                new Result { Runner = MaxGucker, Race = race2019, OverallPlace = 2, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 28, 42) },
+                new Result { Runner = TristanVaughan, Race = race2019, OverallPlace = 3, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 17, 47, 12) },
+                new Result { Runner = ChuckEngle, Race = race2019, OverallPlace = 4, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 55, 57) },
+                new Result { Runner = AlexDerhammer, Race = race2019, OverallPlace = 5, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 19, 14, 18) },
+                new Result { Runner = BrettGucker, Race = race2019, OverallPlace = 6, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 19, 16, 52) },
+                new Result { Runner = AndrewHibler, Race = race2019, OverallPlace = 7, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 20, 39, 17) },
+                new Result { Runner = BrockTegtmeier, Race = race2019, OverallPlace = 8, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 20, 44, 6) },
+                new Result { Runner = JohnMonhemius, Race = race2019, OverallPlace = 9, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 49, 20) },
+                new Result { Runner = RobMiller, Race = race2019, OverallPlace = 10, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 51, 43) },
+                new Result { Runner = ColeYagersz, Race = race2019, OverallPlace = 11, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 20, 58, 51) },
+                new Result { Runner = AdamBrantner, Race = race2019, OverallPlace = 12, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 4, 28) },
+                new Result { Runner = KadeTegtmeier, Race = race2019, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 57, 70) },
+                new Result { Runner = SophiaSpencer, Race = race2019, OverallPlace = 14, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 22, 0, 0) },
+                new Result { Runner = CooperHartsel, Race = race2019, OverallPlace = 15, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 22, 9, 75) },
+                new Result { Runner = ScottStoner, Race = race2019, OverallPlace = 16, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 22, 25, 85) },
+                new Result { Runner = NolanFreeland, Race = race2019, OverallPlace = 17, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 27, 81) },
+                new Result { Runner = HunterStallings, Race = race2019, OverallPlace = 18, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 29, 31) },
+                new Result { Runner = MakaelaSalyer, Race = race2019, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 59, 87) },
+                new Result { Runner = EmmaHibler, Race = race2019, OverallPlace = 20, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 35, 18) },
+                new Result { Runner = MariaPorras, Race = race2019, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 38, 96) },
+                new Result { Runner = VladimirHerdman, Race = race2019, OverallPlace = 22, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 42, 66) },
+                new Result { Runner = PaigeMunchick, Race = race2019, OverallPlace = 23, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 23, 48, 57) },
+                new Result { Runner = AlyssaStoner, Race = race2019, OverallPlace = 24, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 49, 13) },
+                new Result { Runner = WilliamFoster, Race = race2019, OverallPlace = 25, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 51, 22) },
+                new Result { Runner = BrynneMcAllister, Race = race2019, OverallPlace = 26, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 1, 58) },
+                new Result { Runner = DavidHuff, Race = race2019, OverallPlace = 27, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 5, 38) },
+                new Result { Runner = TJCorbett, Race = race2019, OverallPlace = 28, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 24, 38, 17) },
+                new Result { Runner = BlakeWilson, Race = race2019, OverallPlace = 29, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 24, 40, 50) },
+                new Result { Runner = JoeyKurtz, Race = race2019, OverallPlace = 30, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 24, 46, 7) },
+                new Result { Runner = HaroldDravenstott, Race = race2019, OverallPlace = 31, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 35, 92) },
+                new Result { Runner = DakotaJacobson, Race = race2019, OverallPlace = 32, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 25, 40, 82) },
+                new Result { Runner = ClayGucker, Race = race2019, OverallPlace = 33, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 25, 50, 6) },
+                new Result { Runner = RyanMcAllister, Race = race2019, OverallPlace = 34, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 50, 49) },
+                new Result { Runner = JacobBeadnell, Race = race2019, OverallPlace = 35, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 51, 52) },
+                new Result { Runner = DillonWest, Race = race2019, OverallPlace = 36, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 8, 89) },
+                new Result { Runner = LivWells, Race = race2019, OverallPlace = 37, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 9, 84) },
+                new Result { Runner = VanessaMonhemius, Race = race2019, OverallPlace = 38, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 27, 14, 14) },
+                new Result { Runner = BlakeMusick, Race = race2019, OverallPlace = 39, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 23, 79) },
+                new Result { Runner = CalebNeville, Race = race2019, OverallPlace = 40, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 27, 24, 42) },
+                new Result { Runner = KaitlynClifford, Race = race2019, OverallPlace = 41, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 29, 52) },
+                new Result { Runner = HeatherTegtmeier, Race = race2019, OverallPlace = 42, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 27, 54, 17) },
+                new Result { Runner = JoeArmogida, Race = race2019, OverallPlace = 43, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 28, 7, 51) },
+                new Result { Runner = SandraFoster, Race = race2019, OverallPlace = 44, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 8, 23) },
+                new Result { Runner = SommerMueller, Race = race2019, OverallPlace = 45, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 28, 14, 51) },
+                new Result { Runner = RandyTegtmeier, Race = race2019, OverallPlace = 46, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 28, 54, 51) },
+                new Result { Runner = MeganKnapp, Race = race2019, OverallPlace = 47, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 29, 18, 23) },
+                new Result { Runner = BrookeGucker, Race = race2019, OverallPlace = 48, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 29, 29, 96) },
+                new Result { Runner = MaddySnyder, Race = race2019, OverallPlace = 49, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 29, 30, 32) },
+                new Result { Runner = RileyEvans, Race = race2019, OverallPlace = 50, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 29, 30, 77) },
+                new Result { Runner = AmberLeClair, Race = race2019, OverallPlace = 51, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 56, 76) },
+                new Result { Runner = JenMyers, Race = race2019, OverallPlace = 52, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 3, 95) },
+                new Result { Runner = BenjaminKruggel, Race = race2019, OverallPlace = 53, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 30, 7, 52) },
+                new Result { Runner = KatieCanfield, Race = race2019, OverallPlace = 54, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 30, 27, 68) },
+                new Result { Runner = ErinMason, Race = race2019, OverallPlace = 55, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 31, 3, 87) },
+                new Result { Runner = JimPlikerd, Race = race2019, OverallPlace = 56, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 31, 12, 71) },
+                new Result { Runner = RandiVahl, Race = race2019, OverallPlace = 57, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 31, 54, 12) },
+                new Result { Runner = ShaunVahl, Race = race2019, OverallPlace = 58, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 31, 54, 34) },
+                new Result { Runner = RebeccaBoscaljon, Race = race2019, OverallPlace = 59, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 32, 46, 16) },
+                new Result { Runner = JamesJohnson, Race = race2019, OverallPlace = 60, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 35, 44, 69) },
+                new Result { Runner = MelanieStallings, Race = race2019, OverallPlace = 61, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 35, 45, 10) },
+                new Result { Runner = MarleyCarter, Race = race2019, OverallPlace = 62, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 37, 10, 91) },
+                new Result { Runner = TristanPonting, Race = race2019, OverallPlace = 63, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 37, 18, 99) },
+                new Result { Runner = AdamSwait, Race = race2019, OverallPlace = 64, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 37, 19, 39) },
+                new Result { Runner = SarahNaftzger, Race = race2019, OverallPlace = 65, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 39, 30, 88) },
+                new Result { Runner = WindyLewis, Race = race2019, OverallPlace = 66, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 39, 36, 69) },
+                new Result { Runner = AnnaWest, Race = race2019, OverallPlace = 67, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 39, 37, 41) },
+                new Result { Runner = DanNaftzger, Race = race2019, OverallPlace = 68, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 39, 38, 70) },
+                new Result { Runner = WilsonLewis, Race = race2019, OverallPlace = 69, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 39, 54, 12) },
+                new Result { Runner = ValarieBoscaljon, Race = race2019, OverallPlace = 70, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 39, 57, 18) },
+                new Result { Runner = AndreaHoff, Race = race2019, OverallPlace = 71, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 47, 55, 91) },
+                new Result { Runner = StacyStuchal, Race = race2019, OverallPlace = 72, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 47, 56, 43) },
+                new Result { Runner = PamelaBoyles, Race = race2019, OverallPlace = 73, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 48, 45, 82) },
+                new Result { Runner = JoCavallaro, Race = race2019, OverallPlace = 74, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 48, 46, 21) },
+                new Result { Runner = MeghanFiala, Race = race2019, OverallPlace = 75, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 49, 57, 87) }
             };
-            
             
             await context.RaceRunners.AddRangeAsync(raceRunners);
             await context.Results.AddRangeAsync(results);
