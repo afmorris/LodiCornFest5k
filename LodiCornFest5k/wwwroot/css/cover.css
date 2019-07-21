@@ -71,7 +71,7 @@ body {
     border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link + .nav-link, .nav-masthead .nav-link + .nav-item, .nav-masthead .nav-item + .nav-link {
     margin-left: 1rem;
 }
 
@@ -87,6 +87,10 @@ body {
     .nav-masthead {
         float: right;
     }
+}
+
+.nav-masthead a.dropdown-item:hover {
+    background-color: #CCC;
 }
 
 

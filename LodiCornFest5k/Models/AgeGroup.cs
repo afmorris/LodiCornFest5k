@@ -9,6 +9,6 @@ namespace LodiCornFest5k.Models
         public Gender Gender { get; set; }
         
         public Race Race { get; set; }
-        public ICollection<Result> Results { get; set; } = new HashSet<Result>();
+        public ICollection<RaceRunner> RaceRunners { get; set; } = new HashSet<RaceRunner>();
     }
 }

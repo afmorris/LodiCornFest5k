@@ -119,7 +119,6 @@ namespace LodiCornFest5k.Controllers
         {
             var race = await this.context.Races
                 .Include(x => x.AgeGroups)
-                    .ThenInclude(x => x.Results)
                 .Include(x => x.RaceRunners)
                     .ThenInclude(x => x.Runner)
                 .Include(x => x.RaceRunners)

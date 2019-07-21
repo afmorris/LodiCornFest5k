@@ -43,6 +43,15 @@
                 <li asp-controller="Results" asp-action="Index" is-active-route class="nav-item">
                     <a asp-controller="Results" asp-action="Index" class="nav-link">Results</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        All-Time Records
+                    </a>
+                    <ul class="dropdown-menu">
+                        <a asp-controller="Records" asp-action="Overall" class="dropdown-item" is-active-route>Overall</a>
+                        <a asp-controller="Records" asp-action="AgeGroup" class="dropdown-item" is-active-route>Age Group</a>
+                    </ul>
+                </li>
                 <li asp-controller="Route" asp-action="Index" is-active-route class="nav-item">
                     <a asp-controller="Route" asp-action="Index" class="nav-link">Route Map</a>
                 </li>

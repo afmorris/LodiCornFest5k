@@ -6,8 +6,8 @@
 
 <div class="row">
     <div class="col-sm-2">
-        <nav class="nav flex-column nav-pills">
-            <span class="navbar-brand">@ViewData["Title"]</span>
+        <nav class="nav-stacked nav-pills">
+            <p class="navbar-text">@ViewData["Title"]</p>
             <a class="nav-link" is-active-route asp-controller="Results" asp-action="List" asp-route-year="@Model.Race.Date.Year">Runner List</a>
             <a class="nav-link" is-active-route asp-controller="Results" asp-action="Overall" asp-route-year="@Model.Race.Date.Year">Overall Results</a>
             <a class="nav-link" is-active-route asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.Race.Date.Year">Results by Age Group</a>

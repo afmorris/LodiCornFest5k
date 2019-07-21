@@ -35,6 +35,15 @@
                     <a asp-controller="Home" asp-action="Index" is-active-route class="nav-link">Home</a>
                     <a asp-controller="Home" asp-action="About" is-active-route class="nav-link">About</a>
                     <a asp-controller="Results" asp-action="Index" is-active-route class="nav-link">Results</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            All-Time Records
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a asp-controller="Records" asp-action="Overall" class="dropdown-item" is-active-route>Overall</a>
+                            <a asp-controller="Records" asp-action="AgeGroup" class="dropdown-item" is-active-route>Age Group</a>
+                        </ul>
+                    </li>
                     <a asp-controller="Route" asp-action="Index" is-active-route class="nav-link">Route Map</a>
                     @* <a href="https://www.active.com/lodi-oh/running/distance-running-races/lodi-sweet-corn-festival-5k-and-fun-run-2019" target="_blank" class="nav-link">Registration <i class="far fa-external-link-square"></i></a> *@
                 </nav>

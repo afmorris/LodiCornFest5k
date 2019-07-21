@@ -27,12 +27,6 @@ namespace LodiCornFest5k.ViewModels
             }
         }
 
-        public string AgeGroupLink
-        {
-            get
-            {
-                return $"{this.Gender.ToString().ToLower()}-{this.AgeGroupName.Replace(" ", "").Replace("+", "-").Replace("&", "-").ToLower()}";
-            }
-        }
+        public string AgeGroupLink => $"{this.Gender.ToString().ToLower()}-{this.AgeGroupName.Replace(" ", "").Replace("+", "-").Replace("&", "-").ToLower()}";
     }
 }
