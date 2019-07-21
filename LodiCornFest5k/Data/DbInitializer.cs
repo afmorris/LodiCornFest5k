@@ -684,137 +684,73 @@ namespace LodiCornFest5k.Data
             var race2015Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2015);
             var race2015Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2015);
             
-            var race2016Female14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Female60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2016);
-            var race2016Male14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2016);
-            var race2016Male60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Female14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Female60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2016);
+            var race2016Male14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2016);
+            var race2016Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2016);
 
-            var race2017Female14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Female60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2017);
-            var race2017Male14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2017);
-            var race2017Male60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Female14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Female60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2017);
+            var race2017Male14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2017);
+            var race2017Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2017);
 
-            var race2018Female14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Female60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2018);
-            var race2018Male14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2018);
-            var race2018Male60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Female14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Female60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2018);
+            var race2018Male14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male50to59 = await context.AgeGroups.SingleAsync(x =>x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2018);
+            var race2018Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2018);
 
-            var race2019Female14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Female60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2019);
-            var race2019Male14andUnder = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male15to18 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male19to24 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male25to29 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male30to39 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male40to49 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male50to59 = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2019);
-            var race2019Male60Plus = await context.AgeGroups.SingleAsync(x =>
-                x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Female14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Female60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Female && x.Race == race2019);
+            var race2019Male14andUnder = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName14AndUnder && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male15to18 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName15to18 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male19to24 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName19to24 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male25to29 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName25to29 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male30to39 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName30to39 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male40to49 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName40to49 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male50to59 = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName50to59 && x.Gender == Gender.Male && x.Race == race2019);
+            var race2019Male60Plus = await context.AgeGroups.SingleAsync(x => x.Name == AgeGroupName60Plus && x.Gender == Gender.Male && x.Race == race2019);
 
             #endregion
 
@@ -1199,1521 +1135,381 @@ namespace LodiCornFest5k.Data
 
             var results = new ConcurrentBag<Result>
             {
-                new Result { Runner = MattChidsey, Race = race2015, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 17, 31) },
-                new Result { Runner = ChrisCannon, Race = race2015, OverallPlace = 2, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 17, 23, 52) },
-                new Result { Runner = NoahLake, Race = race2015, OverallPlace = 3, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 29, 54) },
-                new Result { Runner = LewisAustin, Race = race2015, OverallPlace = 4, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 18, 2, 21) },
-                new Result { Runner = AndrewJarrett, Race = race2015, OverallPlace = 5, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 18, 50, 54) },
-                new Result { Runner = MichaelMartin, Race = race2015, OverallPlace = 6, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 18, 55, 53) },
-                new Result { Runner = MatthewBildstein, Race = race2015, OverallPlace = 7, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 19, 25, 30) },
-                new Result { Runner = MatthewGerhart, Race = race2015, OverallPlace = 8, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 20, 24, 72) },
-                new Result { Runner = MaxGucker, Race = race2015, OverallPlace = 9, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 20, 33, 98) },
-                new Result { Runner = MadelynMiller, Race = race2015, OverallPlace = 10, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 40, 3) },
-                new Result { Runner = BlakeButsko, Race = race2015, OverallPlace = 11, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 20, 55, 13) },
-                new Result { Runner = RileyFreeland, Race = race2015, OverallPlace = 12, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 57, 8) },
-                new Result { Runner = PatrickBreean, Race = race2015, OverallPlace = 13, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 21, 6, 3) },
-                new Result { Runner = DarrenEgner, Race = race2015, OverallPlace = 14, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 21, 11, 25) },
-                new Result { Runner = VanessaRivera, Race = race2015, OverallPlace = 15, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 23, 27) },
-                new Result { Runner = ZachDreher, Race = race2015, OverallPlace = 16, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 21, 37, 3) },
-                new Result { Runner = JohnMonhemius, Race = race2015, OverallPlace = 17, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 38, 71) },
-                new Result { Runner = JosephBruening, Race = race2015, OverallPlace = 18, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 21, 46, 44) },
-                new Result { Runner = AnnaWinnicki, Race = race2015, OverallPlace = 19, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 21, 54, 83) },
-                new Result { Runner = EstevanOrtega, Race = race2015, OverallPlace = 20, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 21, 57, 86) },
-                new Result { Runner = DillonWest, Race = race2015, OverallPlace = 21, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 0, 24) },
-                new Result { Runner = KristenNapholz, Race = race2015, OverallPlace = 22, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 22, 17, 7) },
-                new Result { Runner = SamBrandt, Race = race2015, OverallPlace = 23, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 22, 53, 20) },
-                new Result { Runner = BaileyFreeland, Race = race2015, OverallPlace = 24, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 58, 91) },
-                new Result { Runner = JimButsko, Race = race2015, OverallPlace = 25, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 18, 31) },
-                new Result { Runner = RachelMurphy, Race = race2015, OverallPlace = 26, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 27, 70) },
-                new Result { Runner = CliffLear, Race = race2015, OverallPlace = 27, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 28, 29) },
-                new Result { Runner = AaronSurrarrer, Race = race2015, OverallPlace = 28, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 49, 6) },
-                new Result { Runner = DrewWest, Race = race2015, OverallPlace = 29, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 23, 49, 45) },
-                new Result { Runner = DominicButsko, Race = race2015, OverallPlace = 30, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 23, 58, 14) },
-                new Result { Runner = ConnorPloucha, Race = race2015, OverallPlace = 31, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 24, 10, 53) },
-                new Result { Runner = DanGrabowski, Race = race2015, OverallPlace = 32, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 24, 10, 84) },
-                new Result { Runner = KevinMartin, Race = race2015, OverallPlace = 33, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 24, 18, 34) },
-                new Result { Runner = NickZiegler, Race = race2015, OverallPlace = 34, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 24, 23, 75) },
-                new Result { Runner = MikeMeans, Race = race2015, OverallPlace = 35, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 24, 29, 34) },
-                new Result { Runner = NickYount, Race = race2015, OverallPlace = 36, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 24, 31, 77) },
-                new Result { Runner = AdamSwiat, Race = race2015, OverallPlace = 37, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 32, 21) },
-                new Result { Runner = PatrickMcKeown, Race = race2015, OverallPlace = 38, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 24, 32, 89) },
-                new Result { Runner = NolanFreeland, Race = race2015, OverallPlace = 39, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 24, 43, 95) },
-                new Result { Runner = AndrewHibler, Race = race2015, OverallPlace = 40, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 24, 45, 24) },
-                new Result { Runner = WilliamFoster, Race = race2015, OverallPlace = 41, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 0, 23) },
-                new Result { Runner = BradOliver, Race = race2015, OverallPlace = 42, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 10, 36) },
-                new Result { Runner = ThomasBieniosek, Race = race2015, OverallPlace = 43, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 15, 89) },
-                new Result { Runner = KaylaWilson, Race = race2015, OverallPlace = 44, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 25, 37, 95) },
-                new Result { Runner = RoyHeger, Race = race2015, OverallPlace = 45, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 59, 62) },
-                new Result { Runner = StephanieFoster, Race = race2015, OverallPlace = 46, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 6, 31) },
-                new Result { Runner = CaleighStefanko, Race = race2015, OverallPlace = 47, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 10, 20) },
-                new Result { Runner = EmmaHibler, Race = race2015, OverallPlace = 48, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 14, 23) },
-                new Result { Runner = TomCurran, Race = race2015, OverallPlace = 49, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 26, 17, 17) },
-                new Result { Runner = VanessaButsko, Race = race2015, OverallPlace = 50, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 23, 73) },
-                new Result { Runner = JeffHeilman, Race = race2015, OverallPlace = 51, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 30, 51) },
-                new Result { Runner = DanEckert, Race = race2015, OverallPlace = 52, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 40, 37) },
-                new Result { Runner = ZackFlynn, Race = race2015, OverallPlace = 53, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 26, 41, 75) },
-                new Result { Runner = DelaineyFlynn, Race = race2015, OverallPlace = 54, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 26, 46, 67) },
-                new Result { Runner = MaddieGrey, Race = race2015, OverallPlace = 55, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 11, 99) },
-                new Result { Runner = JoshuaRittgers, Race = race2015, OverallPlace = 56, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 27, 15, 38) },
-                new Result { Runner = KarenMartin, Race = race2015, OverallPlace = 57, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 27, 28, 4) },
-                new Result { Runner = KellyRennels, Race = race2015, OverallPlace = 58, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 27, 35, 40) },
-                new Result { Runner = BrettDeyling, Race = race2015, OverallPlace = 59, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 27, 50, 44) },
-                new Result { Runner = BrettGucker, Race = race2015, OverallPlace = 60, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 28, 3, 7) },
-                new Result { Runner = CindyMcquown, Race = race2015, OverallPlace = 61, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 8, 44) },
-                new Result { Runner = DanielRittgers, Race = race2015, OverallPlace = 62, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 28, 26, 43) },
-                new Result { Runner = KenTurocy, Race = race2015, OverallPlace = 63, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 28, 37, 57) },
-                new Result { Runner = AidenDonohue, Race = race2015, OverallPlace = 64, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 28, 50, 85) },
-                new Result { Runner = SheilaGucker, Race = race2015, OverallPlace = 65, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 51, 84) },
-                new Result { Runner = MaddieBrandt, Race = race2015, OverallPlace = 66, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 28, 53, 80) },
-                new Result { Runner = ElyseFlynn, Race = race2015, OverallPlace = 67, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 29, 26, 27) },
-                new Result { Runner = SandraFoster, Race = race2015, OverallPlace = 68, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 30, 52, 58) },
-                new Result { Runner = CharlieReed, Race = race2015, OverallPlace = 69, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 30, 53, 38) },
-                new Result { Runner = ChuckWalter, Race = race2015, OverallPlace = 70, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 55, 64) },
-                new Result { Runner = JessicaFlynn, Race = race2015, OverallPlace = 71, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 56, 65) },
-                new Result { Runner = MadisonSnyder, Race = race2015, OverallPlace = 72, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 30, 57, 56) },
-                new Result { Runner = AmyWinnicki, Race = race2015, OverallPlace = 73, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 31, 3, 8) },
-                new Result { Runner = GarySnyder, Race = race2015, OverallPlace = 74, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 31, 26, 27) },
-                new Result { Runner = DavidRittgers, Race = race2015, OverallPlace = 75, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 32, 7, 3) },
-                new Result { Runner = LaurenFrank, Race = race2015, OverallPlace = 76, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 32, 50, 57) },
-                new Result { Runner = WendyTurocy, Race = race2015, OverallPlace = 77, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 33, 27, 30) },
-                new Result { Runner = TonyOliverio, Race = race2015, OverallPlace = 78, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 33, 30, 46) },
-                new Result { Runner = JenniferMcCuen, Race = race2015, OverallPlace = 79, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 33, 30, 86) },
-                new Result { Runner = ShaunVahl, Race = race2015, OverallPlace = 80, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 34, 41, 97) },
-                new Result { Runner = RandiBreese, Race = race2015, OverallPlace = 81, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 34, 43, 10) },
-                new Result { Runner = GraydonFlynn, Race = race2015, OverallPlace = 82, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 34, 59, 63) },
-                new Result { Runner = AdamWanter, Race = race2015, OverallPlace = 83, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 36, 2, 46) },
-                new Result { Runner = MaxieFlynn, Race = race2015, OverallPlace = 84, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 36, 53, 82) },
-                new Result { Runner = JackReed, Race = race2015, OverallPlace = 85, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 38, 25, 78) },
-                new Result { Runner = HollySpears, Race = race2015, OverallPlace = 86, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 38, 32, 97) },
-                new Result { Runner = TheresaStefanko, Race = race2015, OverallPlace = 87, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 39, 22, 83) },
-                new Result { Runner = ReaganFlynn, Race = race2015, OverallPlace = 88, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 39, 29, 30) },
-                new Result { Runner = EthanFlynn, Race = race2015, OverallPlace = 89, AgeGroupPlace = 15, Time = new TimeSpan(0, 0, 40, 19, 82) },
-                new Result { Runner = WillSicking, Race = race2015, OverallPlace = 90, AgeGroupPlace = 16, Time = new TimeSpan(0, 0, 40, 34, 50) },
-new Result
-                {
-                    Runner = NoahAffolder, Race = race2016, OverallPlace = 1, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 16, 15, 58)
-                },
-                new Result
-                {
-                    Runner = LucasClark, Race = race2016, OverallPlace = 2, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 17, 23, 75)
-                },
-                new Result
-                {
-                    Runner = SamAffolder, Race = race2016, OverallPlace = 3, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 17, 38, 25)
-                },
-                new Result
-                {
-                    Runner = TonyKall, Race = race2016, OverallPlace = 4, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 3, 46)
-                },
-                new Result
-                {
-                    Runner = MattChidsey, Race = race2016, OverallPlace = 5, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 18, 14, 99)
-                },
-                new Result
-                {
-                    Runner = KrisKapchak, Race = race2016, OverallPlace = 6, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 18, 21, 26)
-                },
-                new Result
-                {
-                    Runner = BenHouse, Race = race2016, OverallPlace = 7, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 18, 38, 56)
-                },
-                new Result
-                {
-                    Runner = MaxGucker, Race = race2016, OverallPlace = 8, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 19, 12, 64)
-                },
-                new Result
-                {
-                    Runner = NoahNavratil, Race = race2016, OverallPlace = 9, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 20, 8, 10)
-                },
-                new Result
-                {
-                    Runner = TristanVaughan, Race = race2016, OverallPlace = 10, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 20, 17, 50)
-                },
-                new Result
-                {
-                    Runner = CalebHostetler, Race = race2016, OverallPlace = 11, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 20, 31, 58)
-                },
-                new Result
-                {
-                    Runner = DillonWest, Race = race2016, OverallPlace = 12, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 21, 33, 27)
-                },
-                new Result
-                {
-                    Runner = EstevanOrtega, Race = race2016, OverallPlace = 13, AgeGroupPlace = 11,
-                    Time = new TimeSpan(0, 0, 21, 33, 54)
-                },
-                new Result
-                {
-                    Runner = MattButt, Race = race2016, OverallPlace = 14, AgeGroupPlace = 12,
-                    Time = new TimeSpan(0, 0, 21, 42, 72)
-                },
-                new Result
-                {
-                    Runner = EdwardHawkins, Race = race2016, OverallPlace = 15, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 55, 57)
-                },
-                new Result
-                {
-                    Runner = RileyFreeland, Race = race2016, OverallPlace = 16, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 58, 44)
-                },
-                new Result
-                {
-                    Runner = ChristopherDostal, Race = race2016, OverallPlace = 17, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 22, 24, 45)
-                },
-                new Result
-                {
-                    Runner = RobertSayer, Race = race2016, OverallPlace = 18, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 22, 49, 90)
-                },
-                new Result
-                {
-                    Runner = TommieKurtz, Race = race2016, OverallPlace = 19, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 39, 70)
-                },
-                new Result
-                {
-                    Runner = SamBrandt, Race = race2016, OverallPlace = 20, AgeGroupPlace = 13,
-                    Time = new TimeSpan(0, 0, 23, 39, 91)
-                },
-                new Result
-                {
-                    Runner = BaileyFreeland, Race = race2016, OverallPlace = 21, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 40, 92)
-                },
-                new Result
-                {
-                    Runner = NickZiegler, Race = race2016, OverallPlace = 22, AgeGroupPlace = 14,
-                    Time = new TimeSpan(0, 0, 24, 40, 21)
-                },
-                new Result
-                {
-                    Runner = BradOliver, Race = race2016, OverallPlace = 23, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 24, 51, 90)
-                },
-                new Result
-                {
-                    Runner = DannyPrice, Race = race2016, OverallPlace = 24, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 24, 55, 3)
-                },
-                new Result
-                {
-                    Runner = BenNagy, Race = race2016, OverallPlace = 25, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 25, 6, 61)
-                },
-                new Result
-                {
-                    Runner = CaleighStefanko, Race = race2016, OverallPlace = 26, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 25, 20, 15)
-                },
-                new Result
-                {
-                    Runner = WilliamFoster, Race = race2016, OverallPlace = 27, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 25, 22, 19)
-                },
-                new Result
-                {
-                    Runner = JoeyKurtz, Race = race2016, OverallPlace = 28, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 25, 33, 22)
-                },
-                new Result
-                {
-                    Runner = XanderBeltz, Race = race2016, OverallPlace = 29, AgeGroupPlace = 15,
-                    Time = new TimeSpan(0, 0, 25, 33, 41)
-                },
-                new Result
-                {
-                    Runner = TylerPalmer, Race = race2016, OverallPlace = 30, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 25, 37, 0)
-                },
-                new Result
-                {
-                    Runner = DrewWest, Race = race2016, OverallPlace = 31, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 25, 42, 43)
-                },
-                new Result
-                {
-                    Runner = ShaunVahl, Race = race2016, OverallPlace = 32, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 25, 50, 96)
-                },
-                new Result
-                {
-                    Runner = AnnaWinnicki, Race = race2016, OverallPlace = 33, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 25, 51, 86)
-                },
-                new Result
-                {
-                    Runner = ColtonCarpenter, Race = race2016, OverallPlace = 34, AgeGroupPlace = 16,
-                    Time = new TimeSpan(0, 0, 26, 3, 44)
-                },
-                new Result
-                {
-                    Runner = MatthewPettry, Race = race2016, OverallPlace = 35, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 26, 10, 24)
-                },
-                new Result
-                {
-                    Runner = DonHouse, Race = race2016, OverallPlace = 36, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 26, 16, 20)
-                },
-                new Result
-                {
-                    Runner = RandiVahl, Race = race2016, OverallPlace = 37, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 26, 19, 25)
-                },
-                new Result
-                {
-                    Runner = LukeAffolder, Race = race2016, OverallPlace = 38, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 26, 27, 20)
-                },
-                new Result
-                {
-                    Runner = LizStanley, Race = race2016, OverallPlace = 39, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 26, 28, 57)
-                },
-                new Result
-                {
-                    Runner = GiovannaMoroschan, Race = race2016, OverallPlace = 40, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 26, 41, 98)
-                },
-                new Result
-                {
-                    Runner = JeffHeilman, Race = race2016, OverallPlace = 41, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 26, 56, 12)
-                },
-                new Result
-                {
-                    Runner = KaylaMoroschan, Race = race2016, OverallPlace = 42, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 27, 27, 73)
-                },
-                new Result
-                {
-                    Runner = MichelleYoder, Race = race2016, OverallPlace = 43, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 28, 18, 99)
-                },
-                new Result
-                {
-                    Runner = GiaCatalano, Race = race2016, OverallPlace = 44, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 28, 51, 18)
-                },
-                new Result
-                {
-                    Runner = StephanieFoster, Race = race2016, OverallPlace = 45, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 29, 17, 18)
-                },
-                new Result
-                {
-                    Runner = CarsonNagy, Race = race2016, OverallPlace = 46, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 29, 19, 24)
-                },
-                new Result
-                {
-                    Runner = SandraFoster, Race = race2016, OverallPlace = 47, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 29, 32, 72)
-                },
-                new Result
-                {
-                    Runner = ShannonMalikowski, Race = race2016, OverallPlace = 48, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 29, 38, 4)
-                },
-                new Result
-                {
-                    Runner = FaithTheobald, Race = race2016, OverallPlace = 49, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 29, 38, 45)
-                },
-                new Result
-                {
-                    Runner = BillBrandt, Race = race2016, OverallPlace = 50, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 29, 43, 55)
-                },
-                new Result
-                {
-                    Runner = JenniferMeyers, Race = race2016, OverallPlace = 51, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 30, 15, 27)
-                },
-                new Result
-                {
-                    Runner = DarinClapp, Race = race2016, OverallPlace = 52, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 30, 48, 16)
-                },
-                new Result
-                {
-                    Runner = VanessaMonhemius, Race = race2016, OverallPlace = 53, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 30, 48, 49)
-                },
-                new Result
-                {
-                    Runner = JohnMonhemius, Race = race2016, OverallPlace = 54, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 30, 49, 0)
-                },
-                new Result
-                {
-                    Runner = EileenRobison, Race = race2016, OverallPlace = 55, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 31, 7, 78)
-                },
-                new Result
-                {
-                    Runner = MeganBrandt, Race = race2016, OverallPlace = 56, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 31, 46, 20)
-                },
-                new Result
-                {
-                    Runner = AmyWinnicki, Race = race2016, OverallPlace = 57, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 32, 2, 65)
-                },
-                new Result
-                {
-                    Runner = MariaClapp, Race = race2016, OverallPlace = 58, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 32, 19, 35)
-                },
-                new Result
-                {
-                    Runner = MaddieBrandt, Race = race2016, OverallPlace = 59, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 32, 56, 95)
-                },
-                new Result
-                {
-                    Runner = CharlieReed, Race = race2016, OverallPlace = 60, AgeGroupPlace = 17,
-                    Time = new TimeSpan(0, 0, 33, 25, 85)
-                },
-                new Result
-                {
-                    Runner = DonaldSpencer, Race = race2016, OverallPlace = 61, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 33, 44, 49)
-                },
-                new Result
-                {
-                    Runner = KelseyDake, Race = race2016, OverallPlace = 62, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 34, 6, 30)
-                },
-                new Result
-                {
-                    Runner = JessicaFlynn, Race = race2016, OverallPlace = 63, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 34, 8, 70)
-                },
-                new Result
-                {
-                    Runner = MikeHewit, Race = race2016, OverallPlace = 64, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 34, 30, 3)
-                },
-                new Result
-                {
-                    Runner = EthanFlynn, Race = race2016, OverallPlace = 65, AgeGroupPlace = 18,
-                    Time = new TimeSpan(0, 0, 34, 32, 59)
-                },
-                new Result
-                {
-                    Runner = ZechPaul, Race = race2016, OverallPlace = 66, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 34, 40, 14)
-                },
-                new Result
-                {
-                    Runner = MadelineBohan, Race = race2016, OverallPlace = 67, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 34, 50, 91)
-                },
-                new Result
-                {
-                    Runner = EmmaReed, Race = race2016, OverallPlace = 68, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 35, 6, 89)
-                },
-                new Result
-                {
-                    Runner = LisaReinhart, Race = race2016, OverallPlace = 69, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 35, 8, 70)
-                },
-                new Result
-                {
-                    Runner = AmyDonnelly, Race = race2016, OverallPlace = 70, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 36, 0, 88)
-                },
-                new Result
-                {
-                    Runner = MikeBangert, Race = race2016, OverallPlace = 71, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 36, 5, 70)
-                },
-                new Result
-                {
-                    Runner = PhilipSyverson, Race = race2016, OverallPlace = 72, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 36, 6, 0)
-                },
-                new Result
-                {
-                    Runner = VictoriaPorter, Race = race2016, OverallPlace = 73, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 40, 45, 93)
-                },
-                new Result
-                {
-                    Runner = JackReed, Race = race2016, OverallPlace = 74, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 41, 21, 32)
-                },
-                new Result
-                {
-                    Runner = GraydonFlynn, Race = race2016, OverallPlace = 75, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 41, 28, 16)
-                },
-                new Result
-                {
-                    Runner = AbbieEichel, Race = race2016, OverallPlace = 76, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 52, 10, 42)
-                },
-                new Result
-                {
-                    Runner = LiciaPappas, Race = race2016, OverallPlace = 77, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 52, 11, 12)
-                },
-                new Result
-                {
-                    Runner = LucasClark, Race = race2017, OverallPlace = 1, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 16, 51, 87)
-                },
-                new Result
-                {
-                    Runner = KrisKopchak, Race = race2017, OverallPlace = 2, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 18, 1, 89)
-                },
-                new Result
-                {
-                    Runner = NoahNavratil, Race = race2017, OverallPlace = 3, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 18, 17, 74)
-                },
-                new Result
-                {
-                    Runner = MaxGucker, Race = race2017, OverallPlace = 4, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 23, 21)
-                },
-                new Result
-                {
-                    Runner = TristanVaughan, Race = race2017, OverallPlace = 5, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 18, 32, 94)
-                },
-                new Result
-                {
-                    Runner = ChuckEngle, Race = race2017, OverallPlace = 6, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 41, 61)
-                },
-                new Result
-                {
-                    Runner = BenjaminMelkey, Race = race2017, OverallPlace = 7, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 19, 50, 87)
-                },
-                new Result
-                {
-                    Runner = JeralImhoff, Race = race2017, OverallPlace = 8, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 19, 56, 72)
-                },
-                new Result
-                {
-                    Runner = DillonWest, Race = race2017, OverallPlace = 9, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 20, 15, 34)
-                },
-                new Result
-                {
-                    Runner = SamBrandt, Race = race2017, OverallPlace = 10, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 20, 24, 39)
-                },
-                new Result
-                {
-                    Runner = EstevanOrtega, Race = race2017, OverallPlace = 11, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 20, 26, 0)
-                },
-                new Result
-                {
-                    Runner = BradenYoung, Race = race2017, OverallPlace = 12, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 20, 32, 89)
-                },
-                new Result
-                {
-                    Runner = GregSzklarz, Race = race2017, OverallPlace = 13, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 19, 73)
-                },
-                new Result
-                {
-                    Runner = NickZiegler, Race = race2017, OverallPlace = 14, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 22, 54, 60)
-                },
-                new Result
-                {
-                    Runner = AsaGynn, Race = race2017, OverallPlace = 15, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 23, 16, 23)
-                },
-                new Result
-                {
-                    Runner = BrettGucker, Race = race2017, OverallPlace = 16, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 17, 60)
-                },
-                new Result
-                {
-                    Runner = MariaPorras, Race = race2017, OverallPlace = 17, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 23, 22, 46)
-                },
-                new Result
-                {
-                    Runner = JennaOliver, Race = race2017, OverallPlace = 18, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 23, 24, 23)
-                },
-                new Result
-                {
-                    Runner = TommieKurtz, Race = race2017, OverallPlace = 19, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 25, 11)
-                },
-                new Result
-                {
-                    Runner = JackSzklarz, Race = race2017, OverallPlace = 20, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 23, 32, 11)
-                },
-                new Result
-                {
-                    Runner = EmmaNagel, Race = race2017, OverallPlace = 21, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 37, 60)
-                },
-                new Result
-                {
-                    Runner = JoshuaRittgers, Race = race2017, OverallPlace = 22, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 23, 42, 28)
-                },
-                new Result
-                {
-                    Runner = HaydenJarvis, Race = race2017, OverallPlace = 23, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 23, 49, 41)
-                },
-                new Result
-                {
-                    Runner = ScottStoner, Race = race2017, OverallPlace = 24, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 24, 6, 3)
-                },
-                new Result
-                {
-                    Runner = MollieJarvis, Race = race2017, OverallPlace = 25, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 24, 23, 90)
-                },
-                new Result
-                {
-                    Runner = PaigeMunchick, Race = race2017, OverallPlace = 26, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 24, 44, 34)
-                },
-                new Result
-                {
-                    Runner = StevenBett, Race = race2017, OverallPlace = 27, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 24, 55, 74)
-                },
-                new Result
-                {
-                    Runner = BradOliver, Race = race2017, OverallPlace = 28, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 25, 7, 81)
-                },
-                new Result
-                {
-                    Runner = CooperHartsel, Race = race2017, OverallPlace = 29, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 25, 8, 13)
-                },
-                new Result
-                {
-                    Runner = JosephBruening, Race = race2017, OverallPlace = 30, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 25, 8, 43)
-                },
-                new Result
-                {
-                    Runner = WilliamFoster, Race = race2017, OverallPlace = 31, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 25, 24, 52)
-                },
-                new Result
-                {
-                    Runner = ZaneEvans, Race = race2017, OverallPlace = 32, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 25, 45, 84)
-                },
-                new Result
-                {
-                    Runner = StephanieFoster, Race = race2017, OverallPlace = 33, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 26, 55, 84)
-                },
-                new Result
-                {
-                    Runner = BrettDeyling, Race = race2017, OverallPlace = 34, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 27, 1, 39)
-                },
-                new Result
-                {
-                    Runner = JohnMonhemius, Race = race2017, OverallPlace = 35, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 27, 3, 84)
-                },
-                new Result
-                {
-                    Runner = VanessaMonhemius, Race = race2017, OverallPlace = 36, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 27, 4, 14)
-                },
-                new Result
-                {
-                    Runner = CarrieStoner, Race = race2017, OverallPlace = 37, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 29, 2, 47)
-                },
-                new Result
-                {
-                    Runner = AndrewVasel, Race = race2017, OverallPlace = 38, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 29, 11, 22)
-                },
-                new Result
-                {
-                    Runner = AlyssaStoner, Race = race2017, OverallPlace = 39, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 29, 21, 81)
-                },
-                new Result
-                {
-                    Runner = RandiVahl, Race = race2017, OverallPlace = 40, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 29, 22, 99)
-                },
-                new Result
-                {
-                    Runner = SandraFoster, Race = race2017, OverallPlace = 41, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 29, 24, 51)
-                },
-                new Result
-                {
-                    Runner = CharlieReed, Race = race2017, OverallPlace = 42, AgeGroupPlace = 11,
-                    Time = new TimeSpan(0, 0, 29, 45, 56)
-                },
-                new Result
-                {
-                    Runner = ShaunVahl, Race = race2017, OverallPlace = 43, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 30, 8, 80)
-                },
-                new Result
-                {
-                    Runner = BobChittenden, Race = race2017, OverallPlace = 44, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 30, 21, 42)
-                },
-                new Result
-                {
-                    Runner = McKennaKulas, Race = race2017, OverallPlace = 45, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 30, 29, 70)
-                },
-                new Result
-                {
-                    Runner = DavidRittgers, Race = race2017, OverallPlace = 46, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 30, 57, 80)
-                },
-                new Result
-                {
-                    Runner = VladimirHerdman, Race = race2017, OverallPlace = 47, AgeGroupPlace = 11,
-                    Time = new TimeSpan(0, 0, 31, 38, 25)
-                },
-                new Result
-                {
-                    Runner = CarrieHartsel, Race = race2017, OverallPlace = 49, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 33, 38, 5)
-                },
-                new Result
-                {
-                    Runner = GarrettSilva, Race = race2017, OverallPlace = 50, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 34, 44, 46)
-                },
-                new Result
-                {
-                    Runner = MariyaSilva, Race = race2017, OverallPlace = 51, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 37, 23, 87)
-                },
-                new Result
-                {
-                    Runner = KeithWinkler, Race = race2017, OverallPlace = 52, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 37, 59, 22)
-                },
-                new Result
-                {
-                    Runner = JackReed, Race = race2017, OverallPlace = 53, AgeGroupPlace = 12,
-                    Time = new TimeSpan(0, 0, 37, 59, 22)
-                },
-                new Result
-                {
-                    Runner = MaxGucker, Race = race2018, OverallPlace = 1, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 17, 41, 59)
-                },
-                new Result
-                {
-                    Runner = TristanVaughan, Race = race2018, OverallPlace = 2, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 18, 29, 58)
-                },
-                new Result
-                {
-                    Runner = ChuckEngle, Race = race2018, OverallPlace = 3, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 38, 60)
-                },
-                new Result
-                {
-                    Runner = JeralImhoff, Race = race2018, OverallPlace = 4, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 52, 56)
-                },
-                new Result
-                {
-                    Runner = KyleChudzinski, Race = race2018, OverallPlace = 5, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 19, 14, 0)
-                },
-                new Result
-                {
-                    Runner = MacyMcAdams, Race = race2018, OverallPlace = 6, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 19, 42, 83)
-                },
-                new Result
-                {
-                    Runner = AndrewHibler, Race = race2018, OverallPlace = 7, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 20, 13, 54)
-                },
-                new Result
-                {
-                    Runner = AlexDerhammer, Race = race2018, OverallPlace = 8, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 20, 21, 30)
-                },
-                new Result
-                {
-                    Runner = ZaneEvans, Race = race2018, OverallPlace = 9, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 20, 30, 46)
-                },
-                new Result
-                {
-                    Runner = BrettGucker, Race = race2018, OverallPlace = 10, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 20, 49, 94)
-                },
-                new Result
-                {
-                    Runner = LukeMalena, Race = race2018, OverallPlace = 11, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 20, 56, 45)
-                },
-                new Result
-                {
-                    Runner = RileyFreeland, Race = race2018, OverallPlace = 12, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 21, 11, 3)
-                },
-                new Result
-                {
-                    Runner = LaddClifford, Race = race2018, OverallPlace = 13, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 15, 31)
-                },
-                new Result
-                {
-                    Runner = AndyDavis, Race = race2018, OverallPlace = 14, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 21, 53, 80)
-                },
-                new Result
-                {
-                    Runner = NickZiegler, Race = race2018, OverallPlace = 15, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 21, 57, 92)
-                },
-                new Result
-                {
-                    Runner = ZachJohnston, Race = race2018, OverallPlace = 16, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 58, 43)
-                },
-                new Result
-                {
-                    Runner = JosephBruening, Race = race2018, OverallPlace = 17, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 22, 7, 22)
-                },
-                new Result
-                {
-                    Runner = MichaelaDavis, Race = race2018, OverallPlace = 18, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 22, 14, 93)
-                },
-                new Result
-                {
-                    Runner = MariaPorras, Race = race2018, OverallPlace = 19, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 22, 16, 26)
-                },
-                new Result
-                {
-                    Runner = MakaelaSalyer, Race = race2018, OverallPlace = 20, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 22, 17, 80)
-                },
-                new Result
-                {
-                    Runner = GregHill, Race = race2018, OverallPlace = 21, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 22, 21, 58)
-                },
-                new Result
-                {
-                    Runner = BaileyFreeland, Race = race2018, OverallPlace = 22, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 22, 25, 14)
-                },
-                new Result
-                {
-                    Runner = JennaOliver, Race = race2018, OverallPlace = 23, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 22, 33, 17)
-                },
-                new Result
-                {
-                    Runner = CooperHartsel, Race = race2018, OverallPlace = 24, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 22, 50, 24)
-                },
-                new Result
-                {
-                    Runner = JoeyKurtz, Race = race2018, OverallPlace = 25, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 23, 2, 83)
-                },
-                new Result
-                {
-                    Runner = NolanFreeland, Race = race2018, OverallPlace = 26, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 23, 10, 73)
-                },
-                new Result
-                {
-                    Runner = SophiaSpencer, Race = race2018, OverallPlace = 27, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 23, 15, 96)
-                },
-                new Result
-                {
-                    Runner = DavidHuff, Race = race2018, OverallPlace = 28, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 18, 69)
-                },
-                new Result
-                {
-                    Runner = TylerPalmer, Race = race2018, OverallPlace = 29, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 23, 39, 95)
-                },
-                new Result
-                {
-                    Runner = DillonWest, Race = race2018, OverallPlace = 30, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 23, 46, 53)
-                },
-                new Result
-                {
-                    Runner = PaigeMunchick, Race = race2018, OverallPlace = 31, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 47, 44)
-                },
-                new Result
-                {
-                    Runner = DaveFreeland, Race = race2018, OverallPlace = 32, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 54, 20)
-                },
-                new Result
-                {
-                    Runner = KeithJohnston, Race = race2018, OverallPlace = 33, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 57, 91)
-                },
-                new Result
-                {
-                    Runner = HaroldDravenstott, Race = race2018, OverallPlace = 34, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 24, 0, 38)
-                },
-                new Result
-                {
-                    Runner = ScottStoner, Race = race2018, OverallPlace = 35, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 24, 5, 40)
-                },
-                new Result
-                {
-                    Runner = JenniferRidgway, Race = race2018, OverallPlace = 36, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 24, 22, 6)
-                },
-                new Result
-                {
-                    Runner = BradOliver, Race = race2018, OverallPlace = 37, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 24, 33, 38)
-                },
-                new Result
-                {
-                    Runner = TJCorbett, Race = race2018, OverallPlace = 38, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 24, 34, 20)
-                },
-                new Result
-                {
-                    Runner = RaymondMiller, Race = race2018, OverallPlace = 39, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 24, 51, 2)
-                },
-                new Result
-                {
-                    Runner = AsaGynn, Race = race2018, OverallPlace = 40, AgeGroupPlace = 11,
-                    Time = new TimeSpan(0, 0, 24, 57, 85)
-                },
-                new Result
-                {
-                    Runner = WilliamFoster, Race = race2018, OverallPlace = 41, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 25, 3, 57)
-                },
-                new Result
-                {
-                    Runner = EricThomas, Race = race2018, OverallPlace = 42, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 25, 12, 2)
-                },
-                new Result
-                {
-                    Runner = LivWells, Race = race2018, OverallPlace = 43, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 25, 18, 80)
-                },
-                new Result
-                {
-                    Runner = KatieCanfield, Race = race2018, OverallPlace = 44, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 25, 34, 69)
-                },
-                new Result
-                {
-                    Runner = EmmaHibler, Race = race2018, OverallPlace = 45, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 25, 36, 25)
-                },
-                new Result
-                {
-                    Runner = ClayGucker, Race = race2018, OverallPlace = 46, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 26, 13, 39)
-                },
-                new Result
-                {
-                    Runner = AndrewVasel, Race = race2018, OverallPlace = 47, AgeGroupPlace = 12,
-                    Time = new TimeSpan(0, 0, 26, 15, 8)
-                },
-                new Result
-                {
-                    Runner = KevinSeager, Race = race2018, OverallPlace = 48, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 26, 18, 81)
-                },
-                new Result
-                {
-                    Runner = ClaraNeville, Race = race2018, OverallPlace = 49, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 26, 33, 21)
-                },
-                new Result
-                {
-                    Runner = VanessaMonhemius, Race = race2018, OverallPlace = 50, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 28, 9, 27)
-                },
-                new Result
-                {
-                    Runner = JohnMonhemius, Race = race2018, OverallPlace = 51, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 28, 9, 84)
-                },
-                new Result
-                {
-                    Runner = DanielVereb, Race = race2018, OverallPlace = 52, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 28, 23, 66)
-                },
-                new Result
-                {
-                    Runner = RandiVahl, Race = race2018, OverallPlace = 53, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 28, 29, 4)
-                },
-                new Result
-                {
-                    Runner = MadelineBohan, Race = race2018, OverallPlace = 54, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 28, 30, 88)
-                },
-                new Result
-                {
-                    Runner = ShaunVahl, Race = race2018, OverallPlace = 55, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 28, 40, 35)
-                },
-                new Result
-                {
-                    Runner = SandraFoster, Race = race2018, OverallPlace = 56, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 28, 41, 10)
-                },
-                new Result
-                {
-                    Runner = MelodySeager, Race = race2018, OverallPlace = 57, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 28, 46, 32)
-                },
-                new Result
-                {
-                    Runner = JessicaHill, Race = race2018, OverallPlace = 58, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 28, 57, 7)
-                },
-                new Result
-                {
-                    Runner = BeckyMcAdams, Race = race2018, OverallPlace = 59, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 29, 13, 50)
-                },
-                new Result
-                {
-                    Runner = JenniferFoster, Race = race2018, OverallPlace = 60, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 29, 16, 2)
-                },
-                new Result
-                {
-                    Runner = CharlieReed, Race = race2018, OverallPlace = 61, AgeGroupPlace = 13,
-                    Time = new TimeSpan(0, 0, 29, 17, 36)
-                },
-                new Result
-                {
-                    Runner = KevinChudzinski, Race = race2018, OverallPlace = 62, AgeGroupPlace = 14,
-                    Time = new TimeSpan(0, 0, 29, 29, 70)
-                },
-                new Result
-                {
-                    Runner = RileyEvans, Race = race2018, OverallPlace = 63, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 29, 32, 58)
-                },
-                new Result
-                {
-                    Runner = MadisonSnyder, Race = race2018, OverallPlace = 64, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 29, 33, 99)
-                },
-                new Result
-                {
-                    Runner = DebbyKlinect, Race = race2018, OverallPlace = 65, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 29, 53, 62)
-                },
-                new Result
-                {
-                    Runner = AbigailSparks, Race = race2018, OverallPlace = 66, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 30, 33, 25)
-                },
-                new Result
-                {
-                    Runner = LydiaFike, Race = race2018, OverallPlace = 67, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 30, 48, 12)
-                },
-                new Result
-                {
-                    Runner = DavidSears, Race = race2018, OverallPlace = 68, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 30, 52, 90)
-                },
-                new Result
-                {
-                    Runner = EarlKanzeg, Race = race2018, OverallPlace = 69, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 33, 11, 61)
-                },
-                new Result
-                {
-                    Runner = ElizabethKanzeg, Race = race2018, OverallPlace = 70, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 33, 40, 72)
-                },
-                new Result
-                {
-                    Runner = TeresaStrine, Race = race2018, OverallPlace = 71, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 36, 12, 55)
-                },
-                new Result
-                {
-                    Runner = CassieChance, Race = race2018, OverallPlace = 72, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 38, 17, 90)
-                },
-                new Result
-                {
-                    Runner = JamesMathatas, Race = race2018, OverallPlace = 73, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 46, 14, 19)
-                },
-                new Result
-                {
-                    Runner = ChristyMathatas, Race = race2018, OverallPlace = 74, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 46, 15, 16)
-                },
-                new Result
-                {
-                    Runner = CaitySteiner, Race = race2018, OverallPlace = 75, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 46, 55, 73)
-                },
-                new Result
-                {
-                    Runner = BrookeGucker, Race = race2018, OverallPlace = 76, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 46, 56, 5)
-                },
-                new Result
-                {
-                    Runner = HeidiHartzler, Race = race2018, OverallPlace = 77, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 46, 56, 41)
-                },
-                new Result
-                {
-                    Runner = BrianHartzler, Race = race2018, OverallPlace = 78, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 46, 56, 50)
-                },
-                new Result
-                {
-                    Runner = BrianKulchar, Race = race2018, OverallPlace = 79, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 52, 48, 19)
-                },
-                new Result
-                {
-                    Runner = TiffanyKosman, Race = race2018, OverallPlace = 80, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 54, 17, 45)
-                },
-                new Result
-                {
-                    Runner = ConnieEmerson, Race = race2018, OverallPlace = 81, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 54, 17, 65)
-                },
-                new Result
-                {
-                    Runner = RussellSchultz, Race = race2019, OverallPlace = 1, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 17, 10, 64)
-                },
-                new Result
-                {
-                    Runner = MaxGucker, Race = race2019, OverallPlace = 2, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 17, 28, 42)
-                },
-                new Result
-                {
-                    Runner = TristanVaughan, Race = race2019, OverallPlace = 3, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 17, 47, 12)
-                },
-                new Result
-                {
-                    Runner = ChuckEngle, Race = race2019, OverallPlace = 4, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 18, 55, 57)
-                },
-                new Result
-                {
-                    Runner = AlexDerhammer, Race = race2019, OverallPlace = 5, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 19, 14, 18)
-                },
-                new Result
-                {
-                    Runner = BrettGucker, Race = race2019, OverallPlace = 6, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 19, 16, 52)
-                },
-                new Result
-                {
-                    Runner = AndrewHibler, Race = race2019, OverallPlace = 7, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 20, 39, 17)
-                },
-                new Result
-                {
-                    Runner = BrockTegtmeier, Race = race2019, OverallPlace = 8, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 20, 44, 6)
-                },
-                new Result
-                {
-                    Runner = JohnMonhemius, Race = race2019, OverallPlace = 9, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 20, 49, 20)
-                },
-                new Result
-                {
-                    Runner = RobMiller, Race = race2019, OverallPlace = 10, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 20, 51, 43)
-                },
-                new Result
-                {
-                    Runner = ColeYagersz, Race = race2019, OverallPlace = 11, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 20, 58, 51)
-                },
-                new Result
-                {
-                    Runner = AdamBrantner, Race = race2019, OverallPlace = 12, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 21, 4, 28)
-                },
-                new Result
-                {
-                    Runner = KadeTegtmeier, Race = race2019, OverallPlace = 13, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 21, 57, 70)
-                },
-                new Result
-                {
-                    Runner = SophiaSpencer, Race = race2019, OverallPlace = 14, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 22, 0, 0)
-                },
-                new Result
-                {
-                    Runner = CooperHartsel, Race = race2019, OverallPlace = 15, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 22, 9, 75)
-                },
-                new Result
-                {
-                    Runner = ScottStoner, Race = race2019, OverallPlace = 16, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 22, 25, 85)
-                },
-                new Result
-                {
-                    Runner = NolanFreeland, Race = race2019, OverallPlace = 17, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 22, 27, 81)
-                },
-                new Result
-                {
-                    Runner = HunterStallings, Race = race2019, OverallPlace = 18, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 22, 29, 31)
-                },
-                new Result
-                {
-                    Runner = MakaelaSalyer, Race = race2019, OverallPlace = 19, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 22, 59, 87)
-                },
-                new Result
-                {
-                    Runner = EmmaHibler, Race = race2019, OverallPlace = 20, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 23, 35, 18)
-                },
-                new Result
-                {
-                    Runner = MariaPorras, Race = race2019, OverallPlace = 21, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 38, 96)
-                },
-                new Result
-                {
-                    Runner = VladimirHerdman, Race = race2019, OverallPlace = 22, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 23, 42, 66)
-                },
-                new Result
-                {
-                    Runner = PaigeMunchick, Race = race2019, OverallPlace = 23, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 23, 48, 57)
-                },
-                new Result
-                {
-                    Runner = AlyssaStoner, Race = race2019, OverallPlace = 24, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 49, 13)
-                },
-                new Result
-                {
-                    Runner = WilliamFoster, Race = race2019, OverallPlace = 25, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 23, 51, 22)
-                },
-                new Result
-                {
-                    Runner = BrynneMcAllister, Race = race2019, OverallPlace = 26, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 24, 1, 58)
-                },
-                new Result
-                {
-                    Runner = DavidHuff, Race = race2019, OverallPlace = 27, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 24, 5, 38)
-                },
-                new Result
-                {
-                    Runner = TJCorbett, Race = race2019, OverallPlace = 28, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 24, 38, 17)
-                },
-                new Result
-                {
-                    Runner = BlakeWilson, Race = race2019, OverallPlace = 29, AgeGroupPlace = 11,
-                    Time = new TimeSpan(0, 0, 24, 40, 50)
-                },
-                new Result
-                {
-                    Runner = JoeyKurtz, Race = race2019, OverallPlace = 30, AgeGroupPlace = 12,
-                    Time = new TimeSpan(0, 0, 24, 46, 7)
-                },
-                new Result
-                {
-                    Runner = HaroldDravenstott, Race = race2019, OverallPlace = 31, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 25, 35, 92)
-                },
-                new Result
-                {
-                    Runner = DakotaJacobson, Race = race2019, OverallPlace = 32, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 25, 40, 82)
-                },
-                new Result
-                {
-                    Runner = ClayGucker, Race = race2019, OverallPlace = 33, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 25, 50, 6)
-                },
-                new Result
-                {
-                    Runner = RyanMcAllister, Race = race2019, OverallPlace = 34, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 25, 50, 49)
-                },
-                new Result
-                {
-                    Runner = JacobBeadnell, Race = race2019, OverallPlace = 35, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 25, 51, 52)
-                },
-                new Result
-                {
-                    Runner = DillonWest, Race = race2019, OverallPlace = 36, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 26, 8, 89)
-                },
-                new Result
-                {
-                    Runner = LivWells, Race = race2019, OverallPlace = 37, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 26, 9, 84)
-                },
-                new Result
-                {
-                    Runner = VanessaMonhemius, Race = race2019, OverallPlace = 38, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 27, 14, 14)
-                },
-                new Result
-                {
-                    Runner = BlakeMusick, Race = race2019, OverallPlace = 39, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 27, 23, 79)
-                },
-                new Result
-                {
-                    Runner = CalebNeville, Race = race2019, OverallPlace = 40, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 27, 24, 42)
-                },
-                new Result
-                {
-                    Runner = KaitlynClifford, Race = race2019, OverallPlace = 41, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 27, 29, 52)
-                },
-                new Result
-                {
-                    Runner = HeatherTegtmeier, Race = race2019, OverallPlace = 42, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 27, 54, 17)
-                },
-                new Result
-                {
-                    Runner = JoeArmogida, Race = race2019, OverallPlace = 43, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 28, 7, 51)
-                },
-                new Result
-                {
-                    Runner = SandraFoster, Race = race2019, OverallPlace = 44, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 28, 8, 23)
-                },
-                new Result
-                {
-                    Runner = SommerMueller, Race = race2019, OverallPlace = 45, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 28, 14, 51)
-                },
-                new Result
-                {
-                    Runner = RandyTegtmeier, Race = race2019, OverallPlace = 46, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 28, 54, 51)
-                },
-                new Result
-                {
-                    Runner = MeganKnapp, Race = race2019, OverallPlace = 47, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 29, 18, 23)
-                },
-                new Result
-                {
-                    Runner = BrookeGucker, Race = race2019, OverallPlace = 48, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 29, 29, 96)
-                },
-                new Result
-                {
-                    Runner = MadisonSnyder, Race = race2019, OverallPlace = 49, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 29, 30, 32)
-                },
-                new Result
-                {
-                    Runner = RileyEvans, Race = race2019, OverallPlace = 50, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 29, 30, 77)
-                },
-                new Result
-                {
-                    Runner = AmberLeClair, Race = race2019, OverallPlace = 51, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 29, 56, 76)
-                },
-                new Result
-                {
-                    Runner = JenMyers, Race = race2019, OverallPlace = 52, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 30, 3, 95)
-                },
-                new Result
-                {
-                    Runner = BenjaminKruggel, Race = race2019, OverallPlace = 53, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 30, 7, 52)
-                },
-                new Result
-                {
-                    Runner = KatieCanfield, Race = race2019, OverallPlace = 54, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 30, 27, 68)
-                },
-                new Result
-                {
-                    Runner = ErinMason, Race = race2019, OverallPlace = 55, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 31, 3, 87)
-                },
-                new Result
-                {
-                    Runner = JimPlikerd, Race = race2019, OverallPlace = 56, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 31, 12, 71)
-                },
-                new Result
-                {
-                    Runner = RandiVahl, Race = race2019, OverallPlace = 57, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 31, 54, 12)
-                },
-                new Result
-                {
-                    Runner = ShaunVahl, Race = race2019, OverallPlace = 58, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 31, 54, 34)
-                },
-                new Result
-                {
-                    Runner = RebeccaBoscaljon, Race = race2019, OverallPlace = 59, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 32, 46, 16)
-                },
-                new Result
-                {
-                    Runner = JamesJohnson, Race = race2019, OverallPlace = 60, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 35, 44, 69)
-                },
-                new Result
-                {
-                    Runner = MelanieStallings, Race = race2019, OverallPlace = 61, AgeGroupPlace = 5,
-                    Time = new TimeSpan(0, 0, 35, 45, 10)
-                },
-                new Result
-                {
-                    Runner = MarleyCarter, Race = race2019, OverallPlace = 62, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 37, 10, 91)
-                },
-                new Result
-                {
-                    Runner = TristanPonting, Race = race2019, OverallPlace = 63, AgeGroupPlace = 9,
-                    Time = new TimeSpan(0, 0, 37, 18, 99)
-                },
-                new Result
-                {
-                    Runner = AdamSwiat, Race = race2019, OverallPlace = 64, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 37, 19, 39)
-                },
-                new Result
-                {
-                    Runner = SarahNaftzger, Race = race2019, OverallPlace = 65, AgeGroupPlace = 10,
-                    Time = new TimeSpan(0, 0, 39, 30, 88)
-                },
-                new Result
-                {
-                    Runner = WindyLewis, Race = race2019, OverallPlace = 66, AgeGroupPlace = 2,
-                    Time = new TimeSpan(0, 0, 39, 36, 69)
-                },
-                new Result
-                {
-                    Runner = AnnaWest, Race = race2019, OverallPlace = 67, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 39, 37, 41)
-                },
-                new Result
-                {
-                    Runner = DanNaftzger, Race = race2019, OverallPlace = 68, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 39, 38, 70)
-                },
-                new Result
-                {
-                    Runner = WilsonLewis, Race = race2019, OverallPlace = 69, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 39, 54, 12)
-                },
-                new Result
-                {
-                    Runner = ValarieBoscaljon, Race = race2019, OverallPlace = 70, AgeGroupPlace = 3,
-                    Time = new TimeSpan(0, 0, 39, 57, 18)
-                },
-                new Result
-                {
-                    Runner = AndreaHoff, Race = race2019, OverallPlace = 71, AgeGroupPlace = 6,
-                    Time = new TimeSpan(0, 0, 47, 55, 91)
-                },
-                new Result
-                {
-                    Runner = StacyStuchal, Race = race2019, OverallPlace = 72, AgeGroupPlace = 7,
-                    Time = new TimeSpan(0, 0, 47, 56, 43)
-                },
-                new Result
-                {
-                    Runner = PamelaBoyles, Race = race2019, OverallPlace = 73, AgeGroupPlace = 4,
-                    Time = new TimeSpan(0, 0, 48, 45, 82)
-                },
-                new Result
-                {
-                    Runner = JoCavallaro, Race = race2019, OverallPlace = 74, AgeGroupPlace = 1,
-                    Time = new TimeSpan(0, 0, 48, 46, 21)
-                },
-                new Result
-                {
-                    Runner = MeghanFiala, Race = race2019, OverallPlace = 75, AgeGroupPlace = 8,
-                    Time = new TimeSpan(0, 0, 49, 57, 87)
-                }
+                new Result { Runner = MattChidsey, Race = race2015, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 17, 31), AgeGroup = race2015Male15to18 },
+                new Result { Runner = ChrisCannon, Race = race2015, OverallPlace = 2, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 17, 23, 52), AgeGroup = race2015Male15to18 },
+                new Result { Runner = NoahLake, Race = race2015, OverallPlace = 3, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 29, 54), AgeGroup = race2015Male19to24 },
+                new Result { Runner = LewisAustin, Race = race2015, OverallPlace = 4, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 18, 2, 21), AgeGroup = race2015Male19to24 },
+                new Result { Runner = AndrewJarrett, Race = race2015, OverallPlace = 5, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 18, 50, 54), AgeGroup = race2015Male15to18 },
+                new Result { Runner = MichaelMartin, Race = race2015, OverallPlace = 6, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 18, 55, 53), AgeGroup = race2015Male15to18 },
+                new Result { Runner = MatthewBildstein, Race = race2015, OverallPlace = 7, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 19, 25, 30), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = MatthewGerhart, Race = race2015, OverallPlace = 8, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 20, 24, 72), AgeGroup = race2015Male15to18 },
+                new Result { Runner = MaxGucker, Race = race2015, OverallPlace = 9, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 20, 33, 98), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = MadelynMiller, Race = race2015, OverallPlace = 10, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 40, 3), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = BlakeButsko, Race = race2015, OverallPlace = 11, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 20, 55, 13), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = RileyFreeland, Race = race2015, OverallPlace = 12, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 57, 8), AgeGroup = race2015Female15to18 },
+                new Result { Runner = PatrickBreean, Race = race2015, OverallPlace = 13, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 21, 6, 3), AgeGroup = race2015Male19to24 },
+                new Result { Runner = DarrenEgner, Race = race2015, OverallPlace = 14, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 21, 11, 25), AgeGroup = race2015Male15to18 },
+                new Result { Runner = VanessaRivera, Race = race2015, OverallPlace = 15, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 23, 27), AgeGroup = race2015Female15to18 },
+                new Result { Runner = ZachDreher, Race = race2015, OverallPlace = 16, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 21, 37, 3), AgeGroup = race2015Male15to18 },
+                new Result { Runner = JohnMonhemius, Race = race2015, OverallPlace = 17, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 38, 71), AgeGroup = race2015Male30to39 },
+                new Result { Runner = JosephBruening, Race = race2015, OverallPlace = 18, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 21, 46, 44), AgeGroup = race2015Male19to24 },
+                new Result { Runner = AnnaWinnicki, Race = race2015, OverallPlace = 19, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 21, 54, 83), AgeGroup = race2015Female15to18 },
+                new Result { Runner = EstevanOrtega, Race = race2015, OverallPlace = 20, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 21, 57, 86), AgeGroup = race2015Male15to18 },
+                new Result { Runner = DillonWest, Race = race2015, OverallPlace = 21, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 0, 24), AgeGroup = race2015Male15to18 },
+                new Result { Runner = KristenNapholz, Race = race2015, OverallPlace = 22, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 22, 17, 7), AgeGroup = race2015Female15to18 },
+                new Result { Runner = SamBrandt, Race = race2015, OverallPlace = 23, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 22, 53, 20), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = BaileyFreeland, Race = race2015, OverallPlace = 24, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 58, 91), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = JimButsko, Race = race2015, OverallPlace = 25, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 18, 31), AgeGroup = race2015Male40to49 },
+                new Result { Runner = RachelMurphy, Race = race2015, OverallPlace = 26, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 27, 70), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = CliffLear, Race = race2015, OverallPlace = 27, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 28, 29), AgeGroup = race2015Male30to39 },
+                new Result { Runner = AaronSurrarrer, Race = race2015, OverallPlace = 28, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 49, 6), AgeGroup = race2015Male30to39 },
+                new Result { Runner = DrewWest, Race = race2015, OverallPlace = 29, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 23, 49, 45), AgeGroup = race2015Male30to39 },
+                new Result { Runner = DominicButsko, Race = race2015, OverallPlace = 30, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 23, 58, 14), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = ConnorPloucha, Race = race2015, OverallPlace = 31, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 24, 10, 53), AgeGroup = race2015Male15to18 },
+                new Result { Runner = DanGrabowski, Race = race2015, OverallPlace = 32, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 24, 10, 84), AgeGroup = race2015Male40to49 },
+                new Result { Runner = KevinMartin, Race = race2015, OverallPlace = 33, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 24, 18, 34), AgeGroup = race2015Male19to24 },
+                new Result { Runner = NickZiegler, Race = race2015, OverallPlace = 34, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 24, 23, 75), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = MikeMeans, Race = race2015, OverallPlace = 35, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 24, 29, 34), AgeGroup = race2015Male30to39 },
+                new Result { Runner = NickYount, Race = race2015, OverallPlace = 36, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 24, 31, 77), AgeGroup = race2015Male15to18 },
+                new Result { Runner = AdamSwiat, Race = race2015, OverallPlace = 37, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 32, 21), AgeGroup = race2015Male40to49 },
+                new Result { Runner = PatrickMcKeown, Race = race2015, OverallPlace = 38, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 24, 32, 89), AgeGroup = race2015Male15to18 },
+                new Result { Runner = NolanFreeland, Race = race2015, OverallPlace = 39, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 24, 43, 95), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = AndrewHibler, Race = race2015, OverallPlace = 40, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 24, 45, 24), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = WilliamFoster, Race = race2015, OverallPlace = 41, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 0, 23), AgeGroup = race2015Male50to59 },
+                new Result { Runner = BradOliver, Race = race2015, OverallPlace = 42, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 10, 36), AgeGroup = race2015Male50to59 },
+                new Result { Runner = ThomasBieniosek, Race = race2015, OverallPlace = 43, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 15, 89), AgeGroup = race2015Male60Plus },
+                new Result { Runner = KaylaWilson, Race = race2015, OverallPlace = 44, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 25, 37, 95), AgeGroup = race2015Female15to18 },
+                new Result { Runner = RoyHeger, Race = race2015, OverallPlace = 45, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 59, 62), AgeGroup = race2015Male60Plus },
+                new Result { Runner = StephanieFoster, Race = race2015, OverallPlace = 46, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 6, 31), AgeGroup = race2015Female19to24 },
+                new Result { Runner = CaleighStefanko, Race = race2015, OverallPlace = 47, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 10, 20), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = EmmaHibler, Race = race2015, OverallPlace = 48, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 14, 23), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = TomCurran, Race = race2015, OverallPlace = 49, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 26, 17, 17), AgeGroup = race2015Male50to59 },
+                new Result { Runner = VanessaButsko, Race = race2015, OverallPlace = 50, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 23, 73), AgeGroup = race2015Female40to49 },
+                new Result { Runner = JeffHeilman, Race = race2015, OverallPlace = 51, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 30, 51), AgeGroup = race2015Male40to49 },
+                new Result { Runner = DanEckert, Race = race2015, OverallPlace = 52, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 40, 37), AgeGroup = race2015Male25to29 },
+                new Result { Runner = ZackFlynn, Race = race2015, OverallPlace = 53, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 26, 41, 75), AgeGroup = race2015Male25to29 },
+                new Result { Runner = DelaineyFlynn, Race = race2015, OverallPlace = 54, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 26, 46, 67), AgeGroup = race2015Female19to24 },
+                new Result { Runner = MaddieGrey, Race = race2015, OverallPlace = 55, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 11, 99), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = JoshuaRittgers, Race = race2015, OverallPlace = 56, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 27, 15, 38), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = KarenMartin, Race = race2015, OverallPlace = 57, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 27, 28, 4), AgeGroup = race2015Female40to49 },
+                new Result { Runner = KellyRennels, Race = race2015, OverallPlace = 58, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 27, 35, 40), AgeGroup = race2015Male50to59 },
+                new Result { Runner = BrettDeyling, Race = race2015, OverallPlace = 59, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 27, 50, 44), AgeGroup = race2015Male40to49 },
+                new Result { Runner = BrettGucker, Race = race2015, OverallPlace = 60, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 28, 3, 7), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = CindyMcquown, Race = race2015, OverallPlace = 61, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 8, 44), AgeGroup = race2015Female50to59 },
+                new Result { Runner = DanielRittgers, Race = race2015, OverallPlace = 62, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 28, 26, 43), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = KenTurocy, Race = race2015, OverallPlace = 63, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 28, 37, 57), AgeGroup = race2015Male40to49 },
+                new Result { Runner = AidenDonohue, Race = race2015, OverallPlace = 64, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 28, 50, 85), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = SheilaGucker, Race = race2015, OverallPlace = 65, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 51, 84), AgeGroup = race2015Female30to39 },
+                new Result { Runner = MaddieBrandt, Race = race2015, OverallPlace = 66, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 28, 53, 80), AgeGroup = race2015Female19to24 },
+                new Result { Runner = ElyseFlynn, Race = race2015, OverallPlace = 67, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 29, 26, 27), AgeGroup = race2015Female30to39 },
+                new Result { Runner = SandraFoster, Race = race2015, OverallPlace = 68, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 30, 52, 58), AgeGroup = race2015Female50to59 },
+                new Result { Runner = CharlieReed, Race = race2015, OverallPlace = 69, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 30, 53, 38), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = ChuckWalter, Race = race2015, OverallPlace = 70, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 55, 64), AgeGroup = race2015Male60Plus },
+                new Result { Runner = JessicaFlynn, Race = race2015, OverallPlace = 71, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 56, 65), AgeGroup = race2015Female30to39 },
+                new Result { Runner = MadisonSnyder, Race = race2015, OverallPlace = 72, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 30, 57, 56), AgeGroup = race2015Female14andUnder },
+                new Result { Runner = AmyWinnicki, Race = race2015, OverallPlace = 73, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 31, 3, 8), AgeGroup = race2015Female50to59 },
+                new Result { Runner = GarySnyder, Race = race2015, OverallPlace = 74, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 31, 26, 27), AgeGroup = race2015Male50to59 },
+                new Result { Runner = DavidRittgers, Race = race2015, OverallPlace = 75, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 32, 7, 3), AgeGroup = race2015Male40to49 },
+                new Result { Runner = LaurenFrank, Race = race2015, OverallPlace = 76, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 32, 50, 57), AgeGroup = race2015Female15to18 },
+                new Result { Runner = WendyTurocy, Race = race2015, OverallPlace = 77, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 33, 27, 30), AgeGroup = race2015Female40to49 },
+                new Result { Runner = TonyOliverio, Race = race2015, OverallPlace = 78, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 33, 30, 46), AgeGroup = race2015Male50to59 },
+                new Result { Runner = JenniferMcCuen, Race = race2015, OverallPlace = 79, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 33, 30, 86), AgeGroup = race2015Female40to49 },
+                new Result { Runner = ShaunVahl, Race = race2015, OverallPlace = 80, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 34, 41, 97), AgeGroup = race2015Male40to49 },
+                new Result { Runner = RandiBreese, Race = race2015, OverallPlace = 81, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 34, 43, 10), AgeGroup = race2015Female40to49 },
+                new Result { Runner = GraydonFlynn, Race = race2015, OverallPlace = 82, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 34, 59, 63), AgeGroup = race2015Male15to18 },
+                new Result { Runner = AdamWanter, Race = race2015, OverallPlace = 83, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 36, 2, 46), AgeGroup = race2015Male25to29 },
+                new Result { Runner = MaxieFlynn, Race = race2015, OverallPlace = 84, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 36, 53, 82), AgeGroup = race2015Female19to24 },
+                new Result { Runner = JackReed, Race = race2015, OverallPlace = 85, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 38, 25, 78), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = HollySpears, Race = race2015, OverallPlace = 86, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 38, 32, 97), AgeGroup = race2015Female30to39 },
+                new Result { Runner = TheresaStefanko, Race = race2015, OverallPlace = 87, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 39, 22, 83), AgeGroup = race2015Female50to59 },
+                new Result { Runner = ReaganFlynn, Race = race2015, OverallPlace = 88, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 39, 29, 30), AgeGroup = race2015Female19to24 },
+                new Result { Runner = EthanFlynn, Race = race2015, OverallPlace = 89, AgeGroupPlace = 15, Time = new TimeSpan(0, 0, 40, 19, 82), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = WillSicking, Race = race2015, OverallPlace = 90, AgeGroupPlace = 16, Time = new TimeSpan(0, 0, 40, 34, 50), AgeGroup = race2015Male14andUnder },
+                new Result { Runner = NoahAffolder, Race = race2016, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 16, 15, 58), AgeGroup = race2016Male15to18 },
+                new Result { Runner = LucasClark, Race = race2016, OverallPlace = 2, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 17, 23, 75), AgeGroup = race2016Male15to18 },
+                new Result { Runner = SamAffolder, Race = race2016, OverallPlace = 3, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 17, 38, 25), AgeGroup = race2016Male15to18 },
+                new Result { Runner = TonyKall, Race = race2016, OverallPlace = 4, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 3, 46), AgeGroup = race2016Male19to24 },
+                new Result { Runner = MattChidsey, Race = race2016, OverallPlace = 5, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 18, 14, 99), AgeGroup = race2016Male15to18 },
+                new Result { Runner = KrisKapchak, Race = race2016, OverallPlace = 6, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 18, 21, 26), AgeGroup = race2016Male15to18 },
+                new Result { Runner = BenHouse, Race = race2016, OverallPlace = 7, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 18, 38, 56), AgeGroup = race2016Male15to18 },
+                new Result { Runner = MaxGucker, Race = race2016, OverallPlace = 8, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 19, 12, 64), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = NoahNavratil, Race = race2016, OverallPlace = 9, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 20, 8, 10), AgeGroup = race2016Male15to18 },
+                new Result { Runner = TristanVaughan, Race = race2016, OverallPlace = 10, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 20, 17, 50), AgeGroup = race2016Male15to18 },
+                new Result { Runner = CalebHostetler, Race = race2016, OverallPlace = 11, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 20, 31, 58), AgeGroup = race2016Male15to18 },
+                new Result { Runner = DillonWest, Race = race2016, OverallPlace = 12, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 21, 33, 27), AgeGroup = race2016Male15to18 },
+                new Result { Runner = EstevanOrtega, Race = race2016, OverallPlace = 13, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 21, 33, 54), AgeGroup = race2016Male15to18 },
+                new Result { Runner = MattButt, Race = race2016, OverallPlace = 14, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 21, 42, 72), AgeGroup = race2016Male15to18 },
+                new Result { Runner = EdwardHawkins, Race = race2016, OverallPlace = 15, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 55, 57), AgeGroup = race2016Male30to39 },
+                new Result { Runner = RileyFreeland, Race = race2016, OverallPlace = 16, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 58, 44), AgeGroup = race2016Female15to18 },
+                new Result { Runner = ChristopherDostal, Race = race2016, OverallPlace = 17, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 24, 45), AgeGroup = race2016Male30to39 },
+                new Result { Runner = RobertSayer, Race = race2016, OverallPlace = 18, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 22, 49, 90), AgeGroup = race2016Male30to39 },
+                new Result { Runner = TommieKurtz, Race = race2016, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 39, 70), AgeGroup = race2016Female15to18 },
+                new Result { Runner = SamBrandt, Race = race2016, OverallPlace = 20, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 23, 39, 91), AgeGroup = race2016Male15to18 },
+                new Result { Runner = BaileyFreeland, Race = race2016, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 40, 92), AgeGroup = race2016Female15to18 },
+                new Result { Runner = NickZiegler, Race = race2016, OverallPlace = 22, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 24, 40, 21), AgeGroup = race2016Male15to18 },
+                new Result { Runner = BradOliver, Race = race2016, OverallPlace = 23, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 51, 90), AgeGroup = race2016Male50to59 },
+                new Result { Runner = DannyPrice, Race = race2016, OverallPlace = 24, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 55, 3), AgeGroup = race2016Male60Plus },
+                new Result { Runner = BenNagy, Race = race2016, OverallPlace = 25, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 6, 61), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = CaleighStefanko, Race = race2016, OverallPlace = 26, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 20, 15), AgeGroup = race2016Female14andUnder },
+                new Result { Runner = WilliamFoster, Race = race2016, OverallPlace = 27, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 22, 19), AgeGroup = race2016Male50to59 },
+                new Result { Runner = JoeyKurtz, Race = race2016, OverallPlace = 28, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 33, 22), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = XanderBeltz, Race = race2016, OverallPlace = 29, AgeGroupPlace = 15, Time = new TimeSpan(0, 0, 25, 33, 41), AgeGroup = race2016Male15to18 },
+                new Result { Runner = TylerPalmer, Race = race2016, OverallPlace = 30, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 25, 37, 0), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = DrewWest, Race = race2016, OverallPlace = 31, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 42, 43), AgeGroup = race2016Male40to49 },
+                new Result { Runner = ShaunVahl, Race = race2016, OverallPlace = 32, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 50, 96), AgeGroup = race2016Male40to49 },
+                new Result { Runner = AnnaWinnicki, Race = race2016, OverallPlace = 33, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 25, 51, 86), AgeGroup = race2016Female15to18 },
+                new Result { Runner = ColtonCarpenter, Race = race2016, OverallPlace = 34, AgeGroupPlace = 16, Time = new TimeSpan(0, 0, 26, 3, 44), AgeGroup = race2016Male15to18 },
+                new Result { Runner = MatthewPettry, Race = race2016, OverallPlace = 35, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 10, 24), AgeGroup = race2016Male25to29 },
+                new Result { Runner = DonHouse, Race = race2016, OverallPlace = 36, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 26, 16, 20), AgeGroup = race2016Male50to59 },
+                new Result { Runner = RandiVahl, Race = race2016, OverallPlace = 37, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 19, 25), AgeGroup = race2016Female40to49 },
+                new Result { Runner = LukeAffolder, Race = race2016, OverallPlace = 38, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 27, 20), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = LizStanley, Race = race2016, OverallPlace = 39, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 26, 28, 57), AgeGroup = race2016Female40to49 },
+                new Result { Runner = GiovannaMoroschan, Race = race2016, OverallPlace = 40, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 41, 98), AgeGroup = race2016Male30to39 },
+                new Result { Runner = JeffHeilman, Race = race2016, OverallPlace = 41, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 26, 56, 12), AgeGroup = race2016Male40to49 },
+                new Result { Runner = KaylaMoroschan, Race = race2016, OverallPlace = 42, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 27, 27, 73), AgeGroup = race2016Female14andUnder },
+                new Result { Runner = MichelleYoder, Race = race2016, OverallPlace = 43, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 18, 99), AgeGroup = race2016Female30to39 },
+                new Result { Runner = GiaCatalano, Race = race2016, OverallPlace = 44, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 51, 18), AgeGroup = race2016Female19to24 },
+                new Result { Runner = StephanieFoster, Race = race2016, OverallPlace = 45, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 17, 18), AgeGroup = race2016Female25to29 },
+                new Result { Runner = CarsonNagy, Race = race2016, OverallPlace = 46, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 29, 19, 24), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = SandraFoster, Race = race2016, OverallPlace = 47, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 32, 72), AgeGroup = race2016Female50to59 },
+                new Result { Runner = ShannonMalikowski, Race = race2016, OverallPlace = 48, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 29, 38, 4), AgeGroup = race2016Female40to49 },
+                new Result { Runner = FaithTheobald, Race = race2016, OverallPlace = 49, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 29, 38, 45), AgeGroup = race2016Female15to18 },
+                new Result { Runner = BillBrandt, Race = race2016, OverallPlace = 50, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 29, 43, 55), AgeGroup = race2016Male40to49 },
+                new Result { Runner = JenniferMeyers, Race = race2016, OverallPlace = 51, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 30, 15, 27), AgeGroup = race2016Female30to39 },
+                new Result { Runner = DarinClapp, Race = race2016, OverallPlace = 52, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 30, 48, 16), AgeGroup = race2016Male30to39 },
+                new Result { Runner = VanessaMonhemius, Race = race2016, OverallPlace = 53, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 48, 49), AgeGroup = race2016Female14andUnder },
+                new Result { Runner = JohnMonhemius, Race = race2016, OverallPlace = 54, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 30, 49, 0), AgeGroup = race2016Male30to39 },
+                new Result { Runner = EileenRobison, Race = race2016, OverallPlace = 55, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 31, 7, 78), AgeGroup = race2016Female60Plus },
+                new Result { Runner = MeganBrandt, Race = race2016, OverallPlace = 56, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 31, 46, 20), AgeGroup = race2016Female15to18 },
+                new Result { Runner = AmyWinnicki, Race = race2016, OverallPlace = 57, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 32, 2, 65), AgeGroup = race2016Female50to59 },
+                new Result { Runner = MariaClapp, Race = race2016, OverallPlace = 58, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 32, 19, 35), AgeGroup = race2016Female30to39 },
+                new Result { Runner = MaddieBrandt, Race = race2016, OverallPlace = 59, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 32, 56, 95), AgeGroup = race2016Female19to24 },
+                new Result { Runner = CharlieReed, Race = race2016, OverallPlace = 60, AgeGroupPlace = 17, Time = new TimeSpan(0, 0, 33, 25, 85), AgeGroup = race2016Male15to18 },
+                new Result { Runner = DonaldSpencer, Race = race2016, OverallPlace = 61, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 33, 44, 49), AgeGroup = race2016Male19to24 },
+                new Result { Runner = KelseyDake, Race = race2016, OverallPlace = 62, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 34, 6, 30), AgeGroup = race2016Female19to24 },
+                new Result { Runner = JessicaFlynn, Race = race2016, OverallPlace = 63, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 34, 8, 70), AgeGroup = race2016Female30to39 },
+                new Result { Runner = MikeHewit, Race = race2016, OverallPlace = 64, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 34, 30, 3), AgeGroup = race2016Male30to39 },
+                new Result { Runner = EthanFlynn, Race = race2016, OverallPlace = 65, AgeGroupPlace = 18, Time = new TimeSpan(0, 0, 34, 32, 59), AgeGroup = race2016Male30to39 },
+                new Result { Runner = ZechPaul, Race = race2016, OverallPlace = 66, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 34, 40, 14), AgeGroup = race2016Male25to29 },
+                new Result { Runner = MadelineBohan, Race = race2016, OverallPlace = 67, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 34, 50, 91), AgeGroup = race2016Female14andUnder },
+                new Result { Runner = EmmaReed, Race = race2016, OverallPlace = 68, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 35, 6, 89), AgeGroup = race2016Female15to18 },
+                new Result { Runner = LisaReinhart, Race = race2016, OverallPlace = 69, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 35, 8, 70), AgeGroup = race2016Female25to29 },
+                new Result { Runner = AmyDonnelly, Race = race2016, OverallPlace = 70, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 36, 0, 88), AgeGroup = race2016Female40to49 },
+                new Result { Runner = MikeBangert, Race = race2016, OverallPlace = 71, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 36, 5, 70), AgeGroup = race2016Male50to59 },
+                new Result { Runner = PhilipSyverson, Race = race2016, OverallPlace = 72, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 36, 6, 0), AgeGroup = race2016Male50to59 },
+                new Result { Runner = VictoriaPorter, Race = race2016, OverallPlace = 73, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 40, 45, 93), AgeGroup = race2016Female40to49 },
+                new Result { Runner = JackReed, Race = race2016, OverallPlace = 74, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 41, 21, 32), AgeGroup = race2016Male14andUnder },
+                new Result { Runner = GraydonFlynn, Race = race2016, OverallPlace = 75, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 41, 28, 16), AgeGroup = race2016Male19to24 },
+                new Result { Runner = AbbieEichel, Race = race2016, OverallPlace = 76, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 52, 10, 42), AgeGroup = race2016Female25to29 },
+                new Result { Runner = LiciaPappas, Race = race2016, OverallPlace = 77, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 52, 11, 12), AgeGroup = race2016Female50to59 },
+                new Result { Runner = LucasClark, Race = race2017, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 16, 51, 87), AgeGroup = race2017Male15to18 },
+                new Result { Runner = KrisKopchak, Race = race2017, OverallPlace = 2, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 18, 1, 89), AgeGroup = race2017Male15to18 },
+                new Result { Runner = NoahNavratil, Race = race2017, OverallPlace = 3, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 18, 17, 74), AgeGroup = race2017Male15to18 },
+                new Result { Runner = MaxGucker, Race = race2017, OverallPlace = 4, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 23, 21), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = TristanVaughan, Race = race2017, OverallPlace = 5, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 18, 32, 94), AgeGroup = race2017Male15to18 },
+                new Result { Runner = ChuckEngle, Race = race2017, OverallPlace = 6, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 41, 61), AgeGroup = race2017Male40to49 },
+                new Result { Runner = BenjaminMelkey, Race = race2017, OverallPlace = 7, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 19, 50, 87), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = JeralImhoff, Race = race2017, OverallPlace = 8, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 19, 56, 72), AgeGroup = race2017Male25to29 },
+                new Result { Runner = DillonWest, Race = race2017, OverallPlace = 9, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 20, 15, 34), AgeGroup = race2017Male15to18 },
+                new Result { Runner = SamBrandt, Race = race2017, OverallPlace = 10, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 20, 24, 39), AgeGroup = race2017Male15to18 },
+                new Result { Runner = EstevanOrtega, Race = race2017, OverallPlace = 11, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 20, 26, 0), AgeGroup = race2017Male15to18 },
+                new Result { Runner = BradenYoung, Race = race2017, OverallPlace = 12, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 20, 32, 89), AgeGroup = race2017Male15to18 },
+                new Result { Runner = GregSzklarz, Race = race2017, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 19, 73), AgeGroup = race2017Male60Plus },
+                new Result { Runner = NickZiegler, Race = race2017, OverallPlace = 14, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 54, 60), AgeGroup = race2017Male15to18 },
+                new Result { Runner = AsaGynn, Race = race2017, OverallPlace = 15, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 23, 16, 23), AgeGroup = race2017Male15to18 },
+                new Result { Runner = BrettGucker, Race = race2017, OverallPlace = 16, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 17, 60), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = MariaPorras, Race = race2017, OverallPlace = 17, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 22, 46), AgeGroup = race2017Female14andUnder },
+                new Result { Runner = JennaOliver, Race = race2017, OverallPlace = 18, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 24, 23), AgeGroup = race2017Female15to18 },
+                new Result { Runner = TommieKurtz, Race = race2017, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 25, 11), AgeGroup = race2017Female15to18 },
+                new Result { Runner = JackSzklarz, Race = race2017, OverallPlace = 20, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 23, 32, 11), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = EmmaNagel, Race = race2017, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 37, 60), AgeGroup = race2017Female15to18 },
+                new Result { Runner = JoshuaRittgers, Race = race2017, OverallPlace = 22, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 23, 42, 28), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = HaydenJarvis, Race = race2017, OverallPlace = 23, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 23, 49, 41), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = ScottStoner, Race = race2017, OverallPlace = 24, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 24, 6, 3), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = MollieJarvis, Race = race2017, OverallPlace = 25, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 23, 90), AgeGroup = race2017Female30to39 },
+                new Result { Runner = PaigeMunchick, Race = race2017, OverallPlace = 26, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 24, 44, 34), AgeGroup = race2017Female14andUnder },
+                new Result { Runner = StevenBett, Race = race2017, OverallPlace = 27, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 24, 55, 74), AgeGroup = race2017Male60Plus },
+                new Result { Runner = BradOliver, Race = race2017, OverallPlace = 28, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 7, 81), AgeGroup = race2017Male50to59 },
+                new Result { Runner = CooperHartsel, Race = race2017, OverallPlace = 29, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 25, 8, 13), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = JosephBruening, Race = race2017, OverallPlace = 30, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 25, 8, 43), AgeGroup = race2017Male19to24 },
+                new Result { Runner = WilliamFoster, Race = race2017, OverallPlace = 31, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 24, 52), AgeGroup = race2017Male50to59 },
+                new Result { Runner = ZaneEvans, Race = race2017, OverallPlace = 32, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 25, 45, 84), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = StephanieFoster, Race = race2017, OverallPlace = 33, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 26, 55, 84), AgeGroup = race2017Female25to29 },
+                new Result { Runner = BrettDeyling, Race = race2017, OverallPlace = 34, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 27, 1, 39), AgeGroup = race2017Male40to49 },
+                new Result { Runner = JohnMonhemius, Race = race2017, OverallPlace = 35, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 27, 3, 84), AgeGroup = race2017Male30to39 },
+                new Result { Runner = VanessaMonhemius, Race = race2017, OverallPlace = 36, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 27, 4, 14), AgeGroup = race2017Female14andUnder },
+                new Result { Runner = CarrieStoner, Race = race2017, OverallPlace = 37, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 2, 47), AgeGroup = race2017Female40to49 },
+                new Result { Runner = AndrewVasel, Race = race2017, OverallPlace = 38, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 29, 11, 22), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = AlyssaStoner, Race = race2017, OverallPlace = 39, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 29, 21, 81), AgeGroup = race2017Female14andUnder },
+                new Result { Runner = RandiVahl, Race = race2017, OverallPlace = 40, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 29, 22, 99), AgeGroup = race2017Female40to49 },
+                new Result { Runner = SandraFoster, Race = race2017, OverallPlace = 41, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 24, 51), AgeGroup = race2017Female50to59 },
+                new Result { Runner = CharlieReed, Race = race2017, OverallPlace = 42, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 29, 45, 56), AgeGroup = race2017Male15to18 },
+                new Result { Runner = ShaunVahl, Race = race2017, OverallPlace = 43, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 8, 80), AgeGroup = race2017Male40to49 },
+                new Result { Runner = BobChittenden, Race = race2017, OverallPlace = 44, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 21, 42), AgeGroup = race2017Male60Plus },
+                new Result { Runner = McKennaKulas, Race = race2017, OverallPlace = 45, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 30, 29, 70), AgeGroup = race2017Female15to18 },
+                new Result { Runner = DavidRittgers, Race = race2017, OverallPlace = 46, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 30, 57, 80), AgeGroup = race2017Male40to49 },
+                new Result { Runner = VladimirHerdman, Race = race2017, OverallPlace = 47, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 31, 38, 25), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = CarrieHartsel, Race = race2017, OverallPlace = 49, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 33, 38, 5), AgeGroup = race2017Female30to39 },
+                new Result { Runner = GarrettSilva, Race = race2017, OverallPlace = 50, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 34, 44, 46), AgeGroup = race2017Male25to29 },
+                new Result { Runner = MariyaSilva, Race = race2017, OverallPlace = 51, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 37, 23, 87), AgeGroup = race2017Female25to29 },
+                new Result { Runner = KeithWinkler, Race = race2017, OverallPlace = 52, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 37, 59, 22), AgeGroup = race2017Male50to59 },
+                new Result { Runner = JackReed, Race = race2017, OverallPlace = 53, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 37, 59, 22), AgeGroup = race2017Male14andUnder },
+                new Result { Runner = MaxGucker, Race = race2018, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 41, 59), AgeGroup = race2018Male15to18 },
+                new Result { Runner = TristanVaughan, Race = race2018, OverallPlace = 2, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 18, 29, 58), AgeGroup = race2018Male15to18 },
+                new Result { Runner = ChuckEngle, Race = race2018, OverallPlace = 3, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 38, 60), AgeGroup = race2018Male40to49 },
+                new Result { Runner = JeralImhoff, Race = race2018, OverallPlace = 4, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 52, 56), AgeGroup = race2018Male30to39 },
+                new Result { Runner = KyleChudzinski, Race = race2018, OverallPlace = 5, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 19, 14, 0), AgeGroup = race2018Male15to18 },
+                new Result { Runner = MacyMcAdams, Race = race2018, OverallPlace = 6, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 19, 42, 83), AgeGroup = race2018Female19to24 },
+                new Result { Runner = AndrewHibler, Race = race2018, OverallPlace = 7, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 13, 54), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = AlexDerhammer, Race = race2018, OverallPlace = 8, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 20, 21, 30), AgeGroup = race2018Male15to18 },
+                new Result { Runner = ZaneEvans, Race = race2018, OverallPlace = 9, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 20, 30, 46), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = BrettGucker, Race = race2018, OverallPlace = 10, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 20, 49, 94), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = LukeMalena, Race = race2018, OverallPlace = 11, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 20, 56, 45), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = RileyFreeland, Race = race2018, OverallPlace = 12, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 11, 3), AgeGroup = race2018Female19to24 },
+                new Result { Runner = LaddClifford, Race = race2018, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 15, 31), AgeGroup = race2018Male50to59 },
+                new Result { Runner = AndyDavis, Race = race2018, OverallPlace = 14, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 53, 80), AgeGroup = race2018Male40to49 },
+                new Result { Runner = NickZiegler, Race = race2018, OverallPlace = 15, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 21, 57, 92), AgeGroup = race2018Male15to18 },
+                new Result { Runner = ZachJohnston, Race = race2018, OverallPlace = 16, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 58, 43), AgeGroup = race2018Male25to29 },
+                new Result { Runner = JosephBruening, Race = race2018, OverallPlace = 17, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 7, 22), AgeGroup = race2018Male25to29 },
+                new Result { Runner = MichaelaDavis, Race = race2018, OverallPlace = 18, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 22, 14, 93), AgeGroup = race2018Female15to18 },
+                new Result { Runner = MariaPorras, Race = race2018, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 16, 26), AgeGroup = race2018Female15to18 },
+                new Result { Runner = MakaelaSalyer, Race = race2018, OverallPlace = 20, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 22, 17, 80), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = GregHill, Race = race2018, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 22, 21, 58), AgeGroup = race2018Male25to29 },
+                new Result { Runner = BaileyFreeland, Race = race2018, OverallPlace = 22, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 22, 25, 14), AgeGroup = race2018Female15to18 },
+                new Result { Runner = JennaOliver, Race = race2018, OverallPlace = 23, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 22, 33, 17), AgeGroup = race2018Female15to18 },
+                new Result { Runner = CooperHartsel, Race = race2018, OverallPlace = 24, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 22, 50, 24), AgeGroup = race2018Male15to18 },
+                new Result { Runner = JoeyKurtz, Race = race2018, OverallPlace = 25, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 23, 2, 83), AgeGroup = race2018Male15to18 },
+                new Result { Runner = NolanFreeland, Race = race2018, OverallPlace = 26, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 23, 10, 73), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = SophiaSpencer, Race = race2018, OverallPlace = 27, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 23, 15, 96), AgeGroup = race2018Female15to18 },
+                new Result { Runner = DavidHuff, Race = race2018, OverallPlace = 28, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 18, 69), AgeGroup = race2018Male30to39 },
+                new Result { Runner = TylerPalmer, Race = race2018, OverallPlace = 29, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 23, 39, 95), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = DillonWest, Race = race2018, OverallPlace = 30, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 23, 46, 53), AgeGroup = race2018Male15to18 },
+                new Result { Runner = PaigeMunchick, Race = race2018, OverallPlace = 31, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 47, 44), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = DaveFreeland, Race = race2018, OverallPlace = 32, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 54, 20), AgeGroup = race2018Male40to49 },
+                new Result { Runner = KeithJohnston, Race = race2018, OverallPlace = 33, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 57, 91), AgeGroup = race2018Male50to59 },
+                new Result { Runner = HaroldDravenstott, Race = race2018, OverallPlace = 34, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 24, 0, 38), AgeGroup = race2018Male40to49 },
+                new Result { Runner = ScottStoner, Race = race2018, OverallPlace = 35, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 24, 5, 40), AgeGroup = race2018Male15to18 },
+                new Result { Runner = JenniferRidgway, Race = race2018, OverallPlace = 36, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 22, 6), AgeGroup = race2018Female40to49 },
+                new Result { Runner = BradOliver, Race = race2018, OverallPlace = 37, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 33, 38), AgeGroup = race2018Male50to59 },
+                new Result { Runner = TJCorbett, Race = race2018, OverallPlace = 38, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 24, 34, 20), AgeGroup = race2018Male15to18 },
+                new Result { Runner = RaymondMiller, Race = race2018, OverallPlace = 39, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 24, 51, 2), AgeGroup = race2018Male60Plus },
+                new Result { Runner = AsaGynn, Race = race2018, OverallPlace = 40, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 24, 57, 85), AgeGroup = race2018Male15to18 },
+                new Result { Runner = WilliamFoster, Race = race2018, OverallPlace = 41, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 25, 3, 57), AgeGroup = race2018Male50to59 },
+                new Result { Runner = EricThomas, Race = race2018, OverallPlace = 42, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 12, 2), AgeGroup = race2018Male30to39 },
+                new Result { Runner = LivWells, Race = race2018, OverallPlace = 43, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 25, 18, 80), AgeGroup = race2018Female15to18 },
+                new Result { Runner = KatieCanfield, Race = race2018, OverallPlace = 44, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 25, 34, 69), AgeGroup = race2018Female15to18 },
+                new Result { Runner = EmmaHibler, Race = race2018, OverallPlace = 45, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 36, 25), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = ClayGucker, Race = race2018, OverallPlace = 46, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 26, 13, 39), AgeGroup = race2018Male14andUnder },
+                new Result { Runner = AndrewVasel, Race = race2018, OverallPlace = 47, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 26, 15, 8), AgeGroup = race2018Male15to18 },
+                new Result { Runner = KevinSeager, Race = race2018, OverallPlace = 48, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 18, 81), AgeGroup = race2018Male50to59 },
+                new Result { Runner = ClaraNeville, Race = race2018, OverallPlace = 49, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 33, 21), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = VanessaMonhemius, Race = race2018, OverallPlace = 50, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 28, 9, 27), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = JohnMonhemius, Race = race2018, OverallPlace = 51, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 28, 9, 84), AgeGroup = race2018Male30to39 },
+                new Result { Runner = DanielVereb, Race = race2018, OverallPlace = 52, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 28, 23, 66), AgeGroup = race2018Male25to29 },
+                new Result { Runner = RandiVahl, Race = race2018, OverallPlace = 53, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 28, 29, 4), AgeGroup = race2018Female40to49 },
+                new Result { Runner = MadelineBohan, Race = race2018, OverallPlace = 54, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 28, 30, 88), AgeGroup = race2018Female15to18 },
+                new Result { Runner = ShaunVahl, Race = race2018, OverallPlace = 55, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 28, 40, 35), AgeGroup = race2018Male40to49 },
+                new Result { Runner = SandraFoster, Race = race2018, OverallPlace = 56, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 41, 10), AgeGroup = race2018Female50to59 },
+                new Result { Runner = MelodySeager, Race = race2018, OverallPlace = 57, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 28, 46, 32), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = JessicaHill, Race = race2018, OverallPlace = 58, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 57, 7), AgeGroup = race2018Female25to29 },
+                new Result { Runner = BeckyMcAdams, Race = race2018, OverallPlace = 59, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 29, 13, 50), AgeGroup = race2018Female40to49 },
+                new Result { Runner = JenniferFoster, Race = race2018, OverallPlace = 60, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 29, 16, 2), AgeGroup = race2018Female25to29 },
+                new Result { Runner = CharlieReed, Race = race2018, OverallPlace = 61, AgeGroupPlace = 13, Time = new TimeSpan(0, 0, 29, 17, 36), AgeGroup = race2018Male15to18 },
+                new Result { Runner = KevinChudzinski, Race = race2018, OverallPlace = 62, AgeGroupPlace = 14, Time = new TimeSpan(0, 0, 29, 29, 70), AgeGroup = race2018Male15to18 },
+                new Result { Runner = RileyEvans, Race = race2018, OverallPlace = 63, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 29, 32, 58), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = MadisonSnyder, Race = race2018, OverallPlace = 64, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 29, 33, 99), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = DebbyKlinect, Race = race2018, OverallPlace = 65, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 29, 53, 62), AgeGroup = race2018Female50to59 },
+                new Result { Runner = AbigailSparks, Race = race2018, OverallPlace = 66, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 30, 33, 25), AgeGroup = race2018Female30to39 },
+                new Result { Runner = LydiaFike, Race = race2018, OverallPlace = 67, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 30, 48, 12), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = DavidSears, Race = race2018, OverallPlace = 68, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 30, 52, 90), AgeGroup = race2018Male60Plus },
+                new Result { Runner = EarlKanzeg, Race = race2018, OverallPlace = 69, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 33, 11, 61), AgeGroup = race2018Male40to49 },
+                new Result { Runner = ElizabethKanzeg, Race = race2018, OverallPlace = 70, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 33, 40, 72), AgeGroup = race2018Female15to18 },
+                new Result { Runner = TeresaStrine, Race = race2018, OverallPlace = 71, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 36, 12, 55), AgeGroup = race2018Female40to49 },
+                new Result { Runner = CassieChance, Race = race2018, OverallPlace = 72, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 38, 17, 90), AgeGroup = race2018Female40to49 },
+                new Result { Runner = JamesMathatas, Race = race2018, OverallPlace = 73, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 46, 14, 19), AgeGroup = race2018Male30to39 },
+                new Result { Runner = ChristyMathatas, Race = race2018, OverallPlace = 74, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 46, 15, 16), AgeGroup = race2018Female30to39 },
+                new Result { Runner = CaitySteiner, Race = race2018, OverallPlace = 75, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 46, 55, 73), AgeGroup = race2018Female25to29 },
+                new Result { Runner = BrookeGucker, Race = race2018, OverallPlace = 76, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 46, 56, 5), AgeGroup = race2018Female14andUnder },
+                new Result { Runner = HeidiHartzler, Race = race2018, OverallPlace = 77, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 46, 56, 41), AgeGroup = race2018Female40to49 },
+                new Result { Runner = BrianHartzler, Race = race2018, OverallPlace = 78, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 46, 56, 50), AgeGroup = race2018Male40to49 },
+                new Result { Runner = BrianKulchar, Race = race2018, OverallPlace = 79, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 52, 48, 19), AgeGroup = race2018Male50to59 },
+                new Result { Runner = TiffanyKosman, Race = race2018, OverallPlace = 80, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 54, 17, 45), AgeGroup = race2018Female30to39 },
+                new Result { Runner = ConnieEmerson, Race = race2018, OverallPlace = 81, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 54, 17, 65), AgeGroup = race2018Female60Plus },
+                new Result { Runner = RussellSchultz, Race = race2019, OverallPlace = 1, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 10, 64), AgeGroup = race2019Male19to24 },
+                new Result { Runner = MaxGucker, Race = race2019, OverallPlace = 2, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 17, 28, 42), AgeGroup = race2019Male15to18 },
+                new Result { Runner = TristanVaughan, Race = race2019, OverallPlace = 3, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 17, 47, 12), AgeGroup = race2019Male19to24 },
+                new Result { Runner = ChuckEngle, Race = race2019, OverallPlace = 4, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 18, 55, 57), AgeGroup = race2019Male40to49 },
+                new Result { Runner = AlexDerhammer, Race = race2019, OverallPlace = 5, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 19, 14, 18), AgeGroup = race2019Male15to18 },
+                new Result { Runner = BrettGucker, Race = race2019, OverallPlace = 6, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 19, 16, 52), AgeGroup = race2019Male15to18 },
+                new Result { Runner = AndrewHibler, Race = race2019, OverallPlace = 7, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 20, 39, 17), AgeGroup = race2019Male15to18 },
+                new Result { Runner = BrockTegtmeier, Race = race2019, OverallPlace = 8, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 20, 44, 6), AgeGroup = race2019Male15to18 },
+                new Result { Runner = JohnMonhemius, Race = race2019, OverallPlace = 9, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 49, 20), AgeGroup = race2019Male30to39 },
+                new Result { Runner = RobMiller, Race = race2019, OverallPlace = 10, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 20, 51, 43), AgeGroup = race2019Male50to59 },
+                new Result { Runner = ColeYagersz, Race = race2019, OverallPlace = 11, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 20, 58, 51), AgeGroup = race2019Male15to18 },
+                new Result { Runner = AdamBrantner, Race = race2019, OverallPlace = 12, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 21, 4, 28), AgeGroup = race2019Male30to39 },
+                new Result { Runner = KadeTegtmeier, Race = race2019, OverallPlace = 13, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 21, 57, 70), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = SophiaSpencer, Race = race2019, OverallPlace = 14, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 22, 0, 0), AgeGroup = race2019Female15to18 },
+                new Result { Runner = CooperHartsel, Race = race2019, OverallPlace = 15, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 22, 9, 75), AgeGroup = race2019Male15to18 },
+                new Result { Runner = ScottStoner, Race = race2019, OverallPlace = 16, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 22, 25, 85), AgeGroup = race2019Male15to18 },
+                new Result { Runner = NolanFreeland, Race = race2019, OverallPlace = 17, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 22, 27, 81), AgeGroup = race2019Male15to18 },
+                new Result { Runner = HunterStallings, Race = race2019, OverallPlace = 18, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 29, 31), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = MakaelaSalyer, Race = race2019, OverallPlace = 19, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 22, 59, 87), AgeGroup = race2019Female15to18 },
+                new Result { Runner = EmmaHibler, Race = race2019, OverallPlace = 20, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 23, 35, 18), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = MariaPorras, Race = race2019, OverallPlace = 21, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 38, 96), AgeGroup = race2019Female15to18 },
+                new Result { Runner = VladimirHerdman, Race = race2019, OverallPlace = 22, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 23, 42, 66), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = PaigeMunchick, Race = race2019, OverallPlace = 23, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 23, 48, 57), AgeGroup = race2019Female15to18 },
+                new Result { Runner = AlyssaStoner, Race = race2019, OverallPlace = 24, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 49, 13), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = WilliamFoster, Race = race2019, OverallPlace = 25, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 23, 51, 22), AgeGroup = race2019Male50to59 },
+                new Result { Runner = BrynneMcAllister, Race = race2019, OverallPlace = 26, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 1, 58), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = DavidHuff, Race = race2019, OverallPlace = 27, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 24, 5, 38), AgeGroup = race2019Male30to39 },
+                new Result { Runner = TJCorbett, Race = race2019, OverallPlace = 28, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 24, 38, 17), AgeGroup = race2019Male15to18 },
+                new Result { Runner = BlakeWilson, Race = race2019, OverallPlace = 29, AgeGroupPlace = 11, Time = new TimeSpan(0, 0, 24, 40, 50), AgeGroup = race2019Male15to18 },
+                new Result { Runner = JoeyKurtz, Race = race2019, OverallPlace = 30, AgeGroupPlace = 12, Time = new TimeSpan(0, 0, 24, 46, 7), AgeGroup = race2019Male15to18 },
+                new Result { Runner = HaroldDravenstott, Race = race2019, OverallPlace = 31, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 25, 35, 92), AgeGroup = race2019Male40to49 },
+                new Result { Runner = DakotaJacobson, Race = race2019, OverallPlace = 32, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 25, 40, 82), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = ClayGucker, Race = race2019, OverallPlace = 33, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 25, 50, 6), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = RyanMcAllister, Race = race2019, OverallPlace = 34, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 50, 49), AgeGroup = race2019Male40to49 },
+                new Result { Runner = JacobBeadnell, Race = race2019, OverallPlace = 35, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 25, 51, 52), AgeGroup = race2019Male19to24 },
+                new Result { Runner = DillonWest, Race = race2019, OverallPlace = 36, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 26, 8, 89), AgeGroup = race2019Male19to24 },
+                new Result { Runner = LivWells, Race = race2019, OverallPlace = 37, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 26, 9, 84), AgeGroup = race2019Female15to18 },
+                new Result { Runner = VanessaMonhemius, Race = race2019, OverallPlace = 38, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 27, 14, 14), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = BlakeMusick, Race = race2019, OverallPlace = 39, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 23, 79), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = CalebNeville, Race = race2019, OverallPlace = 40, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 27, 24, 42), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = KaitlynClifford, Race = race2019, OverallPlace = 41, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 27, 29, 52), AgeGroup = race2019Female15to18 },
+                new Result { Runner = HeatherTegtmeier, Race = race2019, OverallPlace = 42, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 27, 54, 17), AgeGroup = race2019Female40to49 },
+                new Result { Runner = JoeArmogida, Race = race2019, OverallPlace = 43, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 28, 7, 51), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = SandraFoster, Race = race2019, OverallPlace = 44, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 28, 8, 23), AgeGroup = race2019Female50to59 },
+                new Result { Runner = SommerMueller, Race = race2019, OverallPlace = 45, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 28, 14, 51), AgeGroup = race2019Female40to49 },
+                new Result { Runner = RandyTegtmeier, Race = race2019, OverallPlace = 46, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 28, 54, 51), AgeGroup = race2019Male40to49 },
+                new Result { Runner = MeganKnapp, Race = race2019, OverallPlace = 47, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 29, 18, 23), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = BrookeGucker, Race = race2019, OverallPlace = 48, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 29, 29, 96), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = MadisonSnyder, Race = race2019, OverallPlace = 49, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 29, 30, 32), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = RileyEvans, Race = race2019, OverallPlace = 50, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 29, 30, 77), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = AmberLeClair, Race = race2019, OverallPlace = 51, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 29, 56, 76), AgeGroup = race2019Female30to39 },
+                new Result { Runner = JenMyers, Race = race2019, OverallPlace = 52, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 30, 3, 95), AgeGroup = race2019Female40to49 },
+                new Result { Runner = BenjaminKruggel, Race = race2019, OverallPlace = 53, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 30, 7, 52), AgeGroup = race2019Male40to49 },
+                new Result { Runner = KatieCanfield, Race = race2019, OverallPlace = 54, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 30, 27, 68), AgeGroup = race2019Female15to18 },
+                new Result { Runner = ErinMason, Race = race2019, OverallPlace = 55, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 31, 3, 87), AgeGroup = race2019Female30to39 },
+                new Result { Runner = JimPlikerd, Race = race2019, OverallPlace = 56, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 31, 12, 71), AgeGroup = race2019Male40to49 },
+                new Result { Runner = RandiVahl, Race = race2019, OverallPlace = 57, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 31, 54, 12), AgeGroup = race2019Female40to49 },
+                new Result { Runner = ShaunVahl, Race = race2019, OverallPlace = 58, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 31, 54, 34), AgeGroup = race2019Male40to49 },
+                new Result { Runner = RebeccaBoscaljon, Race = race2019, OverallPlace = 59, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 32, 46, 16), AgeGroup = race2019Female30to39 },
+                new Result { Runner = JamesJohnson, Race = race2019, OverallPlace = 60, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 35, 44, 69), AgeGroup = race2019Male60Plus },
+                new Result { Runner = MelanieStallings, Race = race2019, OverallPlace = 61, AgeGroupPlace = 5, Time = new TimeSpan(0, 0, 35, 45, 10), AgeGroup = race2019Female40to49 },
+                new Result { Runner = MarleyCarter, Race = race2019, OverallPlace = 62, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 37, 10, 91), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = TristanPonting, Race = race2019, OverallPlace = 63, AgeGroupPlace = 9, Time = new TimeSpan(0, 0, 37, 18, 99), AgeGroup = race2019Male14andUnder },
+                new Result { Runner = AdamSwiat, Race = race2019, OverallPlace = 64, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 37, 19, 39), AgeGroup = race2019Male40to49 },
+                new Result { Runner = SarahNaftzger, Race = race2019, OverallPlace = 65, AgeGroupPlace = 10, Time = new TimeSpan(0, 0, 39, 30, 88), AgeGroup = race2019Female14andUnder },
+                new Result { Runner = WindyLewis, Race = race2019, OverallPlace = 66, AgeGroupPlace = 2, Time = new TimeSpan(0, 0, 39, 36, 69), AgeGroup = race2019Female50to59 },
+                new Result { Runner = AnnaWest, Race = race2019, OverallPlace = 67, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 39, 37, 41), AgeGroup = race2019Female19to24 },
+                new Result { Runner = DanNaftzger, Race = race2019, OverallPlace = 68, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 39, 38, 70), AgeGroup = race2019Male30to39 },
+                new Result { Runner = WilsonLewis, Race = race2019, OverallPlace = 69, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 39, 54, 12), AgeGroup = race2019Male50to59 },
+                new Result { Runner = ValarieBoscaljon, Race = race2019, OverallPlace = 70, AgeGroupPlace = 3, Time = new TimeSpan(0, 0, 39, 57, 18), AgeGroup = race2019Female50to59 },
+                new Result { Runner = AndreaHoff, Race = race2019, OverallPlace = 71, AgeGroupPlace = 6, Time = new TimeSpan(0, 0, 47, 55, 91), AgeGroup = race2019Female40to49 },
+                new Result { Runner = StacyStuchal, Race = race2019, OverallPlace = 72, AgeGroupPlace = 7, Time = new TimeSpan(0, 0, 47, 56, 43), AgeGroup = race2019Female40to49 },
+                new Result { Runner = PamelaBoyles, Race = race2019, OverallPlace = 73, AgeGroupPlace = 4, Time = new TimeSpan(0, 0, 48, 45, 82), AgeGroup = race2019Female30to39 },
+                new Result { Runner = JoCavallaro, Race = race2019, OverallPlace = 74, AgeGroupPlace = 1, Time = new TimeSpan(0, 0, 48, 46, 21), AgeGroup = race2019Female60Plus },
+                new Result { Runner = MeghanFiala, Race = race2019, OverallPlace = 75, AgeGroupPlace = 8, Time = new TimeSpan(0, 0, 49, 57, 87), AgeGroup = race2019Female40to49 }
             };
 
             await context.RaceRunners.AddRangeAsync(raceRunners);

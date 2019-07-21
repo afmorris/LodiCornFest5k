@@ -11,5 +11,6 @@ namespace LodiCornFest5k.Models
 
         public Runner Runner { get; set; }
         public Race Race { get; set; }
+        public AgeGroup AgeGroup { get; set; }
     }
 }

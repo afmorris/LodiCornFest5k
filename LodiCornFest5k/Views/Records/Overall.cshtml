@@ -1,4 +1,4 @@
-@model LodiCornFest5k.ViewModels.Top.TopResultsViewModel
+@model LodiCornFest5k.ViewModels.Top.OverallRecordsViewModel
 
 @{
     ViewData["Title"] = "All-Time Overall Records";
@@ -21,25 +21,25 @@
             </tr>
             </thead>
             <tbody>
-                @for (int i = 0; i < Model.TopMaleResults.Count; i++)
+                @for (int i = 0; i < Model.MaleResults.Count; i++)
                 {
                     <tr>
                         <td>@(i+1)</td>
                         <td>
-                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@Model.TopMaleResults[i].LinkName" target="_blank">@Model.TopMaleResults[i].Name</a>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@Model.MaleResults[i].LinkName" target="_blank">@Model.MaleResults[i].Name</a>
                         </td>
-                        <td>@Model.TopMaleResults[i].Time.ToString(@"mm\:ss\.ff")</td>
+                        <td>@Model.MaleResults[i].Time.ToString(@"mm\:ss\.ff")</td>
                         <td>
-                            <a asp-controller="Results" asp-action="List" asp-route-year="@Model.TopMaleResults[i].RaceYear" target="_blank">@Model.TopMaleResults[i].RaceName</a>
-                        </td>
-                        <td>
-                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.TopMaleResults[i].RaceYear" target="_blank">@Model.TopMaleResults[i].AgeGroupName</a>
+                            <a asp-controller="Results" asp-action="List" asp-route-year="@Model.MaleResults[i].RaceYear" target="_blank">@Model.MaleResults[i].RaceName</a>
                         </td>
                         <td>
-                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@Model.TopMaleResults[i].RaceYear" target="_blank">@Model.TopMaleResults[i].OverallPlace</a>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.MaleResults[i].RaceYear" target="_blank">@Model.MaleResults[i].AgeGroupName</a>
                         </td>
                         <td>
-                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.TopMaleResults[i].RaceYear" target="_blank">@Model.TopMaleResults[i].AgeGroupPlace</a>
+                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@Model.MaleResults[i].RaceYear" target="_blank">@Model.MaleResults[i].OverallPlace</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.MaleResults[i].RaceYear" target="_blank">@Model.MaleResults[i].AgeGroupPlace</a>
                         </td>
                     </tr>
                 }
@@ -62,25 +62,25 @@
             </tr>
             </thead>
             <tbody>
-                @for (int i = 0; i < Model.TopFemaleResults.Count; i++)
+                @for (int i = 0; i < Model.FemaleResults.Count; i++)
                 {
                     <tr>
                         <td>@(i+1)</td>
                         <td>
-                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@Model.TopFemaleResults[i].LinkName" target="_blank">@Model.TopFemaleResults[i].Name</a>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@Model.FemaleResults[i].LinkName" target="_blank">@Model.FemaleResults[i].Name</a>
                         </td>
-                        <td>@Model.TopFemaleResults[i].Time.ToString(@"mm\:ss\.ff")</td>
+                        <td>@Model.FemaleResults[i].Time.ToString(@"mm\:ss\.ff")</td>
                         <td>
-                            <a asp-controller="Results" asp-action="List" asp-route-year="@Model.TopFemaleResults[i].RaceYear" target="_blank">@Model.TopFemaleResults[i].RaceName</a>
-                        </td>
-                        <td>
-                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.TopFemaleResults[i].RaceYear" target="_blank">@Model.TopFemaleResults[i].AgeGroupName</a>
+                            <a asp-controller="Results" asp-action="List" asp-route-year="@Model.FemaleResults[i].RaceYear" target="_blank">@Model.FemaleResults[i].RaceName</a>
                         </td>
                         <td>
-                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@Model.TopFemaleResults[i].RaceYear" target="_blank">@Model.TopFemaleResults[i].OverallPlace</a>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.FemaleResults[i].RaceYear" target="_blank">@Model.FemaleResults[i].AgeGroupName</a>
                         </td>
                         <td>
-                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.TopFemaleResults[i].RaceYear" target="_blank">@Model.TopFemaleResults[i].AgeGroupPlace</a>
+                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@Model.FemaleResults[i].RaceYear" target="_blank">@Model.FemaleResults[i].OverallPlace</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@Model.FemaleResults[i].RaceYear" target="_blank">@Model.FemaleResults[i].AgeGroupPlace</a>
                         </td>
                     </tr>
                 }

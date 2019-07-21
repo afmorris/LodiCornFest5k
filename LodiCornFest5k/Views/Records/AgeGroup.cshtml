@@ -1,0 +1,100 @@
+@model LodiCornFest5k.ViewModels.Top.AgeGroupRecordsViewModel
+
+@{
+    ViewData["Title"] = "All-Time Age Group Records";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+}
+
+@section Scripts {
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h1>All-Time Male Age Group Records</h1>
+        
+        @foreach (var ageGroup in Model.MaleAgeGroups)
+        {
+            <h2>All Time @ageGroup.Gender @ageGroup.Name Age Group Records</h2>
+            <table class="table table-bordered table-striped">
+                <caption>All Time @ageGroup.Gender @ageGroup.Name Age Group Records</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Race</th>
+                    <th>Overall Place</th>
+                    <th>Age Group Place</th>
+                </tr>
+                </thead>
+                <tbody>
+                @for (int i = 0; i < ageGroup.Results.Count; i++)
+                {
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@ageGroup.Results[i].LinkName" target="_blank">@ageGroup.Results[i].Name</a>
+                        </td>
+                        <td>@ageGroup.Results[i].Time.ToString(@"mm\:ss\.ff")</td>
+                        <td>
+                            <a asp-controller="Results" asp-action="List" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].RaceName</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].OverallPlace</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].AgeGroupPlace</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        }
+    </div>
+    <div class="col-lg-6">
+        <h1>All-Time Female Age Group Records</h1>
+        
+        @foreach (var ageGroup in Model.FemaleAgeGroups)
+        {
+            <h2>All Time @ageGroup.Gender @ageGroup.Name Age Group Records</h2>
+            <table class="table table-bordered table-striped">
+                <caption>All Time @ageGroup.Gender @ageGroup.Name Age Group Records</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Race</th>
+                    <th>Overall Place</th>
+                    <th>Age Group Place</th>
+                </tr>
+                </thead>
+                <tbody>
+                @for (int i = 0; i < ageGroup.Results.Count; i++)
+                {
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>
+                            <a asp-controller="Runners" asp-action="RunnerDetails" asp-route-runnerName="@ageGroup.Results[i].LinkName" target="_blank">@ageGroup.Results[i].Name</a>
+                        </td>
+                        <td>@ageGroup.Results[i].Time.ToString(@"mm\:ss\.ff")</td>
+                        <td>
+                            <a asp-controller="Results" asp-action="List" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].RaceName</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="Overall" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].OverallPlace</a>
+                        </td>
+                        <td>
+                            <a asp-controller="Results" asp-action="AgeGroup" asp-route-year="@ageGroup.Results[i].RaceYear" target="_blank">@ageGroup.Results[i].AgeGroupPlace</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
